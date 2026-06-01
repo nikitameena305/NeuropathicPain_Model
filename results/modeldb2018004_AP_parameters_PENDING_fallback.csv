@@ -1,0 +1,2 @@
+model,RMP_mV,threshold_mV_dvdt10,threshold_time_ms,peak_mV,stim_amp_nA
+fallback_simplified_DRG_HH_not_validated_2018004,-68.14861711554902,-68.5724658251323,19.9999999999994,-46.07167034158808,1.0

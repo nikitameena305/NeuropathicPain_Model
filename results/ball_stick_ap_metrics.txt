@@ -1,0 +1,4 @@
+Baseline/RMP approx: -65.00 mV
+Peak voltage: -59.93 mV
+Approx threshold crossing time > -20 mV: nan ms
+Stimulus current: 0.35 nA
