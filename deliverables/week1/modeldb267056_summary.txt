@@ -1,0 +1,21 @@
+ModelDB 267056 Week 1 extraction summary
+=========================================
+Source JSON: /home/nikita/NeuropathicPain_Model/results/modeldb_267056/100mN_data.json
+Total spikes: 27048
+Unique spiking cells: 377
+Duration analysed: 4999.186 ms
+
+Top population firing rates:
+population  n_cells  total_spikes  mean_rate_Hz  median_rate_Hz  max_rate_Hz
+   unknown      377         27048     14.351408        4.200684   121.219738
+
+Possible eTrC/TrC populations:
+
+No eTrC/TrC-labelled population detected automatically.
+
+Possible GABA/inhibitory populations for Group 3 focus:
+
+No GABA/inhibitory-labelled population detected automatically.
+
+Stimulus current pA: not automatically extracted from JSON; check model config/readme if required.
+Match to Medlock Fig. 3: write Y/N after visual comparison with paper/model documentation.

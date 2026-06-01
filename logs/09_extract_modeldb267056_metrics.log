@@ -1,0 +1,24 @@
+JSON candidates:
+ - /home/nikita/NeuropathicPain_Model/results/modeldb_267056/100mN_data.json
+ - /home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json
+ - /home/nikita/NeuropathicPain_Model/external/SDHmodel/data/100mN_data.json
+ - /home/nikita/NeuropathicPain_Model/modeldb/267056/spkt/spkt_C_100mN.json
+ - /home/nikita/NeuropathicPain_Model/external/SDHmodel/spkt/spkt_C_100mN.json
+ - /home/nikita/NeuropathicPain_Model/modeldb/267056/spkt/spkt_SAI_100mN.json
+ - /home/nikita/NeuropathicPain_Model/external/SDHmodel/spkt/spkt_SAI_100mN.json
+ - /home/nikita/NeuropathicPain_Model/modeldb/267056/spkt/spkt_SAII_100mN.json
+ - /home/nikita/NeuropathicPain_Model/external/SDHmodel/spkt/spkt_SAII_100mN.json
+ - /home/nikita/NeuropathicPain_Model/modeldb/267056/spkt/spkt_Ad_100mN.json
+
+Using JSON file: /home/nikita/NeuropathicPain_Model/results/modeldb_267056/100mN_data.json
+
+DONE.
+Created:
+  /home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb267056_cell_rates.csv
+  /home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb267056_population_rates.csv
+  /home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb267056_summary.txt
+  /home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb267056_tonic_firing.png
+
+Top population rates:
+population  n_cells  total_spikes  mean_rate_Hz  median_rate_Hz  max_rate_Hz
+   unknown      377         27048     14.351408        4.200684   121.219738
