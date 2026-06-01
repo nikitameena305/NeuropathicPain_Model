@@ -1,0 +1,28 @@
+/home/nikita/NeuropathicPain_Model/python/14_run_modeldb2018004_AP_simulation.py:36: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat([self, pd.DataFrame([other])], ignore_index=ignore_index)
+Loaded compiled mechanisms.
+Patched pandas DataFrame.append compatibility.
+Creating pseudounipolar neuron...
+Neuron created.
+Number of sections in sectionDF: 553
+
+Created:
+/home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb2018004_soma_voltage_trace.csv
+/home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb2018004_soma_voltage_trace.png
+/home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb2018004_section_summary.csv
+
+Voltage check:
+min_mV = -86.3170784967596
+max_mV = -65.0
+start_mV = -65.0
+end_mV = -84.16892724026961
+
+Section types:
+sectionType
+STIN       300
+MYSA       100
+FLUT       100
+node        50
+soma         1
+iseg         1
+tjnNode      1

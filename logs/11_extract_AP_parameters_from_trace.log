@@ -1,0 +1,7 @@
+AP parameters:
+                                            source_trace time_column voltage_column     RMP_mV  threshold_mV  threshold_time_ms  peak_mV  peak_time_ms                                                     method_note
+deliverables/week1/modeldb2018004_soma_voltage_trace.csv     time_ms     voltage_mV -85.053885         -65.0                0.0    -65.0           0.0 Threshold estimated from dV/dt > 10 mV/ms or max dV/dt fallback
+
+Created:
+/home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb2018004_AP_parameters.csv
+/home/nikita/NeuropathicPain_Model/deliverables/week1/modeldb2018004_AP_trace_with_parameters.png
