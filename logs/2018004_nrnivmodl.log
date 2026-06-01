@@ -1,0 +1,27 @@
+/home/nikita/NeuropathicPain_Model/modeldb/2018004
+cfiles =
+Mod files: "flut_sensory.mod" "mysa_sensory.mod" "node_sensory.mod" "stin_sensory.mod"
+
+Creating 'x86_64' directory for .o files.
+
+MODOBJS= ./flut_sensory.o ./mysa_sensory.o ./node_sensory.o ./stin_sensory.o
+ -> [32mCompiling[0m mod_func.cpp
+ -> [32mNMODL[0m ../flut_sensory.mod
+ -> [32mNMODL[0m ../mysa_sensory.mod
+ -> [32mNMODL[0m ../node_sensory.mod
+Translating mysa_sensory.mod into /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/mysa_sensory.cpp
+Translating node_sensory.mod into /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/node_sensory.cpp
+Translating flut_sensory.mod into /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/flut_sensory.cpp
+Thread Safe
+Thread Safe
+Thread Safe
+ -> [32mNMODL[0m ../stin_sensory.mod
+ -> [32mCompiling[0m /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/flut_sensory.cpp
+ -> [32mCompiling[0m /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/mysa_sensory.cpp
+Translating stin_sensory.mod into /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/stin_sensory.cpp
+Thread Safe
+ -> [32mCompiling[0m /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/node_sensory.cpp
+ -> [32mCompiling[0m /home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/stin_sensory.cpp
+ => [32mLINKING[0m shared library "/home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/./libnrnmech.so"
+ => [32mLINKING[0m executable "/home/nikita/NeuropathicPain_Model/modeldb/2018004/x86_64/./special" LDFLAGS are:     
+Successfully created x86_64/special
