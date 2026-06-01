@@ -1,0 +1,127 @@
+Mon Jun  1 04:08:56 UTC 2026
+CURRENT PROJECT STRUCTURE
+.
+├── data
+├── deliverables
+│   └── week1
+├── external
+│   ├── SDHmodel
+│   └── __MACOSX
+├── figures
+│   ├── 01_ball_stick_AP_demo.png
+│   ├── 02_DRG_normal_vs_neuropathic.png
+│   ├── 03_SDH_normal_vs_neuropathic_output.png
+│   └── modeldb2018004_AP_parameters_PENDING_fallback.png
+├── hoc
+├── logs
+│   ├── 01_ball_stick_ap_demo.log
+│   ├── 02_DRG_normal_vs_neuropathic.log
+│   ├── 03_SDH_normal_vs_neuropathic.log
+│   ├── 07_DRG_AP_parameters_fallback.log
+│   ├── 08_make_neuromorpho_week1_table.log
+│   ├── count_dorsal_horn.log
+│   ├── download_dorsal_horn.log
+│   ├── download_dorsal_horn_mouse.log
+│   ├── download_dorsal_horn_rat.log
+│   ├── download_drg_all.log
+│   ├── download_drg_swc.log
+│   ├── download_mouse_sensory.log
+│   ├── download_neuromorpho_full.log
+│   ├── download_pain_regions.log
+│   ├── download_rat_all.log
+│   ├── download_rat_sensory.log
+│   ├── download_rat_spinal.log
+│   ├── download_sdh_all.log
+│   ├── download_sdh_swc.log
+│   ├── download_swc_dorsal_horn_strict_source.log
+│   ├── download_swc_top10.log
+│   ├── fields.log
+│   ├── filter_dorsal_horn.log
+│   ├── github_logs
+│   ├── inspect_dorsal_horn_all.log
+│   ├── neuromorpho_fields.log
+│   └── week1_today_start.log
+├── metadata
+│   ├── dorsal_horn_all.csv
+│   ├── drg_all.csv
+│   ├── neuromorpho_full_all_neurons.csv
+│   ├── rat_all.csv
+│   └── sdh_all.csv
+├── mod
+├── modeldb
+│   └── 267056
+├── notes
+│   └── ONE_HOUR_COMPUTATIONAL_SUMMARY.md
+├── pain_neuron_env
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   ├── lib64 -> lib
+│   ├── pyvenv.cfg
+│   └── share
+├── python
+│   ├── 01_ball_stick_ap_demo.py
+│   ├── 01_ball_stick_ap_demo.py.save
+│   ├── 02_DRG_normal_vs_neuropathic.py
+│   ├── 03_SDH_normal_vs_neuropathic_output.py
+│   ├── 04_make_1hr_summary.py
+│   ├── 07_DRG_AP_parameters_fallback.py
+│   └── 08_make_neuromorpho_week1_table.py
+├── results
+│   ├── 02_DRG_normal_vs_neuropathic_metrics.csv
+│   ├── 02_DRG_normal_vs_neuropathic_trace.csv
+│   ├── 03_SDH_normal_vs_neuropathic_metrics.csv
+│   ├── 03_SDH_normal_vs_neuropathic_trace.csv
+│   ├── ball_stick_ap_metrics.txt
+│   ├── ball_stick_ap_trace.csv
+│   ├── modeldb2018004_AP_parameters_PENDING_fallback.csv
+│   ├── modeldb_267056
+│   └── neuromorpho_week1_table.csv
+├── scripts
+│   ├── __pycache__
+│   ├── download_swc_from_csv.py
+│   ├── filter_rank_neurons.py
+│   ├── filter_rank_neurons_old.py
+│   ├── inspect_csv.py
+│   └── neuromorpho_downloader.py
+├── selected
+│   ├── dorsal_horn_STRICT_spinal_only.csv
+│   ├── dorsal_horn_ranked.csv
+│   ├── drg_selected.csv
+│   └── sdh_selected.csv
+└── swc
+    ├── dorsal_horn
+    ├── dorsal_horn_strict
+    ├── drg
+    ├── drg_mammal
+    ├── sdh
+    └── sdh_candidate
+
+35 directories, 61 files
+CURRENT KEY OUTPUTS
+figures/01_ball_stick_AP_demo.png
+figures/02_DRG_normal_vs_neuropathic.png
+figures/03_SDH_normal_vs_neuropathic_output.png
+figures/modeldb2018004_AP_parameters_PENDING_fallback.png
+metadata/dorsal_horn_all.csv
+metadata/drg_all.csv
+metadata/neuromorpho_full_all_neurons.csv
+metadata/rat_all.csv
+metadata/sdh_all.csv
+notes/ONE_HOUR_COMPUTATIONAL_SUMMARY.md
+results/02_DRG_normal_vs_neuropathic_metrics.csv
+results/02_DRG_normal_vs_neuropathic_trace.csv
+results/03_SDH_normal_vs_neuropathic_metrics.csv
+results/03_SDH_normal_vs_neuropathic_trace.csv
+results/ball_stick_ap_metrics.txt
+results/ball_stick_ap_trace.csv
+results/modeldb2018004_AP_parameters_PENDING_fallback.csv
+results/modeldb_267056/100mN_data.json
+results/modeldb_267056/100mN_plot_conn_pop_weight_matrix.png
+results/modeldb_267056/100mN_raster.png
+results/modeldb_267056/run_summary.txt
+results/neuromorpho_week1_table.csv
+selected/dorsal_horn_STRICT_spinal_only.csv
+selected/dorsal_horn_ranked.csv
+selected/drg_selected.csv
+selected/sdh_selected.csv

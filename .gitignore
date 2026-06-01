@@ -1,0 +1,15 @@
+pain_neuron_env/
+__pycache__/
+*.pyc
+.x86_64/
+x86_64/
+nrnmech.dll
+*.o
+*.c
+*.so
+*.dll
+*.dylib
+.DS_Store
+__MACOSX/
+*.zip
+*.tar.gz
