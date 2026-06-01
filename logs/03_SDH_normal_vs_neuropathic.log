@@ -1,0 +1,5 @@
+DONE: SDH normal vs neuropathic-like output
+       condition  AMPA_weight  NMDA_weight  GABA_weight  baseline_mV    peak_mV  voltage_change_mV  spike_count  afterdischarge_mean_400_600ms
+          normal        0.002       0.0005       0.0015        -65.0 -60.024593           4.975407            0                     -65.095221
+neuropathic_like        0.004       0.0012       0.0003        -65.0 -55.496892           9.503108            0                     -62.735313
+Figure: figures/03_SDH_normal_vs_neuropathic_output.png

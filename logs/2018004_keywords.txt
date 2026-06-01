@@ -1,0 +1,200 @@
+modeldb/2018004/x86_64/mysa_sensory.cpp:2:/* VECTORIZED */
+modeldb/2018004/x86_64/mysa_sensory.cpp:3:#define NRN_VECTORIZED 1
+modeldb/2018004/x86_64/mysa_sensory.cpp:7:#include "mech_api.h"
+modeldb/2018004/x86_64/mysa_sensory.cpp:23:using _nrn_mechanism_std_vector = std::vector<T>;
+modeldb/2018004/x86_64/mysa_sensory.cpp:129: static _nrn_mechanism_std_vector<Datum> _extcall_thread;
+modeldb/2018004/x86_64/mysa_sensory.cpp:138: static void _hoc_vtrapNB(void);
+modeldb/2018004/x86_64/mysa_sensory.cpp:139: static void _hoc_vtrapNA(void);
+modeldb/2018004/x86_64/mysa_sensory.cpp:156: {"vtrapNB_mysa_sensory", _hoc_vtrapNB},
+modeldb/2018004/x86_64/mysa_sensory.cpp:157: {"vtrapNA_mysa_sensory", _hoc_vtrapNA},
+modeldb/2018004/x86_64/mysa_sensory.cpp:161:/* Direct Python call wrappers to density mechanism functions.*/
+modeldb/2018004/x86_64/mysa_sensory.cpp:164: static double _npy_vtrapNB(Prop*);
+modeldb/2018004/x86_64/mysa_sensory.cpp:165: static double _npy_vtrapNA(Prop*);
+modeldb/2018004/x86_64/mysa_sensory.cpp:170: {"vtrapNB", _npy_vtrapNB},
+modeldb/2018004/x86_64/mysa_sensory.cpp:171: {"vtrapNA", _npy_vtrapNA},
+modeldb/2018004/x86_64/mysa_sensory.cpp:175:#define vtrapNB vtrapNB_mysa_sensory
+modeldb/2018004/x86_64/mysa_sensory.cpp:176:#define vtrapNA vtrapNA_mysa_sensory
+modeldb/2018004/x86_64/mysa_sensory.cpp:178: extern double vtrapNB( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/mysa_sensory.cpp:179: extern double vtrapNA( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/mysa_sensory.cpp:289:static void _ode_map(Prop*, int, neuron::container::data_handle<double>*, neuron::container::data_handle<double>*, double*, int);
+modeldb/2018004/x86_64/mysa_sensory.cpp:326: static _nrn_mechanism_std_vector<double> _parm_default{
+modeldb/2018004/x86_64/mysa_sensory.cpp:375:	int _vectorized = 1;
+modeldb/2018004/x86_64/mysa_sensory.cpp:418: 	hoc_register_cvode(_mechtype, _ode_count, _ode_map, _ode_spec, _ode_matsol);
+modeldb/2018004/x86_64/mysa_sensory.cpp:427:static const char *modelname = "Motor Axon MYSA channels";
+modeldb/2018004/x86_64/mysa_sensory.cpp:477:   _la = q10_3 * vtrapNA ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:478:   _lb = q10_3 * vtrapNB ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:520:double vtrapNA ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:521:   double _lvtrapNA;
+modeldb/2018004/x86_64/mysa_sensory.cpp:523:     _lvtrapNA = anA * anC ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:526:     _lvtrapNA = anA * ( v - anB ) / ( 1.0 - Exp ( _threadargscomma_ ( anB - v ) / anC ) ) ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:529:return _lvtrapNA;
+modeldb/2018004/x86_64/mysa_sensory.cpp:532:static void _hoc_vtrapNA(void) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:545: _r =  vtrapNA ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/mysa_sensory.cpp:549:static double _npy_vtrapNA(Prop* _prop) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:560: _r =  vtrapNA ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/mysa_sensory.cpp:564:double vtrapNB ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:565:   double _lvtrapNB;
+modeldb/2018004/x86_64/mysa_sensory.cpp:567:     _lvtrapNB = bnA * bnC ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:570:     _lvtrapNB = bnA * ( bnB - v ) / ( 1.0 - Exp ( _threadargscomma_ ( v - bnB ) / bnC ) ) ;
+modeldb/2018004/x86_64/mysa_sensory.cpp:573:return _lvtrapNB;
+modeldb/2018004/x86_64/mysa_sensory.cpp:576:static void _hoc_vtrapNB(void) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:589: _r =  vtrapNB ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/mysa_sensory.cpp:593:static double _npy_vtrapNB(Prop* _prop) {
+modeldb/2018004/x86_64/mysa_sensory.cpp:604: _r =  vtrapNB ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/mysa_sensory.cpp:672:static void _ode_map(Prop* _prop, int _ieq, neuron::container::data_handle<double>* _pv, neuron::container::data_handle<double>* _pvdot, double* _atol, int _type) { 
+modeldb/2018004/x86_64/mysa_sensory.cpp:840:  "TITLE Motor Axon MYSA channels\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:857:  ": responsible for nodal action potential\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:863:  ": Motor and Sensory Axon Activation in the Median Nerve Using Surface \n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:864:  ": Electrical Stimulation. Journal of Computational Neuroscience, 2018.\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1006:  "	a = q10_3*vtrapNA(v)\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1007:  "	b = q10_3*vtrapNB(v)\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1012:  ": vtrap functions to prevent discontinuity\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1013:  "FUNCTION vtrapNA(x){\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1015:  "        vtrapNA = anA*anC\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1017:  "        vtrapNA = anA*(v-anB)/(1-Exp((anB-v)/anC))\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1021:  "FUNCTION vtrapNB(x){\n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1023:  "        vtrapNB = bnA*bnC  \n"
+modeldb/2018004/x86_64/mysa_sensory.cpp:1025:  "        vtrapNB = bnA*(bnB-v)/(1-Exp((v-bnB)/bnC))\n"
+modeldb/2018004/x86_64/node_sensory.cpp:2:/* VECTORIZED */
+modeldb/2018004/x86_64/node_sensory.cpp:3:#define NRN_VECTORIZED 1
+modeldb/2018004/x86_64/node_sensory.cpp:7:#include "mech_api.h"
+modeldb/2018004/x86_64/node_sensory.cpp:23:using _nrn_mechanism_std_vector = std::vector<T>;
+modeldb/2018004/x86_64/node_sensory.cpp:69:#define gnapbar _ml->template fpfield<0>(_iml)
+modeldb/2018004/x86_64/node_sensory.cpp:70:#define gnapbar_columnindex 0
+modeldb/2018004/x86_64/node_sensory.cpp:87:#define inap _ml->template fpfield<9>(_iml)
+modeldb/2018004/x86_64/node_sensory.cpp:88:#define inap_columnindex 9
+modeldb/2018004/x86_64/node_sensory.cpp:149: static _nrn_mechanism_std_vector<Datum> _extcall_thread;
+modeldb/2018004/x86_64/node_sensory.cpp:158: static void _hoc_vtrap(void);
+modeldb/2018004/x86_64/node_sensory.cpp:159: static void _hoc_vtrapNB(void);
+modeldb/2018004/x86_64/node_sensory.cpp:160: static void _hoc_vtrapNA(void);
+modeldb/2018004/x86_64/node_sensory.cpp:161: static void _hoc_vtrap8(void);
+modeldb/2018004/x86_64/node_sensory.cpp:162: static void _hoc_vtrap7(void);
+modeldb/2018004/x86_64/node_sensory.cpp:163: static void _hoc_vtrap6(void);
+modeldb/2018004/x86_64/node_sensory.cpp:164: static void _hoc_vtrap2(void);
+modeldb/2018004/x86_64/node_sensory.cpp:165: static void _hoc_vtrap1(void);
+modeldb/2018004/x86_64/node_sensory.cpp:182: {"vtrap_node_sensory", _hoc_vtrap},
+modeldb/2018004/x86_64/node_sensory.cpp:183: {"vtrapNB_node_sensory", _hoc_vtrapNB},
+modeldb/2018004/x86_64/node_sensory.cpp:184: {"vtrapNA_node_sensory", _hoc_vtrapNA},
+modeldb/2018004/x86_64/node_sensory.cpp:185: {"vtrap8_node_sensory", _hoc_vtrap8},
+modeldb/2018004/x86_64/node_sensory.cpp:186: {"vtrap7_node_sensory", _hoc_vtrap7},
+modeldb/2018004/x86_64/node_sensory.cpp:187: {"vtrap6_node_sensory", _hoc_vtrap6},
+modeldb/2018004/x86_64/node_sensory.cpp:188: {"vtrap2_node_sensory", _hoc_vtrap2},
+modeldb/2018004/x86_64/node_sensory.cpp:189: {"vtrap1_node_sensory", _hoc_vtrap1},
+modeldb/2018004/x86_64/node_sensory.cpp:193:/* Direct Python call wrappers to density mechanism functions.*/
+modeldb/2018004/x86_64/node_sensory.cpp:196: static double _npy_vtrap(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:197: static double _npy_vtrapNB(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:198: static double _npy_vtrapNA(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:199: static double _npy_vtrap8(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:200: static double _npy_vtrap7(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:201: static double _npy_vtrap6(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:202: static double _npy_vtrap2(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:203: static double _npy_vtrap1(Prop*);
+modeldb/2018004/x86_64/node_sensory.cpp:208: {"vtrap", _npy_vtrap},
+modeldb/2018004/x86_64/node_sensory.cpp:209: {"vtrapNB", _npy_vtrapNB},
+modeldb/2018004/x86_64/node_sensory.cpp:210: {"vtrapNA", _npy_vtrapNA},
+modeldb/2018004/x86_64/node_sensory.cpp:211: {"vtrap8", _npy_vtrap8},
+modeldb/2018004/x86_64/node_sensory.cpp:212: {"vtrap7", _npy_vtrap7},
+modeldb/2018004/x86_64/node_sensory.cpp:213: {"vtrap6", _npy_vtrap6},
+modeldb/2018004/x86_64/node_sensory.cpp:214: {"vtrap2", _npy_vtrap2},
+modeldb/2018004/x86_64/node_sensory.cpp:215: {"vtrap1", _npy_vtrap1},
+modeldb/2018004/x86_64/node_sensory.cpp:219:#define vtrap vtrap_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:220:#define vtrapNB vtrapNB_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:221:#define vtrapNA vtrapNA_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:222:#define vtrap8 vtrap8_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:223:#define vtrap7 vtrap7_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:224:#define vtrap6 vtrap6_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:225:#define vtrap2 vtrap2_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:226:#define vtrap1 vtrap1_node_sensory
+modeldb/2018004/x86_64/node_sensory.cpp:228: extern double vtrap( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:229: extern double vtrapNB( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:230: extern double vtrapNA( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:231: extern double vtrap8( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:232: extern double vtrap7( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:233: extern double vtrap6( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:234: extern double vtrap2( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:235: extern double vtrap1( _internalthreadargsprotocomma_ double );
+modeldb/2018004/x86_64/node_sensory.cpp:306: {"gnapbar_node_sensory", "mho/cm2"},
+modeldb/2018004/x86_64/node_sensory.cpp:315: {"inap_node_sensory", "mA/cm2"},
+modeldb/2018004/x86_64/node_sensory.cpp:385:static void _ode_map(Prop*, int, neuron::container::data_handle<double>*, neuron::container::data_handle<double>*, double*, int);
+modeldb/2018004/x86_64/node_sensory.cpp:395: "gnapbar_node_sensory",
+modeldb/2018004/x86_64/node_sensory.cpp:405: "inap_node_sensory",
+modeldb/2018004/x86_64/node_sensory.cpp:430: static _nrn_mechanism_std_vector<double> _parm_default{
+modeldb/2018004/x86_64/node_sensory.cpp:431:     0.01, /* gnapbar */
+modeldb/2018004/x86_64/node_sensory.cpp:454: 	gnapbar = _parm_default[0]; /* 0.01 */
+modeldb/2018004/x86_64/node_sensory.cpp:481:	int _vectorized = 1;
+modeldb/2018004/x86_64/node_sensory.cpp:492:                                       _nrn_mechanism_field<double>{"gnapbar"} /* 0 */,
+modeldb/2018004/x86_64/node_sensory.cpp:501:                                       _nrn_mechanism_field<double>{"inap"} /* 9 */,
+modeldb/2018004/x86_64/node_sensory.cpp:534: 	hoc_register_cvode(_mechtype, _ode_count, _ode_map, _ode_spec, _ode_matsol);
+modeldb/2018004/x86_64/node_sensory.cpp:543:static const char *modelname = "Sensory Axon Node channels";
+modeldb/2018004/x86_64/node_sensory.cpp:590: _la = q10_1 * vtrap1 ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:591:   _lb = q10_1 * vtrap2 ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:594:   _la = q10_1 * vtrap6 ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:595:   _lb = q10_1 * vtrap7 ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:598:   _la = q10_2 * vtrap8 ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:607:   _la = q10_3 * vtrapNA ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:608:   _lb = q10_3 * vtrapNB ( _threadargscomma_ _lv ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:650:double vtrap ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:651:   double _lvtrap;
+modeldb/2018004/x86_64/node_sensory.cpp:653:     _lvtrap = 0.0 ;
+modeldb/2018004/x86_64/node_sensory.cpp:656:     _lvtrap = bsA / ( Exp ( _threadargscomma_ ( _lx + bsB ) / bsC ) + 1.0 ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:659:return _lvtrap;
+modeldb/2018004/x86_64/node_sensory.cpp:662:static void _hoc_vtrap(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:675: _r =  vtrap ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:679:static double _npy_vtrap(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:690: _r =  vtrap ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:694:double vtrap1 ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:695:   double _lvtrap1;
+modeldb/2018004/x86_64/node_sensory.cpp:697:     _lvtrap1 = ampA * ampC ;
+modeldb/2018004/x86_64/node_sensory.cpp:700:     _lvtrap1 = ( ampA * ( _lx + ampB ) ) / ( 1.0 - Exp ( _threadargscomma_ - ( _lx + ampB ) / ampC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:703:return _lvtrap1;
+modeldb/2018004/x86_64/node_sensory.cpp:706:static void _hoc_vtrap1(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:719: _r =  vtrap1 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:723:static double _npy_vtrap1(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:734: _r =  vtrap1 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:738:double vtrap2 ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:739:   double _lvtrap2;
+modeldb/2018004/x86_64/node_sensory.cpp:741:     _lvtrap2 = bmpA * bmpC ;
+modeldb/2018004/x86_64/node_sensory.cpp:744:     _lvtrap2 = ( bmpA * ( - ( _lx + bmpB ) ) ) / ( 1.0 - Exp ( _threadargscomma_ ( _lx + bmpB ) / bmpC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:747:return _lvtrap2;
+modeldb/2018004/x86_64/node_sensory.cpp:750:static void _hoc_vtrap2(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:763: _r =  vtrap2 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:767:static double _npy_vtrap2(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:778: _r =  vtrap2 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:782:double vtrap6 ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:783:   double _lvtrap6;
+modeldb/2018004/x86_64/node_sensory.cpp:785:     _lvtrap6 = amA * amC ;
+modeldb/2018004/x86_64/node_sensory.cpp:788:     _lvtrap6 = ( amA * ( _lx + amB ) ) / ( 1.0 - Exp ( _threadargscomma_ - ( _lx + amB ) / amC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:791:return _lvtrap6;
+modeldb/2018004/x86_64/node_sensory.cpp:794:static void _hoc_vtrap6(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:807: _r =  vtrap6 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:811:static double _npy_vtrap6(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:822: _r =  vtrap6 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:826:double vtrap7 ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:827:   double _lvtrap7;
+modeldb/2018004/x86_64/node_sensory.cpp:829:     _lvtrap7 = bmA * bmC ;
+modeldb/2018004/x86_64/node_sensory.cpp:832:     _lvtrap7 = ( bmA * ( - ( _lx + bmB ) ) ) / ( 1.0 - Exp ( _threadargscomma_ ( _lx + bmB ) / bmC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:835:return _lvtrap7;
+modeldb/2018004/x86_64/node_sensory.cpp:838:static void _hoc_vtrap7(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:851: _r =  vtrap7 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:855:static double _npy_vtrap7(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:866: _r =  vtrap7 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:870:double vtrap8 ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:871:   double _lvtrap8;
+modeldb/2018004/x86_64/node_sensory.cpp:873:     _lvtrap8 = ahA * ahC ;
+modeldb/2018004/x86_64/node_sensory.cpp:876:     _lvtrap8 = ( ahA * ( - ( _lx + ahB ) ) ) / ( 1.0 - Exp ( _threadargscomma_ ( _lx + ahB ) / ahC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:879:return _lvtrap8;
+modeldb/2018004/x86_64/node_sensory.cpp:882:static void _hoc_vtrap8(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:895: _r =  vtrap8 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:899:static double _npy_vtrap8(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:910: _r =  vtrap8 ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:914:double vtrapNA ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:915:   double _lvtrapNA;
+modeldb/2018004/x86_64/node_sensory.cpp:917:     _lvtrapNA = anA * anC ;
+modeldb/2018004/x86_64/node_sensory.cpp:920:     _lvtrapNA = anA * ( v - anB ) / ( 1.0 - Exp ( _threadargscomma_ ( anB - v ) / anC ) ) ;
+modeldb/2018004/x86_64/node_sensory.cpp:923:return _lvtrapNA;
+modeldb/2018004/x86_64/node_sensory.cpp:926:static void _hoc_vtrapNA(void) {
+modeldb/2018004/x86_64/node_sensory.cpp:939: _r =  vtrapNA ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:943:static double _npy_vtrapNA(Prop* _prop) {
+modeldb/2018004/x86_64/node_sensory.cpp:954: _r =  vtrapNA ( _threadargscomma_ *getarg(1) );
+modeldb/2018004/x86_64/node_sensory.cpp:958:double vtrapNB ( _internalthreadargsprotocomma_ double _lx ) {
+modeldb/2018004/x86_64/node_sensory.cpp:959:   double _lvtrapNB;

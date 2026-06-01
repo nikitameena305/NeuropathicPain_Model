@@ -1,0 +1,8 @@
+DONE: AP spike generated
+Figure: figures/01_ball_stick_AP_demo.png
+Metrics: results/ball_stick_ap_metrics.txt
+Baseline/RMP approx: -65.00 mV
+Peak voltage: -59.93 mV
+Approx threshold crossing time > -20 mV: nan ms
+Stimulus current: 0.35 nA
+

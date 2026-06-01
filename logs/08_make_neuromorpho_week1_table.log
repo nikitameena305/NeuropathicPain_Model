@@ -1,0 +1,23 @@
+CSV files found:
+ - metadata/dorsal_horn_all.csv
+ - metadata/sdh_all.csv
+ - metadata/rat_all.csv
+ - metadata/drg_all.csv
+ - metadata/neuromorpho_full_all_neurons.csv
+ - selected/dorsal_horn_ranked.csv
+ - selected/dorsal_horn_STRICT_spinal_only.csv
+ - selected/drg_selected.csv
+ - selected/sdh_selected.csv
+
+Week 1 NeuroMorpho table:
+table_group                    neuron_name                 species                                    brain_region                                cell_type soma_surface                      domain physical_integrity total_length primary_branches                                                  swc_standardized_url                                                 neuron_page_url                  source_file
+        DRG  383-delta-20x-Hsp-GFP-17-bw-t                     rat peripheral nervous system; dorsal root ganglion                                  sensory          nan No Dendrites, No Soma, Axon                                                                                                                    nan                                                             nan         metadata/rat_all.csv
+        DRG 383-delta-20x-Hsp-GFP-17-bw-tb                     rat peripheral nervous system; dorsal root ganglion                                  sensory          nan No Dendrites, No Soma, Axon                                                                                                                    nan                                                             nan         metadata/rat_all.csv
+        DRG   383-delta-20x-Hsp-GFP-3-bw-t                     rat peripheral nervous system; dorsal root ganglion                                  sensory          nan No Dendrites, No Soma, Axon                                                                                                                    nan                                                             nan         metadata/rat_all.csv
+        DRG  383-delta-20x-Hsp-GFP-3-bw-tb                     rat peripheral nervous system; dorsal root ganglion                                  sensory          nan No Dendrites, No Soma, Axon                                                                                                                    nan                                                             nan         metadata/rat_all.csv
+        DRG  383-delta-20x-Hsp-GFP-34-bw-t                     rat peripheral nervous system; dorsal root ganglion                                  sensory          nan No Dendrites, No Soma, Axon                                                                                                                    nan                                                             nan         metadata/rat_all.csv
+        SDH                    block_57337 drosophila melanogaster           antennal lobe; glomerulus DL2; dorsal principal cell; uniglomerular projection          nan           Neurites, No Soma                                                  https://neuromorpho.org/dableFiles/bock/CNG%20version/block_57337.swc https://neuromorpho.org/neuron_info.jsp?neuron_name=block_57337 metadata/dorsal_horn_all.csv
+        SDH                    block_30791 drosophila melanogaster           antennal lobe; glomerulus DL2; dorsal principal cell; uniglomerular projection          nan           Neurites, No Soma                                                  https://neuromorpho.org/dableFiles/bock/CNG%20version/block_30791.swc https://neuromorpho.org/neuron_info.jsp?neuron_name=block_30791 metadata/dorsal_horn_all.csv
+        SDH                    block_57341 drosophila melanogaster           antennal lobe; glomerulus DL2; dorsal principal cell; uniglomerular projection          nan           Neurites, No Soma                                                  https://neuromorpho.org/dableFiles/bock/CNG%20version/block_57341.swc https://neuromorpho.org/neuron_info.jsp?neuron_name=block_57341 metadata/dorsal_horn_all.csv
+
+Saved: results/neuromorpho_week1_table.csv

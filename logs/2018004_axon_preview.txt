@@ -1,0 +1,260 @@
+# class definitions to generate an MRG axon, extracellular electrode and trial objects
+
+from neuron import h
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.interpolate import LinearNDInterpolator
+import os
+
+
+def line(x, a, b):
+    return a*x + b
+
+
+def logfn(x, h, k):
+    return h*np.log(x) + k
+
+
+def logreg(x, L, x0, k, b):
+    return (L/(1.0 + np.exp(-k*(x-x0)))) + b 
+
+h.celsius = 37.0
+h.dt = 0.005  # ms
+
+class axon():
+    """Class to create an axon of passage
+
+    Structure and electrical properties are obtained from the MRG model modified for sensory neurons in Gaines et al. 
+    Contains functions to generate the axon with user defined properties and set the XYZ position.
+
+    NOTE
+    ----
+    Instantiating the axon object DOES NOT automatically generate positions for the neuron segments.
+    Object function setXYZpos MUST be run on the axon object AFTER it has been instantiated.
+    """
+    def __init__(self, axonnodes, fiberD, pos=(0,0,0)):
+        """
+        Parameters
+        ----------
+        axonnodes : int
+            number of nodes to include in the axon (must be >= 1)
+        fiberD: float
+            diameter of axon
+        pos : tuple
+            (x,y,z) position of endpoint of axon
+        """
+
+        # electrical parameters
+        self.rhoa = 0.7e6   # [Ohm-um] specific axoplasmic resistance
+        self.mycm = 0.1     # uF/cm2/lamella membrane//
+        self.mygm = 0.001   # S/cm2/lamella membrane//
+
+        self.timestep = h.dt
+
+        # morphological parameters
+        self.axonnodes = axonnodes          
+        self.paranodes1 = 2*(axonnodes-1)   
+        self.paranodes2 = 2*(axonnodes-1)   
+        self.axoninter = 6*(axonnodes-1)    
+        self.numNodes = axonnodes
+        self.numSections = self.axonnodes+self.paranodes1+self.paranodes2+self.axoninter
+
+        self.fiberD = fiberD  
+        self.paralength1 = 3.0
+        self.nodelength = 1.0
+        self.space_p1 = 0.002
+        self.space_p2 = 0.004
+        self.space_i = 0.004
+
+        self.sectionDF = pd.DataFrame(columns=['nodeIndex', 'sectionIndex', 'object', 'sectionType', 'x', 'y', 'z', 'L'])
+
+        self.getModelParamsContinuous(fiberD)
+
+        # construct axon
+        parentSection = []
+        for iNode in range(axonnodes-1):
+            parentSection = self.createMRGfiber(iNode, parentSection=parentSection)
+        self.createNodeSection(iNode+1, parentSection=parentSection)
+
+        # setup recording
+        self.membraneV = []
+
+    def createMRGfiber(self, nodeNum, parentSection=None):
+        node = self.createNodeSection(nodeNum)
+        mysa1 = self.createMYSAsection(node)
+        flut1 = self.createFLUTsection(mysa1)
+        STINroot = flut1
+        for iSTIN in range(6):
+            STINroot = self.createSTINsection(parentSection=STINroot)
+        flut2 = self.createFLUTsection(STINroot)
+        mysa2 = self.createMYSAsection(flut2)
+
+        if parentSection:
+            node.connect(parentSection)
+
+        return mysa2
+
+    def createNodeSection(self, nodeNum, parentSection=None):
+        tmp = h.Section(name='node')
+        tmp.nseg = 1
+        tmp.L = self.nodelength
+        tmp.Ra = self.rhoa / 10000
+        tmp.cm = 2.0
+        tmp.diam = self.nodeD
+        # xc is a hoc nickname for xc[0], i.e. the capacitance in the extracellular layer that is immediately adjacent to the
+        # cell membrane. xc[1] is the capacitance in the outer extracellular layer. Similar comments apply to xg and xg[1].
+
+        if nodeNum ==0 or nodeNum == self.axonnodes: #80:
+            tmp.insert('pas')
+            tmp.g_pas = 0.0001
+            tmp.e_pas = -80
+        else:
+            tmp.insert('node_sensory')
+        tmp.insert('extracellular')
+        tmp.xraxial[0] = self.Rpn0
+        tmp.xg[0] = 1e10
+        tmp.xc[0] = 0.0
+        self.sectionDF = self.sectionDF.append({'sectionType': 'node',
+                                                    'nodeIndex': (self.sectionDF['sectionType'] == 'node').sum(),
+                                                    'sectionIndex': (self.sectionDF['sectionType']=='node').sum(),
+                                                    'x': 0, 'y': 0, 'z': 0, 'L': tmp.L, 'object': tmp}, ignore_index=True)
+
+        if parentSection:
+            tmp.connect(parentSection)
+
+        return tmp
+
+    def createMYSAsection(self, parentSection=None):
+        tmp = h.Section(name='MYSA')
+        tmp.nseg = 1
+        tmp.L = self.paralength1
+        tmp.Ra = self.rhoa * (1 / (self.paraD1 / self.fiberD) ** 2.0) / 10000
+        tmp.cm = 2.0 * self.paraD1 / self.fiberD
+        tmp.diam = self.fiberD
+
+        tmp.insert('mysa_sensory')
+
+        tmp.insert('extracellular')
+        tmp.xraxial[0] = self.Rpn1
+        tmp.xg[0] = self.mygm / (self.nl * 2)
+        tmp.xc[0] = self.mycm / (self.nl * 2)
+
+        self.sectionDF = self.sectionDF.append({'sectionType': 'MYSA',
+                                                'nodeIndex': (self.sectionDF['sectionType'] == 'node').sum(),
+                                                'sectionIndex': (self.sectionDF['sectionType']=='MYSA').sum(),
+                                                'x': 0, 'y': 0, 'z': 0, 'L': tmp.L, 'object': tmp}, ignore_index=True)
+
+        if parentSection:
+            tmp.connect(parentSection)
+
+        return tmp
+
+    def createFLUTsection(self, parentSection=None):
+        tmp = h.Section(name='FLUT')
+        tmp.nseg = 1
+        tmp.L = self.paralength2
+        tmp.Ra = self.rhoa * (1 / (self.paraD2 / self.fiberD) ** 2.0) / 10000
+        tmp.cm = 2.0 * self.paraD2 / self.fiberD
+        tmp.diam = self.fiberD
+
+        tmp.insert('flut_sensory')
+
+        tmp.insert('extracellular')
+        tmp.xraxial[0] = self.Rpn2
+        tmp.xg[0] = self.mygm / (self.nl * 2)
+        tmp.xc[0] = self.mycm / (self.nl * 2)
+        self.sectionDF = self.sectionDF.append({'sectionType': 'FLUT',
+                                                'nodeIndex': (self.sectionDF['sectionType'] == 'node').sum(),
+                                                'sectionIndex': (self.sectionDF['sectionType'] == 'FLUT').sum(),
+                                                'x': 0, 'y': 0, 'z': 0, 'L': tmp.L, 'object': tmp}, ignore_index=True)
+
+        if parentSection:
+            tmp.connect(parentSection)
+
+        return tmp
+
+    def createSTINsection(self, parentSection=None):
+        tmp = h.Section(name='STIN')
+        tmp.nseg = 1
+        tmp.L = self.interlength
+        tmp.Ra = self.rhoa * (1 / (self.axonD / self.fiberD) ** 2.0) / 10000
+        tmp.cm = 2 * self.axonD / self.fiberD
+        tmp.diam = self.fiberD
+
+        tmp.insert('stin_sensory')
+
+        tmp.insert('extracellular')
+        tmp.xraxial[0] = self.Rpx
+        tmp.xg[0] = self.mygm / (self.nl * 2)
+        tmp.xc[0] = self.mycm / (self.nl * 2)
+        self.sectionDF = self.sectionDF.append({'sectionType': 'STIN',
+                                                'nodeIndex': (self.sectionDF['sectionType'] == 'node').sum(),
+                                                'sectionIndex': (self.sectionDF['sectionType'] == 'STIN').sum(),
+                                                'x': 0, 'y': 0, 'z': 0, 'L': tmp.L, 'object': tmp}, ignore_index=True)
+        if parentSection:
+            tmp.connect(parentSection)
+
+        return tmp
+
+    def setXYZpos(self, pos, bent=False, peak_index=None, xpos_set=False, xshift=None):
+        # place middle node of axon at center of DRG with some random jitter
+        """
+        pos: tuple
+            (x,y,z) coordinates of the negative endpoint of the axon OR of the desired center point of the axon
+                if the x coordinate is the positive endpoint of the axon, set xpos_set=False
+                if the x coordinate is the desired center point of the axon, set xpos_set=True
+
+        Optional parameters should be left to defaults and only changed under the following conditions:
+
+            set bent=True IF you want to have the axon bend at a sharp angle near the top of the DRG to prevent it from sticking out of the DRG area 
+                NOTE: no adverse effects result from axons sticking out of the DRG area as long as the axon is long enough to avoid terminal effects
+            set peak_index IF bent==True AND you already know the node index at which the axon should bend
+            set xpos_set=True IF the x coordinate in the pos tuple is the x-coordinate of exact desired center point of the axon
+            set xshift IF the x coordinate is the positive endpoint of the axon AND there is a specific desired amount of jitter from the center
+        """
+        if xpos_set:
+            self.sectionDF['x'] = pos[0] - (self.sectionDF.loc[::1, 'L'].cumsum()[::1] - self.sectionDF['L'] / 2)
+        elif isinstance(xshift, float):
+            xpos = 0 + (self.deltax*(self.axonnodes/2))
+            xpos = xpos + xshift
+            self.sectionDF['x'] = xpos - (self.sectionDF.loc[::1, 'L'].cumsum()[::1] - self.sectionDF['L'] / 2)
+            self.xpos = xpos
+            self.xshift = xshift 
+        else:
+            xpos = 0 + (self.deltax*(self.axonnodes/2))
+            xshift = (np.random.random()-0.5)*self.deltax
+            xpos = xpos + xshift
+            self.sectionDF['x'] = xpos - (self.sectionDF.loc[::1, 'L'].cumsum()[::1] - self.sectionDF['L'] / 2)
+            self.xpos = xpos
+            self.xshift = xshift 
+        #self.sectionDF['x'] = pos[0] - (self.sectionDF.loc[::1, 'L'].cumsum()[::1] - self.sectionDF['L'] / 2)
+        self.sectionDF['y'] = pos[1]
+        self.sectionDF['z'] = pos[2]
+        if bent:
+            if isinstance(peak_index, int):
+                cutoff = peak_index
+            else:
+                idx = (self.sectionDF['x']>-500) & (self.sectionDF['x']<500)
+                i = np.random.randint(len(self.sectionDF.loc[idx, 'x']))
+                indices = self.sectionDF.index
+                i_test = indices[self.sectionDF.x == self.sectionDF.loc[idx,'x'].iloc[i]]
+                cutoff = i_test.to_list()[0]
+            df1 = self.sectionDF.iloc[:cutoff].copy()
+            df2 = self.sectionDF.iloc[cutoff+1:].copy()
+            seg_shift = self.sectionDF.loc[cutoff, 'L']/2
+            xshift = self.sectionDF.loc[cutoff, 'x']
+            yshift = pos[1]
+            zshift = pos[2]
+            #print(xshift, yshift, zshift)
+
+            if pos[1] >= 750:
+                yTube = 600
+            elif pos[1] <= -750:
+                yTube = -600
+            else:
+                yTube = yshift
+
+            if pos[2] >= 750:
+                zTube = 600
+            elif pos[2] <= -750:

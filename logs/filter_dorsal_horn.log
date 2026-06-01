@@ -1,0 +1,20 @@
+[input] metadata/dorsal_horn_all.csv
+[output] selected/dorsal_horn_ranked.csv
+[region keyword] dorsal horn
+[loaded] 7750 rows
+[columns found] 48 columns
+[filtered] 7750 rows
+[saved] selected/dorsal_horn_ranked.csv
+
+[top 10 neurons]
+          neuron_name species                                    brain_region                 cell_type    stain age_classification  suitability_score
+               0004-2     rat                        hippocampus; CA1; dorsal principal cell; pyramidal    Golgi              adult                 20
+             BAS2-2_4     rat                        hippocampus; CA1; dorsal principal cell; pyramidal    Golgi              adult                 20
+             BAS1-4_4     rat                        hippocampus; CA1; dorsal principal cell; pyramidal    Golgi              adult                 20
+01-03-13_cell1_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+20-02-13_cell2_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+21-02-13_cell1_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+21-02-13_cell2_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+28-01-13_cell1_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+28-02-13_cell1_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20
+29-01-13_cell1_Dorsal     rat hippocampus; CA1; pyramidal layer; dorsal; CA1b pyramidal; principal cell biocytin        young adult                 20

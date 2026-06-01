@@ -13,3 +13,7 @@ nrnmech.dll
 __MACOSX/
 *.zip
 *.tar.gz
+
+# Large generated metadata files - keep local, do not upload to GitHub
+metadata/neuromorpho_full_all_neurons.csv
+metadata/rat_all.csv

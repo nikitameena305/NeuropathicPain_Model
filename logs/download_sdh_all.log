@@ -1,0 +1,9 @@
+
+[custom] probing count... 7,750 neurons across 16 pages.
+  ✓ 7,750 neurons → metadata/sdh_all.csv
+ neuron_id                                 neuron_name species                                           brain_region                    cell_type
+    104509 MYUX45L-RECONSTRUCCION-CORREGIDA-AIS-AND-SC   mouse basal ganglia; substantia nigra; pars compacta; dorsal principal cell; dopaminergic
+    104510 MYUX-68-RECONSTRUCCION-CORREGIDA-AIS-AND-SC   mouse basal ganglia; substantia nigra; pars compacta; dorsal principal cell; dopaminergic
+    104511 MYUX75L-RECONSTRUCCION-CORREGIDA-AIS-AND-SC   mouse basal ganglia; substantia nigra; pars compacta; dorsal principal cell; dopaminergic
+    104512 MYUX100-RECONSTRUCCION-CORREGIDA-AIS-AND-SC   mouse basal ganglia; substantia nigra; pars compacta; dorsal principal cell; dopaminergic
+    104513  MYUX29-RECONSTRUCCION-CORREGIDA-AIS-AND-SC   mouse basal ganglia; substantia nigra; pars compacta; dorsal principal cell; dopaminergic

@@ -1,0 +1,9 @@
+Loaded compiled mechanisms.
+
+axon_class public names:
+['LinearNDInterpolator', 'axon', 'h', 'line', 'logfn', 'logreg', 'np', 'os', 'pd', 'plt']
+
+pseudounipolar_neuron_class public names:
+['LinearNDInterpolator', 'h', 'line', 'logfn', 'logreg', 'np', 'os', 'pd', 'pseudounipolar_neuron']
+
+Currently existing NEURON sections:

@@ -1,0 +1,260 @@
+# class definitions to generate an MRG axon and trial objects
+from neuron import h
+import numpy as np
+import pandas as pd
+import os
+from scipy.interpolate import LinearNDInterpolator
+
+def line(x, a, b):
+    return a*x + b
+
+
+def logfn(x, h, k):
+    return h*np.log(x) + k
+
+
+def logreg(x, L, x0, k, b):
+    return (L/(1.0 + np.exp(-k*(x-x0)))) + b 
+
+h.celsius = 37.0
+h.dt = 0.005  # ms
+
+class pseudounipolar_neuron:
+    """Class to create a pseudounipolar neuron
+
+    Geometric properties of the soma and neck are obtained from Devor et al. Structure and electrical properties are
+    obtained from the MRG model modified for sensory neurons in Gaines et al. Contains functions to generate each branch
+    of the neuron with user defined properties and set the XYZ position.
+
+
+    NOTE
+    ----
+    Instantiating the pseudounipolar_neuron object DOES NOT automatically generate positions for the neuron segments.
+    Object function setXYZpos MUST be run on the pseudounipolar_neuron object AFTER it has been instantiated.
+    """
+
+    def __init__(self, centralFiberD=5.7, peripheralFiberD=7.3, neckFiberD=7.3, numNodes_p = 100, numNodes_c = 100, somaSize = 80, femElec=''):
+        """
+        Parameters
+        ----------
+        centralFiberD : float
+            diameter of central branch
+        peripheralFiberD: float
+            diameter of peripheral branch
+        neckFiberD: float
+            diameter of neck branch
+        numNodes_p: int
+            number of nodes after abnormal segments in peripheral branch
+        numNodes_c : int
+            number of nodes after abnormal segments in central branch
+        femdf : dict
+            dictionary of FEM dataframes
+        femElec : str
+            electrode used to run simulation
+        """
+
+        self.centralFiberD = centralFiberD
+        self.peripheralFiberD = peripheralFiberD
+        self.neckFiberD = neckFiberD
+        self.timestep = h.dt
+
+        # number of nodes after initial abnormal sections
+        self.numNodes_c = numNodes_c
+        self.numNodes_p = numNodes_p
+        self.somaSize = somaSize
+
+        # electrical parameters
+        self.rhoa = 0.7e6   # [Ohm-um] specific axoplasmic resistance
+        self.mycm = 0.1     # uF/cm2/lamella membrane//
+        self.mygm = 0.001   # S/cm2/lamella membrane//
+
+        self.paralength1 = 3.0
+        self.nodelength = 1.0
+        self.space_p1 = 0.002
+        self.space_p2 = 0.004
+        self.space_i = 0.004
+
+        self.sectionDF = pd.DataFrame(columns=['nodeIndex', 'sectionIndex', 'object', 'puniBranch', 'sectionType', 'x', 'y', 'z', 'L'])
+        neckRoot = self.createSomaSection()
+        tjnRoot = self.createNeckSections(neckRoot)
+        centralRoot = self.createCentralBranch(tjnRoot)
+        peripheralRoot = self.createPeripheralBranch(tjnRoot)
+
+        neckIdx = self.sectionDF['puniBranch'] == 'n'
+        self.stemLength = self.sectionDF[neckIdx]['L'].sum()
+
+        self.etype = femElec
+
+    def createSomaSection(self):
+        """Create soma and iseg sections with modified sodium channel densities"""
+
+        soma = h.Section(name='soma')
+        soma.nseg = 1
+        soma.L = self.somaSize
+        soma.diam = self.somaSize
+        soma.Ra = self.rhoa / 10000
+        soma.cm = 2
+
+        soma.insert('node_sensory')
+        for seg in list(soma.allseg())[1:-1]:
+            seg.node_sensory.gnabar = seg.node_sensory.gnabar * (300/2000)  # 0.45
+            seg.node_sensory.gnapbar = seg.node_sensory.gnapbar * (300/2000)  # 0.0015
+            seg.node_sensory.el = -80
+
+        soma.insert('extracellular')
+        soma.e_extracellular = 0
+        soma.xraxial[0] = (self.rhoa*.01)/(np.pi*((((soma.diam/2)+self.space_p1)**2)-((soma.diam/2)**2)))
+        soma.xg[0] = 1e10
+        soma.xc[0] = 0.0
+
+        self.sectionDF = self.sectionDF.append({'sectionType': 'soma',
+                                                'nodeIndex': 0,
+                                                'sectionIndex': 0,
+                                                'puniBranch': 'n',
+                                                'x': 0, 'y': 0, 'z': 0, 'L': soma.L, 'object': soma}, ignore_index=True)
+
+        # stem unmyelinated segment
+        iseg = h.Section(name='iseg')
+        iseg.nseg = 33
+        iseg.L = 200.0
+        iseg.diam = (5.0/7.3)*self.neckFiberD # adjusting linearly for axon size
+        iseg.Ra = self.rhoa / 10000
+        iseg.cm = 2.0
+
+        iseg.insert('extracellular')
+        iseg.e_extracellular = 0
+        iseg.xraxial[0] = (self.rhoa*.01)/(np.pi*((((iseg.diam/2)+self.space_p1)**2)-((iseg.diam/2)**2)))
+        iseg.xg[0] = 1e10
+        iseg.xc[0] = 0.0
+
+        iseg.insert('node_sensory')
+        for idx, seg in enumerate(list(iseg.allseg())[1:-1]):
+
+            if idx == 0:
+                seg.node_sensory.gnabar = seg.node_sensory.gnabar * (1000/2000)     # 0.75
+                seg.node_sensory.gnapbar = seg.node_sensory.gnapbar * (1000/2000)   # 0.0025
+            else:
+                seg.node_sensory.gnabar = seg.node_sensory.gnabar * (600 / 2000)  # 0.75
+                seg.node_sensory.gnapbar = seg.node_sensory.gnapbar * (600 / 2000)  # 0.0025
+
+
+            seg.node_sensory.el = -80
+
+        self.sectionDF = self.sectionDF.append({'sectionType':'iseg',
+                                 'nodeIndex':0,
+                                 'sectionIndex':0,
+                                 'puniBranch':'n',
+                                 'x':0,'y':0,'z':0,'L':iseg.L,'object':iseg},ignore_index=True)
+        iseg.connect(soma)
+
+        return iseg
+
+    def createNeckSections(self, parentNode):
+        """Create stem MRG axon sections with abnormal internode and myelination"""
+
+        pair1 = self.MRGaxon(axonnodes=1, fiberD=self.neckFiberD, prefix='n', deltaX=85, nlFactor=0.07747)
+        pair2 = self.MRGaxon(axonnodes=1, fiberD=self.neckFiberD, prefix='n', deltaX=130, nlFactor=0.48592)
+        pair3 = self.MRGaxon(axonnodes=1, fiberD=self.neckFiberD, prefix='n', deltaX=168, nlFactor=0.66197)
+        pair4 = self.MRGaxon(axonnodes=1, fiberD=self.neckFiberD, prefix='n', deltaX=201, nlFactor=1.0)
+
+        pair1[0].connect(parentNode)
+        pair2[0].connect(pair1[-1])
+        pair3[0].connect(pair2[-1])
+        pair4[0].connect(pair3[-1])
+
+        modelParams = self.getModelParamsContinuous(self.neckFiberD, None, 1, 'n')
+        tjNode = self.createNodeSection(modelParams, 'n', parentSection=pair4[-1], sectionType='tjnNode')
+
+        return tjNode
+
+    def createCentralBranch(self, parentSection):
+        """Create central MRG axon sections with 3 abnormal sections"""
+
+        pair1 = self.MRGaxon(axonnodes=1, fiberD=self.centralFiberD, prefix='c', deltaX=358, spec='c1')
+        pair2 = self.MRGaxon(axonnodes=1, fiberD=self.centralFiberD, prefix='c', deltaX=780, spec='c2')
+        pair3 = self.MRGaxon(axonnodes=1, fiberD=self.centralFiberD, prefix='c', deltaX=1170, spec='c3')
+        fiber = self.MRGaxon(axonnodes=self.numNodes_c, fiberD=self.centralFiberD, prefix='c')
+
+        pair1[0].connect(parentSection)
+        pair2[0].connect(pair1[-1])
+        pair3[0].connect(pair2[-1])
+        fiber[0].connect(pair3[-1])
+
+        return fiber
+
+    def createPeripheralBranch(self, parentSection):
+        """Create peripheral MRG axon sections with 3 abnormal sections"""
+
+        pair1 = self.MRGaxon(axonnodes=1, fiberD=self.peripheralFiberD, prefix='p', deltaX=461, spec='p1')
+        pair2 = self.MRGaxon(axonnodes=1, fiberD=self.peripheralFiberD, prefix='p', deltaX=670, spec='p2')
+        pair3 = self.MRGaxon(axonnodes=1, fiberD=self.peripheralFiberD, prefix='p', deltaX=1119, spec='p3')
+        fiber2 = self.MRGaxon(axonnodes=self.numNodes_p, fiberD=self.peripheralFiberD, prefix='p')
+
+        pair1[0].connect(parentSection)
+        pair2[0].connect(pair1[-1])
+        pair3[0].connect(pair2[-1])
+        fiber2[0].connect(pair3[-1])
+
+        return fiber2
+
+    def MRGaxon(self, axonnodes, fiberD, prefix, deltaX=None, nlFactor=1.0, spec='none'):
+        """Create axon fiber using sections defined in MRG model
+
+        order of sections: Node-MYSA-FLUT-[STIN x 6]-FLUT-MYSA
+        note: each iteration ends in a MYSA section so that the output can be connected with a node parent
+        """
+
+        modelParams = self.getModelParamsContinuous(fiberD, deltaX, nlFactor, prefix)
+
+        # construct axon
+        parentSection = []
+        for iNode in range(axonnodes):
+            node = self.createNodeSection(modelParams, prefix)
+            mysa1 = self.createMYSAsection(modelParams, prefix, node)
+            flut1 = self.createFLUTsection(modelParams, prefix, mysa1)
+            STINroot = flut1
+            for iSTIN in range(6):
+                STINroot = self.createSTINsection(modelParams, prefix, parentSection=STINroot)
+            flut2 = self.createFLUTsection(modelParams, prefix, STINroot)
+            mysa2 = self.createMYSAsection(modelParams, prefix, flut2)
+            if parentSection:
+                node.connect(parentSection)
+            parentSection = mysa2
+
+        return mysa2.wholetree()
+
+    def createNodeSection(self, modelparams, prefix, parentSection=None, sectionType='node'):
+        """Create Node section with node_sensory mechanism from Gaines et. al"""
+
+        tmp = h.Section(name='node')
+        tmp.nseg = 1
+        tmp.L = self.nodelength
+        tmp.Ra = self.rhoa / 10000
+        tmp.cm = 2.0
+        tmp.diam = modelparams['nodeD']
+
+        # xc is a hoc nickname for xc[0], i.e. the capacitance in the extracellular layer that is immediately adjacent to the
+        # cell membrane. xc[1] is the capacitance in the outer extracellular layer. Similar comments apply to xg and xg[1].
+
+        tmp.insert('node_sensory')
+        tmp.insert('extracellular')
+        tmp.e_extracellular = 0
+        tmp.xraxial[0] = modelparams['Rpn0']
+        tmp.xg[0] = 1e10
+        tmp.xc[0] = 0.0
+
+        self.sectionDF = self.sectionDF.append({'sectionType': sectionType,
+                                                 'nodeIndex':((self.sectionDF['sectionType']=='node')&((self.sectionDF['puniBranch']==prefix))).sum(),
+                                                 'sectionIndex': (self.sectionDF['sectionType']=='node').sum(),
+                                                 'puniBranch': prefix,
+                                                 'x': 0, 'y': 0, 'z': 0, 'L':tmp.L,'object': tmp},ignore_index=True)
+
+        if parentSection:
+            tmp.connect(parentSection)
+
+        return tmp
+
+    def createMYSAsection(self, modelparams, prefix, parentSection=None):
+        """Create MYSA section with mysa_sensory mechanism from Gaines et. al"""
+
+        tmp = h.Section(name='MYSA')

@@ -1,0 +1,9 @@
+
+[all_neurons] probing count... 297,302 neurons across 595 pages.
+  ✓ 297,302 neurons → metadata/neuromorpho_full_all_neurons.csv
+ neuron_id neuron_name    species                               brain_region                                   cell_type
+         1    cnic_001     monkey             neocortex; prefrontal; layer 3 Local projecting; pyramidal; principal cell
+        10    cnic_041     monkey             neocortex; prefrontal; layer 3 Local projecting; pyramidal; principal cell
+       100        n419        rat                           hippocampus; CA1                   pyramidal; principal cell
+      1000  DS3_030701        rat  neocortex; somatosensory; barrel; layer 4             Spiny; stellate; principal cell
+     10000         AS2 C. elegans somatic nervous system; ventral nerve cord                  Motoneuron; principal cell

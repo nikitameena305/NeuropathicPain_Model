@@ -1,0 +1,5 @@
+DONE: DRG normal vs neuropathic-like simulation
+       condition  stimulus_nA  RMP_mV    peak_mV  spike_count  first_spike_ms
+          normal         0.08   -65.0 -65.000000            0             NaN
+neuropathic_like         0.08   -65.0 -63.550397            0             NaN
+Figure: figures/02_DRG_normal_vs_neuropathic.png

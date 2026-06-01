@@ -1,0 +1,8 @@
+# ModelDB 2018004 .mod inventory
+
+| mod_file                         | mechanism_name   | type              | ions_used   | nonspecific_current    | guessed_channel                  |
+|:---------------------------------|:-----------------|:------------------|:------------|:-----------------------|:---------------------------------|
+| modeldb/2018004/flut_sensory.mod | flut_sensory     | DENSITY_MECHANISM |             | ik, ikf, il, iq        | Voltage-gated sodium current     |
+| modeldb/2018004/mysa_sensory.mod | mysa_sensory     | DENSITY_MECHANISM |             | ik, ikf, il, iq        | Voltage-gated sodium current     |
+| modeldb/2018004/node_sensory.mod | node_sensory     | DENSITY_MECHANISM |             | ik, ikf, il, ina, inap | Persistent sodium current / INaP |
+| modeldb/2018004/stin_sensory.mod | stin_sensory     | DENSITY_MECHANISM |             | ik, ikf, il, iq        | Voltage-gated sodium current     |
