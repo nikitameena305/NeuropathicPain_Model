@@ -1,0 +1,6 @@
+relative_GABA_inhibition,predicted_SDH_output_Hz,interpretation
+1.0,20.0,less inhibition increases SDH output
+0.75,26.666666666666668,less inhibition increases SDH output
+0.5,40.0,less inhibition increases SDH output
+0.25,80.0,less inhibition increases SDH output
+0.1,200.0,less inhibition increases SDH output
