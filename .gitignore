@@ -1,19 +1,39 @@
-pain_neuron_env/
+# Python
 __pycache__/
 *.pyc
-.x86_64/
+
+# Virtual environments
+pain_neuron_env/
+.env/
+.venv/
+
+# NEURON compiled mechanism outputs
 x86_64/
+.x86_64/
 nrnmech.dll
 *.o
 *.c
 *.so
 *.dll
 *.dylib
+
+# System files
 .DS_Store
 __MACOSX/
+
+# Archives
 *.zip
 *.tar.gz
 
-# Large generated metadata files - keep local, do not upload to GitHub
+# Large raw external/model/morphology files - keep local only
+external/
+swc/
+modeldb/267056/
+modeldb/2018004/.git/
+
+# Large generated metadata files - keep local only
 metadata/neuromorpho_full_all_neurons.csv
 metadata/rat_all.csv
+
+# Raw ModelDB 267056 output folder if copied separately
+results/modeldb_267056/
