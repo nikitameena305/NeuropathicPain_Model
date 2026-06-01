@@ -1,0 +1,12 @@
+Corrected ball-and-stick AP simulation
+=====================================
+Soma mechanism: hh
+Dendrite mechanism: passive
+IClamp delay: 20.0 ms
+IClamp duration: 2.0 ms
+IClamp amplitude: 0.8 nA
+AP generated: YES
+RMP: -64.971 mV
+Peak voltage: 41.537 mV
+Peak time: 20.975 ms
+Threshold estimate: -17.216698314132397 mV at 20.649999999999363 ms

@@ -1,0 +1,6 @@
+DONE: corrected clear AP figure generated.
+                                    model  stim_delay_ms  stim_duration_ms  stim_amplitude_nA  initial_voltage_mV  estimated_RMP_mV AP_generated  threshold_estimate_mV  threshold_time_ms  peak_voltage_mV  peak_time_ms
+Ball-and-stick HH soma + passive dendrite           20.0               2.0                0.8                 -65        -64.970852          YES             -17.216698              20.65        41.537436        20.975
+Figure: figures/01_ball_stick_CLEAR_AP_corrected.png
+Trace: results/01_ball_stick_CLEAR_AP_trace.csv
+Metrics: results/01_ball_stick_CLEAR_AP_metrics.csv

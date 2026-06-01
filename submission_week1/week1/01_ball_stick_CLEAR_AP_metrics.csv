@@ -1,0 +1,2 @@
+model,stim_delay_ms,stim_duration_ms,stim_amplitude_nA,initial_voltage_mV,estimated_RMP_mV,AP_generated,threshold_estimate_mV,threshold_time_ms,peak_voltage_mV,peak_time_ms
+Ball-and-stick HH soma + passive dendrite,20.0,2.0,0.8,-65,-64.97085181442449,YES,-17.216698314132397,20.649999999999363,41.53743647095531,20.974999999999344
