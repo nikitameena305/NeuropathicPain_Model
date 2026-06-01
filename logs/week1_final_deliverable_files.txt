@@ -1,0 +1,14 @@
+deliverables/week1/WEEK1_EVIDENCE_INDEX.md
+deliverables/week1/modeldb2018004_AP_parameters.csv
+deliverables/week1/modeldb2018004_AP_trace_with_parameters.png
+deliverables/week1/modeldb2018004_mod_inventory.csv
+deliverables/week1/modeldb2018004_mod_inventory.md
+deliverables/week1/modeldb2018004_section_summary.csv
+deliverables/week1/modeldb2018004_soma_voltage_trace.csv
+deliverables/week1/modeldb2018004_soma_voltage_trace.png
+deliverables/week1/modeldb267056_cell_rates.csv
+deliverables/week1/modeldb267056_population_rates.csv
+deliverables/week1/modeldb267056_summary.txt
+deliverables/week1/modeldb267056_tonic_firing.png
+deliverables/week1/morphology_decision.txt
+deliverables/week1/neuromorpho_week1_table.csv
