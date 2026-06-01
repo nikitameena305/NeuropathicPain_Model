@@ -35,14 +35,5 @@ modeldb/2018004/.git/
 metadata/neuromorpho_full_all_neurons.csv
 metadata/rat_all.csv
 
-<<<<<<< HEAD
 # Raw ModelDB 267056 output folder if copied separately
 results/modeldb_267056/
-=======
-# Large raw external/model files
-external/
-swc/
-modeldb/267056/
-
-# Keep processed deliverables/results, not raw huge files
->>>>>>> 451e979 (Ignore large raw external morphology and ModelDB folders)
