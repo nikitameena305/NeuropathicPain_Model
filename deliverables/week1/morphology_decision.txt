@@ -1,0 +1,18 @@
+Week 1 Morphology Decision
+
+DRG decision:
+Primary choice will be based on the NeuroMorpho DRG candidate table if a suitable rat/mouse
+dorsal root ganglion neuron is present with soma diameter <30 um, axon present, and
+pseudounipolar morphology.
+
+If no suitable DRG morphology passes these criteria:
+No suitable cell found -- will use Farooqui ModelDB 2018004 fallback.
+
+SDH decision:
+For Week 1 and early circuit benchmarking, SDH will use Medlock ModelDB 267056 point-neuron
+template because this is the assigned SDH circuit model and is standard for synaptic input
+modelling.
+
+Group 3 focus:
+The SDH analysis will emphasize GABAergic inhibitory interneuron/disinhibition logic because
+reduced inhibitory control is a major mechanism of neuropathic pain central sensitization.
