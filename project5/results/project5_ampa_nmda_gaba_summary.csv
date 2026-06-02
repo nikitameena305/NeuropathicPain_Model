@@ -1,0 +1,5 @@
+condition,description,gaba_scale,ampa_scale,nmda_scale,total_spike_count,stimulus_window_spikes,late_window_spikes,stimulus_projection_rate_Hz,late_projection_rate_Hz,persistent_firing_index
+normal_AMPA_NMDA,Normal AMPA/NMDA with normal GABA inhibition,1.0,1.0,1.0,469,367,93,61.166666666666664,11.625,0.19005449591280654
+reduced_GABA,Reduced GABA inhibition with normal AMPA/NMDA,0.35,1.0,1.0,727,583,141,97.16666666666667,17.625,0.1813893653516295
+reduced_GABA_NMDA_block,Reduced GABA inhibition plus NMDA receptor block,0.35,1.0,0.0,355,329,20,54.833333333333336,2.5,0.04559270516717325
+reduced_GABA_AMPA_block,Reduced GABA inhibition plus AMPA receptor block,0.35,0.0,1.0,251,132,114,22.0,14.25,0.6477272727272727

@@ -1,0 +1,16 @@
+\n==============================
+PROJECT 5 COMPLETE
+==============================
+              condition                                      description  gaba_scale  ampa_scale  nmda_scale  total_spike_count  stimulus_window_spikes  late_window_spikes  stimulus_projection_rate_Hz  late_projection_rate_Hz  persistent_firing_index
+       normal_AMPA_NMDA     Normal AMPA/NMDA with normal GABA inhibition        1.00         1.0         1.0                469                     367                  93                    61.166667                   11.625                 0.190054
+           reduced_GABA    Reduced GABA inhibition with normal AMPA/NMDA        0.35         1.0         1.0                727                     583                 141                    97.166667                   17.625                 0.181389
+reduced_GABA_NMDA_block Reduced GABA inhibition plus NMDA receptor block        0.35         1.0         0.0                355                     329                  20                    54.833333                    2.500                 0.045593
+reduced_GABA_AMPA_block Reduced GABA inhibition plus AMPA receptor block        0.35         0.0         1.0                251                     132                 114                    22.000000                   14.250                 0.647727
+\nSaved summary:
+/home/nikita/NeuropathicPain_Model/project5/results/project5_ampa_nmda_gaba_summary.csv
+\nSaved time-series:
+/home/nikita/NeuropathicPain_Model/project5/results/project5_projection_timeseries.csv
+\nSaved figures in:
+/home/nikita/NeuropathicPain_Model/project5/figures
+\nSaved interpretation note:
+/home/nikita/NeuropathicPain_Model/project5/notes/project5_interpretation.md
