@@ -1,0 +1,6 @@
+case,population,n_cells,total_spikes,mean_rate_Hz,description,GABA_SCALE,PV_SCALE,DYN_SCALE,ISLET_SCALE,baseline_rate_Hz,relative_output_vs_baseline
+baseline_normal_inhibition,unknown,377,27048,14.349071618037135,Normal inhibition,1.0,1.0,1.0,1.0,14.349071618037135,1.0
+all_inhibition_reduced,unknown,397,63730,32.10579345088161,All inhibition reduced,0.3,0.3,0.3,0.3,14.349071618037135,2.2374822779840224
+only_PV_inhibition_reduced,unknown,383,47012,24.54934725848564,Only PV inhibition reduced,1.0,0.3,1.0,1.0,14.349071618037135,1.7108665920676365
+only_DYN_inhibition_reduced,unknown,377,27048,14.349071618037135,Only DYN inhibition reduced,1.0,1.0,0.3,1.0,14.349071618037135,1.0
+only_ISLET_inhibition_reduced,unknown,377,27062,14.356498673740052,Only ISLET inhibition reduced,1.0,1.0,1.0,0.3,14.349071618037135,1.0005175983436854

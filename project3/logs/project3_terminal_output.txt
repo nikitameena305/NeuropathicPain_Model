@@ -1,0 +1,35 @@
+Patch compile check passed.
+
+==============================
+Running case: baseline_normal_inhibition
+Description: Normal inhibition
+GABA=1.0 PV=1.0 DYN=1.0 ISLET=1.0
+==============================
+
+==============================
+Running case: all_inhibition_reduced
+Description: All inhibition reduced
+GABA=0.3 PV=0.3 DYN=0.3 ISLET=0.3
+==============================
+
+==============================
+Running case: only_PV_inhibition_reduced
+Description: Only PV inhibition reduced
+GABA=1.0 PV=0.3 DYN=1.0 ISLET=1.0
+==============================
+
+==============================
+Running case: only_DYN_inhibition_reduced
+Description: Only DYN inhibition reduced
+GABA=1.0 PV=1.0 DYN=0.3 ISLET=1.0
+==============================
+
+==============================
+Running case: only_ISLET_inhibition_reduced
+Description: Only ISLET inhibition reduced
+GABA=1.0 PV=1.0 DYN=1.0 ISLET=0.3
+==============================
+
+DONE: Project 3 completed.
+Saved summary CSVs and figures.
+Restored original netParams_mechanical.py

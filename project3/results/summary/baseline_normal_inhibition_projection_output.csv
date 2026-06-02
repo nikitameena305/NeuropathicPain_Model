@@ -1,0 +1,2 @@
+case,population,n_cells,total_spikes,mean_rate_Hz,description,GABA_SCALE,PV_SCALE,DYN_SCALE,ISLET_SCALE
+baseline_normal_inhibition,unknown,377,27048,14.349071618037135,Normal inhibition,1.0,1.0,1.0,1.0

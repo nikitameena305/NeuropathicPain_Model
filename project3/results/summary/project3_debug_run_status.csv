@@ -1,0 +1,6 @@
+case,status,log_file,json_path,n_spkt,n_spkid
+baseline_normal_inhibition,success,/home/nikita/NeuropathicPain_Model/project3/logs/baseline_normal_inhibition.log,/home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json,27048,27048
+all_inhibition_reduced,success,/home/nikita/NeuropathicPain_Model/project3/logs/all_inhibition_reduced.log,/home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json,63730,63730
+only_PV_inhibition_reduced,success,/home/nikita/NeuropathicPain_Model/project3/logs/only_PV_inhibition_reduced.log,/home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json,47012,47012
+only_DYN_inhibition_reduced,success,/home/nikita/NeuropathicPain_Model/project3/logs/only_DYN_inhibition_reduced.log,/home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json,27048,27048
+only_ISLET_inhibition_reduced,success,/home/nikita/NeuropathicPain_Model/project3/logs/only_ISLET_inhibition_reduced.log,/home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json,27062,27062

@@ -1,0 +1,2 @@
+case,population,n_cells,total_spikes,mean_rate_Hz,description,GABA_SCALE,PV_SCALE,DYN_SCALE,ISLET_SCALE
+all_inhibition_reduced,unknown,397,63730,32.10579345088161,All inhibition reduced,0.3,0.3,0.3,0.3

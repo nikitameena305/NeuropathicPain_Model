@@ -1,0 +1,2 @@
+case,population,n_cells,total_spikes,mean_rate_Hz,description,GABA_SCALE,PV_SCALE,DYN_SCALE,ISLET_SCALE
+only_DYN_inhibition_reduced,unknown,377,27048,14.349071618037135,Only DYN inhibition reduced,1.0,1.0,0.3,1.0
