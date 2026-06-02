@@ -1,0 +1,5 @@
+condition,stimulus_label,stimulus_scale,gaba_label,gaba_scale,disinhibition_multiplier,abeta_to_pain_gate,projection_drive_raw,biological_state,projection_output_index_vs_high_normal,projection_output_index_vs_low_normal,allodynia_like_output
+low_abeta_normal_gaba,Low Aβ input,0.35,Normal GABA,1.0,1.0,0.2,0.06999999999999999,Harmless touch with intact inhibition,0.3499999999999999,1.0,False
+low_abeta_reduced_gaba,Low Aβ input,0.35,Reduced GABA,0.25,3.25,0.8,0.91,Touch input under disinhibition / allodynia-like state,4.55,13.000000000000002,True
+high_abeta_normal_gaba,High Aβ input,1.0,Normal GABA,1.0,1.0,0.2,0.2,Strong mechanical input with intact inhibition,1.0,2.8571428571428577,True
+high_abeta_reduced_gaba,High Aβ input,1.0,Reduced GABA,0.25,3.25,0.8,2.6,Strong input plus disinhibition,13.0,37.142857142857146,True

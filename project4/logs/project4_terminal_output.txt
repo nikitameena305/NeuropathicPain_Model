@@ -1,0 +1,27 @@
+
+==============================
+Project 4: Aβ input and mechanical allodynia sweep
+==============================
+
+Project 3 evidence status:
+Project 3 files not found or columns not readable; using calibrated Project 4 transfer-index model.
+Project 3 relative gain used for annotation: 1.000
+
+Condition summary:
+              condition  stimulus_scale  gaba_scale  projection_output_index_vs_high_normal  projection_output_index_vs_low_normal  allodynia_like_output
+  low_abeta_normal_gaba            0.35        1.00                                    0.35                               1.000000                  False
+ low_abeta_reduced_gaba            0.35        0.25                                    4.55                              13.000000                   True
+ high_abeta_normal_gaba            1.00        1.00                                    1.00                               2.857143                   True
+high_abeta_reduced_gaba            1.00        0.25                                   13.00                              37.142857                   True
+
+Saved outputs:
+CSV: /home/nikita/NeuropathicPain_Model/project4/results/project4_abeta_allodynia_condition_summary.csv
+CSV: /home/nikita/NeuropathicPain_Model/project4/results/project4_biological_interpretation.csv
+JSON: /home/nikita/NeuropathicPain_Model/project4/results/project4_methodology.json
+Figure: /home/nikita/NeuropathicPain_Model/project4/figures/project4_abeta_allodynia_barplot.png
+Figure: /home/nikita/NeuropathicPain_Model/project4/figures/project4_abeta_gaba_matrix.png
+Figure: /home/nikita/NeuropathicPain_Model/project4/figures/project4_mechanical_allodynia_mechanism_diagram.png
+Notes: /home/nikita/NeuropathicPain_Model/project4/notes/project4_explanation.md
+
+Project 4 completed successfully.
+

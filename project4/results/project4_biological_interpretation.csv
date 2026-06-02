@@ -1,0 +1,5 @@
+condition,interpretation
+low_abeta_normal_gaba,Low Aβ touch input remains mostly non-painful because normal GABA inhibition keeps projection neuron output low.
+low_abeta_reduced_gaba,Low Aβ touch input produces strong projection output when GABA is reduced. This supports a mechanical allodynia-like mechanism.
+high_abeta_normal_gaba,High mechanical input gives the reference output under intact inhibition.
+high_abeta_reduced_gaba,High input plus reduced inhibition produces the strongest projection output.

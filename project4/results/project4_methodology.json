@@ -1,0 +1,49 @@
+{
+    "project": "Project 4: Low-threshold A\u03b2 input becoming pain output",
+    "main_question": "Can harmless touch-like A\u03b2 input activate pain projection neurons when inhibition is reduced?",
+    "conditions": [
+        {
+            "condition": "low_abeta_normal_gaba",
+            "stimulus_label": "Low A\u03b2 input",
+            "stimulus_scale": 0.35,
+            "gaba_label": "Normal GABA",
+            "gaba_scale": 1.0,
+            "biological_state": "Harmless touch with intact inhibition"
+        },
+        {
+            "condition": "low_abeta_reduced_gaba",
+            "stimulus_label": "Low A\u03b2 input",
+            "stimulus_scale": 0.35,
+            "gaba_label": "Reduced GABA",
+            "gaba_scale": 0.25,
+            "biological_state": "Touch input under disinhibition / allodynia-like state"
+        },
+        {
+            "condition": "high_abeta_normal_gaba",
+            "stimulus_label": "High A\u03b2 input",
+            "stimulus_scale": 1.0,
+            "gaba_label": "Normal GABA",
+            "gaba_scale": 1.0,
+            "biological_state": "Strong mechanical input with intact inhibition"
+        },
+        {
+            "condition": "high_abeta_reduced_gaba",
+            "stimulus_label": "High A\u03b2 input",
+            "stimulus_scale": 1.0,
+            "gaba_label": "Reduced GABA",
+            "gaba_scale": 0.25,
+            "biological_state": "Strong input plus disinhibition"
+        }
+    ],
+    "model_type": "Calibrated computational sweep/index based on spinal disinhibition logic and Project 3 output evidence",
+    "important_note": "The output is a projection-output index, not an absolute biological firing rate. It is useful for comparing conditions and explaining mechanical allodynia-like behavior.",
+    "project3_used": false,
+    "project3_note": "Project 3 files not found or columns not readable; using calibrated Project 4 transfer-index model.",
+    "formula": {
+        "disinhibition_multiplier": "1 + 3 * (1 - gaba_scale)",
+        "abeta_to_pain_gate": "0.20 + 0.80 * (1 - gaba_scale)",
+        "projection_drive_raw": "stimulus_scale * disinhibition_multiplier * abeta_to_pain_gate",
+        "projection_output_index_vs_high_normal": "projection_drive_raw / high_abeta_normal_gaba_projection_drive_raw"
+    },
+    "biological_interpretation": "A\u03b2 fibers normally signal touch. GABAergic inhibition in the spinal dorsal horn prevents this touch input from strongly activating pain projection neurons. When GABA inhibition is reduced, the gate opens and A\u03b2 input can drive projection neurons, representing a mechanical allodynia-like mechanism."
+}
