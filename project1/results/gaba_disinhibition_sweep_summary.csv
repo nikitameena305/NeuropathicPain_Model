@@ -1,0 +1,6 @@
+condition,gaba_strength_fraction,disinhibition_fraction,projection_mean_rate_Hz,projection_percent_change_from_baseline,estimated_total_SDH_spikes,estimated_E_I_ratio,biological_interpretation
+GABA_100_percent,1.0,0.0,38.32052540639833,0.0,27048.0,1.0243843553838723,normal inhibition
+GABA_75_percent,0.75,0.25,83.82614932649635,118.75,37191.0,2.0487687107677446,mild disinhibition
+GABA_50_percent,0.5,0.5,143.70197027399374,275.0,47334.0,4.097537421535489,moderate disinhibition
+GABA_25_percent,0.25,0.75,217.9479882488905,468.75,57477.0,10.243843553838722,severe disinhibition
+GABA_0_percent,0.0,1.0,306.56420325118665,699.9999999999999,67620.0,307.3153066151617,complete inhibitory loss

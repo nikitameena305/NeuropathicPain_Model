@@ -1,0 +1,2 @@
+condition,duration_s,total_spikes,excitatory_plus_projection_spikes,inhibitory_spikes,E_I_ratio,projection_total_spikes,projection_mean_rate_Hz
+baseline_100_percent_GABA,4.999185855093786,27048,4243,4142,1.0243843553838725,1341,38.32052540639833

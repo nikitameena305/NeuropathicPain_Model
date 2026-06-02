@@ -1,0 +1,318 @@
+./spkt_gen.py:76:        inh_poisson_generator, inh_gamma_generator, inh_adaptingmarkov_generator
+./spkt_gen.py:110:def inh_poisson_generator(rate, t, t_stop, seed=None):
+./spkt_gen.py:112:    Returns a SpikeTrain whose spikes are a realization of an inhomogeneous 
+./spkt_gen.py:136:        >> stgen.inh_poisson_generator(time,sin(time), 1000)
+./spkt_gen.py:139:        poisson_generator, inh_gamma_generator, inh_adaptingmarkov_generator
+./mods/iNaP.mod:10:: sodium current active a subthreshold potentials, works synergistically
+./mods/iNaP.mod:47:	vsm	= -2            (mV)	: collapses activation curve as increasingly -ve
+./mods/iNaP.mod:48:	vsh	= -5            (mV)	: shifts inactivation curve left as increasingly -ve
+./mods/Glycine_DynSyn.mod:1:TITLE Glycine receptor with pre-synaptic short-term plasticity 
+./mods/Glycine_DynSyn.mod:5: Glycine receptor conductance using a dual-exponential profile
+./mods/Glycine_DynSyn.mod:6:Pre-synaptic short-term plasticity based on Fuhrmann et al, 2002
+./mods/Glycine_DynSyn.mod:9:pauloaguiar@fc.up.pt (modified slightly from GABAa_DynSyn by Tianhe Zhang--2012); mafsousa@ibmc.up.pt
+./mods/Glycine_DynSyn.mod:15:	POINT_PROCESS Glycine_DynSyn	
+./mods/Glycine_DynSyn.mod:26:	tau_rec   = 0.1   (ms)  : the pre-synaptic short-term plasticity _
+./mods/Glycine_DynSyn.mod:28:	e         = -70.0 (mV)  : Glycine synapse reversal potential
+./mods/Glycine_DynSyn.mod:64:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/Glycine_DynSyn.mod:78:	A = A + weight*factor*Pv
+./mods/Glycine_DynSyn.mod:79:	B = B + weight*factor*Pv	
+./mods/NMDA_DynSyn.mod:1:TITLE  NMDA receptor with Ca influx and pre-synaptic short-term plasticity
+./mods/NMDA_DynSyn.mod:5:Dynamic presynaptic activity based on Fuhrmann et al, 2002: "Coding of temporal information by activity-dependent synapses" 
+./mods/NMDA_DynSyn.mod:13:	POINT_PROCESS NMDA_DynSyn
+./mods/NMDA_DynSyn.mod:33:	tau_rec   = 0.1   (ms)  : the pre-synaptic SP short-term plasticity
+./mods/NMDA_DynSyn.mod:35:	e         = 0.0   (mV)  : synapse reversal potential
+./mods/NMDA_DynSyn.mod:83:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/NMDA_DynSyn.mod:98:	A=A + weight*factor*Pv
+./mods/NMDA_DynSyn.mod:99:	B=B + weight*factor*Pv
+./mods/GABAb_DynSyn.mod:1:TITLE GABA_B receptor with pre-synaptic short-term plasticity 
+./mods/GABAb_DynSyn.mod:5:GABA_B receptor conductance using a dual-exponential profile
+./mods/GABAb_DynSyn.mod:6:Pre-synaptic short-term plasticity based on Fuhrmann et al, 2002
+./mods/GABAb_DynSyn.mod:15:	POINT_PROCESS GABAb_DynSyn	
+./mods/GABAb_DynSyn.mod:26:	tau_rec   = 0.1   (ms)  : the pre-synaptic SP short-term plasticity _
+./mods/GABAb_DynSyn.mod:28:	e         = -95   (mV)  : GABAb synapse reversal potential
+./mods/GABAb_DynSyn.mod:64:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/GABAb_DynSyn.mod:78:	A = A + weight*factor*Pv
+./mods/GABAb_DynSyn.mod:79:	B = B + weight*factor*Pv	
+./mods/GABAa_DynSyn.mod:1:TITLE GABA_A receptor with pre-synaptic short-term plasticity 
+./mods/GABAa_DynSyn.mod:5:GABA_A receptor conductance using a dual-exponential profile
+./mods/GABAa_DynSyn.mod:6:Pre-synaptic short-term plasticity based on Fuhrmann et al, 2002
+./mods/GABAa_DynSyn.mod:15:	POINT_PROCESS GABAa_DynSyn	
+./mods/GABAa_DynSyn.mod:26:	tau_rec   = 0.1   (ms)  : the pre-synaptic short-term plasticity _
+./mods/GABAa_DynSyn.mod:28:	e         = -80.0 (mV)  : GABAa synapse reversal potential
+./mods/GABAa_DynSyn.mod:64:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/GABAa_DynSyn.mod:78:	A = A + weight*factor*Pv
+./mods/GABAa_DynSyn.mod:79:	B = B + weight*factor*Pv	
+./mods/AMPA_DynSyn.mod:1:TITLE AMPA receptor with pre-synaptic short-term plasticity 
+./mods/AMPA_DynSyn.mod:6:Pre-synaptic short-term plasticity based on Fuhrmann et al, 2002
+./mods/AMPA_DynSyn.mod:15:	POINT_PROCESS AMPA_DynSyn	
+./mods/AMPA_DynSyn.mod:26:	tau_rec   = 0.1   (ms)  : the pre-synaptic short-term plasticity _
+./mods/AMPA_DynSyn.mod:28:	e         = 0.0   (mV)  : AMPA synapse reversal potential
+./mods/AMPA_DynSyn.mod:64:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/AMPA_DynSyn.mod:78:	A = A + weight*factor*Pv: BME503--weight may not be necessarily what you think it is because a scaling factor has been left out.  Weighting factor is 1/(td*tr/(td-tr)).
+./mods/AMPA_DynSyn.mod:79:	B = B + weight*factor*Pv	
+./mods/HH2new.mod:47:	vsm		= -5 (mV)	: collapses activation curve as increasingly -ve
+./mods/NK1_DynSyn.mod:34: synaptic release but other mechanisms, such as SP diffusion, which
+./mods/NK1_DynSyn.mod:47:	POINT_PROCESS NK1_DynSyn	
+./mods/NK1_DynSyn.mod:66:	tau_rec   = 0.1			(ms)  : the pre-synaptic SP short-term plasticity _
+./mods/NK1_DynSyn.mod:111:NET_RECEIVE (weight, Pv, P, Use, t0 (ms)){
+./mods/NK1_DynSyn.mod:126:	A=A + weight*factor*Pv
+./mods/NK1_DynSyn.mod:127:	B=B + weight*factor*Pv
+./netParams_mechanical.py:65:netParams.popParams['PV'] = {'cellType': 'IN', 'numCells': 15} # PV+ neurons (inhibitory)
+./netParams_mechanical.py:68:netParams.popParams['DYN'] = {'cellType': 'IN', 'numCells': 60} # Central/DYN+ neurons (inhibitory)
+./netParams_mechanical.py:71:netParams.popParams['ISLET'] = {'cellType': 'IN', 'numCells': 15} # Islet-type neurons (inhibitory)
+./netParams_mechanical.py:75:#   Synaptic Mechanisms
+./netParams_mechanical.py:79:netParams.synMechParams['AMPA'] = {'mod': 'AMPA_DynSyn'   , 'tau_rise': 0.1, 'tau_decay': 5            }
+./netParams_mechanical.py:80:netParams.synMechParams['NMDA'] = {'mod': 'NMDA_DynSyn'   , 'tau_rise': 2  , 'tau_decay': 100          }
+./netParams_mechanical.py:81:netParams.synMechParams['NK13'] = {'mod': 'NK1_DynSyn'    , 'tau_rise': 100, 'tau_decay': 1000         }
+./netParams_mechanical.py:82:netParams.synMechParams['NK23'] = {'mod': 'NK1_DynSyn'    , 'tau_rise': 200, 'tau_decay': 3000         }
+./netParams_mechanical.py:83:netParams.synMechParams['GABA'] = {'mod': 'GABAa_DynSyn'  , 'tau_rise': 0.1, 'tau_decay': 20, 'e': -70 }
+./netParams_mechanical.py:84:netParams.synMechParams['GLY']  = {'mod': 'Glycine_DynSyn', 'tau_rise': 0.1, 'tau_decay': 10, 'e': -70 }
+./netParams_mechanical.py:91:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:94:    'weight': cfg.Ab_EX_AMPA,           
+./netParams_mechanical.py:99:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:102:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:105:    'weight': cfg.Ab_EX_NMDA,           
+./netParams_mechanical.py:110:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:113:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:116:    'weight': cfg.Ab_EX_AMPA,           
+./netParams_mechanical.py:121:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:124:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:127:    'weight': cfg.Ab_EX_NMDA,           
+./netParams_mechanical.py:132:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:135:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:138:    'weight': cfg.Ab_IN_AMPA,           
+./netParams_mechanical.py:143:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:146:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:149:    'weight': cfg.Ab_IN_NMDA,           
+./netParams_mechanical.py:154:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:157:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:160:    'weight': cfg.Ab_IN_AMPA,           
+./netParams_mechanical.py:165:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:168:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:171:    'weight': cfg.Ab_EX_AMPA,           
+./netParams_mechanical.py:176:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:179:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:182:    'weight': cfg.Ab_EX_NMDA,           
+./netParams_mechanical.py:187:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:190:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:193:    'weight': cfg.Ab_EX_AMPA,           
+./netParams_mechanical.py:198:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:201:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:204:    'weight': cfg.Ab_EX_NMDA,           
+./netParams_mechanical.py:209:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:212:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:215:    'weight': cfg.Ab_IN_AMPA,           
+./netParams_mechanical.py:220:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:223:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:226:    'weight': cfg.Ab_IN_NMDA,           
+./netParams_mechanical.py:231:    'synMech': 'NMDA'} 
+./netParams_mechanical.py:234:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:237:    'weight': cfg.Ab_IN_AMPA,           
+./netParams_mechanical.py:242:    'synMech': 'AMPA'} 
+./netParams_mechanical.py:246:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:249:    'weight': cfg.Ad_AMPA,
+./netParams_mechanical.py:254:    'synMech': 'AMPA'}
+./netParams_mechanical.py:257:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:260:    'weight': cfg.Ad_NMDA,
+./netParams_mechanical.py:265:    'synMech': 'NMDA'}
+./netParams_mechanical.py:268:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:271:    'weight': cfg.Ad_AMPA,
+./netParams_mechanical.py:276:    'synMech': 'AMPA'}
+./netParams_mechanical.py:279:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:282:    'weight': cfg.Ad_NMDA,
+./netParams_mechanical.py:287:    'synMech': 'NMDA'}
+./netParams_mechanical.py:290:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:293:    'weight': cfg.Ad_AMPA,
+./netParams_mechanical.py:298:    'synMech': 'AMPA'}
+./netParams_mechanical.py:301:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:304:    'weight': cfg.Ad_NMDA,
+./netParams_mechanical.py:309:    'synMech': 'NMDA'}
+./netParams_mechanical.py:313:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:316:    'weight': cfg.C_TrC_AMPA,
+./netParams_mechanical.py:321:    'synMech': 'AMPA'}
+./netParams_mechanical.py:324:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:327:    'weight': cfg.C_EX_AMPA,
+./netParams_mechanical.py:332:    'synMech': 'AMPA'}
+./netParams_mechanical.py:335:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:338:    'weight': cfg.C_EX_NMDA,
+./netParams_mechanical.py:343:    'synMech': 'NMDA'}
+./netParams_mechanical.py:346:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:349:    'weight': cfg.C_EX_AMPA,
+./netParams_mechanical.py:354:    'synMech': 'AMPA'}
+./netParams_mechanical.py:357:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:360:    'weight': cfg.C_EX_NMDA,
+./netParams_mechanical.py:365:    'synMech': 'NMDA'}
+./netParams_mechanical.py:368:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:371:    'weight': cfg.C_DYN_AMPA,
+./netParams_mechanical.py:376:    'synMech': 'AMPA'}
+./netParams_mechanical.py:379:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:382:    'weight': cfg.C_ISLET_AMPA,
+./netParams_mechanical.py:387:    'synMech': 'AMPA'}
+./netParams_mechanical.py:390:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:393:    'weight': cfg.C_NK1_AMPA,
+./netParams_mechanical.py:398:    'synMech': 'AMPA'}
+./netParams_mechanical.py:401:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:404:    'weight': cfg.C_NK1_NMDA,
+./netParams_mechanical.py:409:    'synMech': 'NMDA'}
+./netParams_mechanical.py:412:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:415:    'weight': cfg.C_NK1_NK1,
+./netParams_mechanical.py:420:    'synMech': 'NK13'}
+./netParams_mechanical.py:424:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:427:    'weight': cfg.C_TrC_AMPA,
+./netParams_mechanical.py:432:    'synMech': 'AMPA'}
+./netParams_mechanical.py:435:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:438:    'weight': cfg.C_EX_AMPA,
+./netParams_mechanical.py:443:    'synMech': 'AMPA'}
+./netParams_mechanical.py:446:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:449:    'weight': cfg.C_EX_NMDA,
+./netParams_mechanical.py:454:    'synMech': 'NMDA'}
+./netParams_mechanical.py:457:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:460:    'weight': cfg.C_EX_AMPA,
+./netParams_mechanical.py:465:    'synMech': 'AMPA'}
+./netParams_mechanical.py:468:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:471:    'weight': cfg.C_EX_NMDA,
+./netParams_mechanical.py:476:    'synMech': 'NMDA'}
+./netParams_mechanical.py:479:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:482:    'weight': cfg.C_DYN_AMPA,
+./netParams_mechanical.py:487:    'synMech': 'AMPA'}
+./netParams_mechanical.py:490:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:493:    'weight': cfg.C_ISLET_AMPA,
+./netParams_mechanical.py:498:    'synMech': 'AMPA'}
+./netParams_mechanical.py:501:#   Connectivity Betweeen Spinal Neurons (inh>ex, ex>ex, ex/inh>projection)
+./netParams_mechanical.py:505:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:508:    'weight': cfg.VGLUT3_PKC_AMPA,           
+./netParams_mechanical.py:513:    'synMech': 'AMPA'}
+./netParams_mechanical.py:516:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:519:    'weight': cfg.VGLUT3_PKC_NMDA,           
+./netParams_mechanical.py:524:    'synMech': 'NMDA'}
+./netParams_mechanical.py:526:netParams.connParams['PV_GABA->PKC'] = {
+./netParams_mechanical.py:527:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:530:    'weight': cfg.PV_GABA,          
+./netParams_mechanical.py:535:    'synMech': 'GABA'}
+./netParams_mechanical.py:537:netParams.connParams['PV_GLY->PKC'] = {
+./netParams_mechanical.py:538:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:541:    'weight': cfg.PV_GLY,        
+./netParams_mechanical.py:546:    'synMech': 'GLY'}
+./netParams_mechanical.py:549:netParams.connParams['PV_GABA->DOR'] = {
+./netParams_mechanical.py:550:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:553:    'weight': cfg.PV_GABA,
+./netParams_mechanical.py:558:    'synMech': 'GABA'}
+./netParams_mechanical.py:560:netParams.connParams['PV_GLY->DOR'] = {
+./netParams_mechanical.py:561:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:564:    'weight': cfg.PV_GLY,
+./netParams_mechanical.py:569:    'synMech': 'GLY'}
+./netParams_mechanical.py:572:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:575:    'weight': cfg.VGLUT3_PKC_AMPA,           
+./netParams_mechanical.py:580:    'synMech': 'AMPA'}
+./netParams_mechanical.py:583:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:586:    'weight': cfg.VGLUT3_PKC_NMDA,           
+./netParams_mechanical.py:591:    'synMech': 'NMDA'}
+./netParams_mechanical.py:595:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:598:    'weight': cfg.PKC_AMPA,           
+./netParams_mechanical.py:603:    'synMech': 'AMPA'}
+./netParams_mechanical.py:605:netParams.connParams['ISLET_GABA->TrC'] = {
+./netParams_mechanical.py:606:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:609:    'weight': cfg.ISLET_GABA,       
+./netParams_mechanical.py:614:    'synMech': 'GABA'}
+./netParams_mechanical.py:617:netParams.connParams['DYN_GABA->ISLET'] = {
+./netParams_mechanical.py:618:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:621:    'weight': cfg.DYN_ISLET_GABA,           
+./netParams_mechanical.py:626:    'synMech': 'GABA'}
+./netParams_mechanical.py:629:netParams.connParams['ISLET_GABA->DYN'] = {
+./netParams_mechanical.py:630:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:633:    'weight': cfg.ISLET_GABA,           
+./netParams_mechanical.py:638:    'synMech': 'GABA'}
+./netParams_mechanical.py:641:netParams.connParams['DYN_GABA->SOM'] = {
+./netParams_mechanical.py:642:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:645:    'weight': cfg.DYN_EX_GABA,           
+./netParams_mechanical.py:650:    'synMech': 'GABA'}
+./netParams_mechanical.py:652:netParams.connParams['DYN_GLY->SOM'] = {
+./netParams_mechanical.py:653:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:656:    'weight': cfg.DYN_EX_GLY,           
+./netParams_mechanical.py:661:    'synMech': 'GLY'}
+./netParams_mechanical.py:664:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:667:    'weight': cfg.TrC_AMPA,           
+./netParams_mechanical.py:672:    'synMech': 'AMPA'}
+./netParams_mechanical.py:675:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:678:    'weight': cfg.TrC_NMDA,           
+./netParams_mechanical.py:683:    'synMech': 'NMDA'}
+./netParams_mechanical.py:686:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:689:    'weight': cfg.PKC_AMPA,           
+./netParams_mechanical.py:694:    'synMech': 'AMPA'}
+./netParams_mechanical.py:697:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:700:    'weight': cfg.PKC_NMDA,           
+./netParams_mechanical.py:705:    'synMech': 'NMDA'}
+./netParams_mechanical.py:708:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:711:    'weight': cfg.VGLUT3_SOM_AMPA,           
+./netParams_mechanical.py:716:    'synMech': 'AMPA'}
+./netParams_mechanical.py:719:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:722:    'weight': cfg.VGLUT3_SOM_NMDA,           
+./netParams_mechanical.py:727:    'synMech': 'NMDA'}
+./netParams_mechanical.py:730:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:733:    'weight': cfg.DOR_AMPA,           
+./netParams_mechanical.py:738:    'synMech': 'AMPA'}
+./netParams_mechanical.py:741:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:744:    'weight': cfg.DOR_NMDA,           
+./netParams_mechanical.py:749:    'synMech': 'NMDA'}
+./netParams_mechanical.py:752:netParams.connParams['DYN_GABA->CR'] = {
+./netParams_mechanical.py:753:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:756:    'weight': cfg.DYN_EX_GABA,           
+./netParams_mechanical.py:761:    'synMech': 'GABA'}
+./netParams_mechanical.py:763:netParams.connParams['DYN_GLY->CR'] = {
+./netParams_mechanical.py:764:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:767:    'weight': cfg.DYN_EX_GLY,           
+./netParams_mechanical.py:772:    'synMech': 'GLY'}
+./netParams_mechanical.py:775:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:778:    'weight': cfg.TrC_AMPA,           
+./netParams_mechanical.py:783:    'synMech': 'AMPA'}
+./netParams_mechanical.py:786:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:789:    'weight': cfg.TrC_NMDA,           
+./netParams_mechanical.py:794:    'synMech': 'NMDA'}
+./netParams_mechanical.py:797:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:800:    'weight': cfg.PKC_AMPA,           
+./netParams_mechanical.py:805:    'synMech': 'AMPA'}
+./netParams_mechanical.py:808:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:811:    'weight': cfg.PKC_NMDA,           
+./netParams_mechanical.py:816:    'synMech': 'NMDA'}
+./netParams_mechanical.py:819:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:822:    'weight': cfg.DOR_AMPA,           
+./netParams_mechanical.py:827:    'synMech': 'AMPA'}
+./netParams_mechanical.py:830:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:833:    'weight': cfg.DOR_NMDA,           
+./netParams_mechanical.py:838:    'synMech': 'NMDA'}
+./netParams_mechanical.py:842:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:845:    'weight': cfg.EX_NK1_AMPA,
+./netParams_mechanical.py:850:    'synMech': 'AMPA'}
+./netParams_mechanical.py:853:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:856:    'weight': cfg.EX_NK1_NMDA,
+./netParams_mechanical.py:861:    'synMech': 'NMDA'}
+./netParams_mechanical.py:864:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:867:    'weight': cfg.EX_NK1_NK1,
+./netParams_mechanical.py:872:    'synMech': 'NK13'}
+./netParams_mechanical.py:875:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:878:    'weight': cfg.EX_NK1_AMPA,
+./netParams_mechanical.py:883:    'synMech': 'AMPA'}
+./netParams_mechanical.py:886:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:889:    'weight': cfg.EX_NK1_NMDA,
+./netParams_mechanical.py:894:    'synMech': 'NMDA'}
+./netParams_mechanical.py:897:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:900:    'weight': cfg.EX_NK1_NK1,
+./netParams_mechanical.py:905:    'synMech': 'NK13'}
+./netParams_mechanical.py:907:netParams.connParams['DYN_GABA->NK1'] = {
+./netParams_mechanical.py:908:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:911:    'weight': cfg.DYN_NK1_GABA,
+./netParams_mechanical.py:916:    'synMech': 'GABA'}
+./netParams_mechanical.py:918:netParams.connParams['DYN_GLY->NK1'] = {
+./netParams_mechanical.py:919:    'oneSynPerNetcon': True,
+./netParams_mechanical.py:922:    'weight': cfg.DYN_NK1_GLY,
+./netParams_mechanical.py:927:    'synMech': 'GLY'}
+./cfg_mechanical.py:29:# SYNAPTIC WEIGHT
+./cfg_mechanical.py:47:cfg.PV_GABA = 0.29416             
+./cfg_mechanical.py:48:cfg.PV_GLY =  0.011521           
+./cfg_mechanical.py:49:cfg.DYN_ISLET_GABA = 0.36182     
+./cfg_mechanical.py:50:cfg.ISLET_GABA = 0.34293         
+./cfg_mechanical.py:51:cfg.DYN_EX_GABA = 4.50e-05        
+./cfg_mechanical.py:52:cfg.DYN_EX_GLY = 4.50e-05         
+./cfg_mechanical.py:64:cfg.DYN_NK1_GABA = 6.3720e-06
+./cfg_mechanical.py:65:cfg.DYN_NK1_GLY = 2.3608e-06
+./cfg_mechanical.py:79:cfg.analysis['plotConn'] = {'includePre': ['all'], 'includePost': ['all'], 'feature': 'weight','logPlot': True, 'saveFig': True, 'showFig': True}
