@@ -1,0 +1,34 @@
+
+✅ Project 2 completed successfully!
+Input JSON used: /home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json
+Population rates saved to: /home/nikita/NeuropathicPain_Model/project2/results/project2_baseline_population_rates.csv
+Cell-level spike counts saved to: /home/nikita/NeuropathicPain_Model/project2/results/project2_gid_population_spike_counts.csv
+Condition summary saved to: /home/nikita/NeuropathicPain_Model/project2/results/project2_condition_summary.csv
+Figure saved to: /home/nikita/NeuropathicPain_Model/project2/figures/project2_projection_output_barplot.png
+Relative figure saved to: /home/nikita/NeuropathicPain_Model/project2/figures/project2_relative_output_index.png
+Log saved to: /home/nikita/NeuropathicPain_Model/project2/logs/project2_run_log.txt
+
+Baseline population rates:
+population  n_cells  active_cells  total_spikes  mean_rate_Hz  active_cell_fraction
+    Ab_SAI       10            10           678     13.560000              1.000000
+   Ab_SAII       10            10           635     12.700000              1.000000
+        Ad       20            20           469      4.690000              1.000000
+        CR      100           100         31062     62.124000              1.000000
+      C_NP       80            80          1291      3.227500              1.000000
+     C_PEP       40            40           625      3.125000              1.000000
+       DOR       15            12          8850    118.000000              0.800000
+       DYN       10            10          1268     25.360000              1.000000
+     ISLET        4             4          1348     67.400000              1.000000
+       NK1        9             0             0      0.000000              0.000000
+       PKC       75            74         17056     45.482667              0.986667
+        PV       15            12          6473     86.306667              0.800000
+       SOM       15            15          2846     37.946667              1.000000
+       TrC        5             3          1383     55.320000              0.600000
+    VGLUT3       10            10          2161     43.220000              1.000000
+
+Condition summary:
+                 condition      DRG_state GABA_state  DRG_SCALE  GABA_SCALE  central_disinhibition_gain  baseline_DRG_input_rate_Hz  baseline_inhibitory_rate_Hz  baseline_projection_rate_Hz  predicted_projection_rate_Hz  relative_output_index_vs_C1
+ C1_normal_DRG_normal_GABA         normal     normal        1.0         1.0                         1.0                      4.6225                    62.682759                    52.478846                     52.478846                          1.0
+  C2_hyper_DRG_normal_GABA hyperexcitable     normal        1.5         1.0                         1.0                      4.6225                    62.682759                    52.478846                     78.718269                          1.5
+C3_normal_DRG_reduced_GABA         normal    reduced        1.0         0.5                         2.0                      4.6225                    62.682759                    52.478846                    104.957692                          2.0
+ C4_hyper_DRG_reduced_GABA hyperexcitable    reduced        1.5         0.5                         2.0                      4.6225                    62.682759                    52.478846                    157.436538                          3.0

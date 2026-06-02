@@ -1,0 +1,23 @@
+Using: modeldb/267056/data/100mN_data.json
+
+Top-level keys:
+ - net <class 'dict'>
+ - netpyne_changeset <class 'str'>
+ - netpyne_version <class 'str'>
+ - simConfig <class 'dict'>
+ - simData <class 'dict'>
+
+net keys:
+ - params <class 'dict'>
+
+simData keys:
+ - avgRate <class 'float'>
+ - popRates <class 'dict'> len = 15
+ - spkid <class 'list'> len = 76145
+ - spkt <class 'list'> len = 76145
+ - stims <class 'dict'> len = 409
+ - t <class 'list'> len = 200000
+ - vs <class 'dict'> len = 0
+
+Example cells:
+cells type: <class 'list'> len: 0

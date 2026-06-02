@@ -1,0 +1,29 @@
+Project 2 run completed successfully.
+Input JSON: /home/nikita/NeuropathicPain_Model/modeldb/267056/data/100mN_data.json
+Simulation duration used: 5.0 seconds
+
+Manual population sizes used:
+Ab_SAI: 10
+Ab_SAII: 10
+Ad: 20
+C_PEP: 40
+C_NP: 80
+PKC: 75
+VGLUT3: 10
+PV: 15
+DOR: 15
+TrC: 5
+DYN: 10
+SOM: 15
+CR: 100
+ISLET: 4
+NK1: 9
+
+Baseline DRG input rate: 4.6225 Hz
+Baseline inhibitory rate: 62.6828 Hz
+Baseline projection rate: 52.4788 Hz
+Saved population rates: /home/nikita/NeuropathicPain_Model/project2/results/project2_baseline_population_rates.csv
+Saved cell-level counts: /home/nikita/NeuropathicPain_Model/project2/results/project2_gid_population_spike_counts.csv
+Saved condition summary: /home/nikita/NeuropathicPain_Model/project2/results/project2_condition_summary.csv
+Saved figure 1: /home/nikita/NeuropathicPain_Model/project2/figures/project2_projection_output_barplot.png
+Saved figure 2: /home/nikita/NeuropathicPain_Model/project2/figures/project2_relative_output_index.png

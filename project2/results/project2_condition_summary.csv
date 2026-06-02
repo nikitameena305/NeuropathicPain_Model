@@ -1,0 +1,5 @@
+condition,DRG_state,GABA_state,DRG_SCALE,GABA_SCALE,central_disinhibition_gain,baseline_DRG_input_rate_Hz,baseline_inhibitory_rate_Hz,baseline_projection_rate_Hz,predicted_projection_rate_Hz,relative_output_index_vs_C1
+C1_normal_DRG_normal_GABA,normal,normal,1.0,1.0,1.0,4.6225,62.68275862068966,52.478846153846156,52.478846153846156,1.0
+C2_hyper_DRG_normal_GABA,hyperexcitable,normal,1.5,1.0,1.0,4.6225,62.68275862068966,52.478846153846156,78.71826923076924,1.5
+C3_normal_DRG_reduced_GABA,normal,reduced,1.0,0.5,2.0,4.6225,62.68275862068966,52.478846153846156,104.95769230769231,2.0
+C4_hyper_DRG_reduced_GABA,hyperexcitable,reduced,1.5,0.5,2.0,4.6225,62.68275862068966,52.478846153846156,157.43653846153848,3.0
