@@ -1,0 +1,19 @@
+{
+  "cell_type": "spinal_lamina_I_projection_neuron",
+  "passive": {
+    "v_rest_mV": -65,
+    "rin_MOhm_min": 500,
+    "rin_MOhm_max": 1200,
+    "tau_ms_min": 10,
+    "tau_ms_max": 80
+  },
+  "active": {
+    "rheobase_pA_min": 20,
+    "rheobase_pA_max": 200,
+    "ap_amplitude_mV_min": 50,
+    "ap_half_width_ms_min": 0.5,
+    "ap_half_width_ms_max": 5.0,
+    "max_spikes_allowed": 30,
+    "no_plateau_required": true
+  }
+}

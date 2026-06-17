@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# NEURON compiled mechanisms
+mechanisms/x86_64/
+x86_64/
+*.o
+*.so
+special
+
+# Logs / temporary files
+*.log
+
+# Large generated output folders if needed
+# results/
+# figures/
+
+# OS files
+.DS_Store
+Thumbs.db
