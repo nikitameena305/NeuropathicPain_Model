@@ -1,0 +1,34 @@
+L796 STEP 5 ACTIVE CONDUCTANCE TUNING REPORT
+============================================================
+
+Purpose:
+Refine active conductance scales around the Step 4 best candidate.
+
+Passive parameters were kept fixed:
+  e_pas = -72.8 mV
+  g_pas = 3.7855152493e-06 S/cm2
+  cm = 1.0 uF/cm2
+  Ra = 200.0 ohm-cm
+
+Best tuned active scales:
+  BNa_scale = 1.45
+  KDR_scale = 0.5
+  KCa_scale = 0.25
+  CaL_scale = 1.25
+  iNaP_scale = 1.0
+  CaAN_scale = 1.25
+
+Best score = 793.2942
+
+Best model current-step summary:
+  -10 pA: RIN = 0.7562 GOhm, deltaV = -7.5619 mV
+  0 pA: AIS spikes=0, soma spikes=0, freq=0.00 Hz, AIS peak=-72.21 mV, latency=nan ms, recovery soma=-72.16 mV, adaptation=nan
+  20 pA: AIS spikes=0, soma spikes=0, freq=0.00 Hz, AIS peak=-53.91 mV, latency=nan ms, recovery soma=-65.90 mV, adaptation=nan
+  40 pA: AIS spikes=2, soma spikes=2, freq=4.00 Hz, AIS peak=13.97 mV, latency=144.60 ms, recovery soma=-72.80 mV, adaptation=nan
+  60 pA: AIS spikes=4, soma spikes=4, freq=8.00 Hz, AIS peak=17.65 mV, latency=92.07 ms, recovery soma=-72.34 mV, adaptation=1.0115354017523572
+  80 pA: AIS spikes=5, soma spikes=5, freq=10.00 Hz, AIS peak=20.16 mV, latency=67.75 ms, recovery soma=-72.45 mV, adaptation=1.0054280779697369
+  100 pA: AIS spikes=6, soma spikes=6, freq=12.00 Hz, AIS peak=22.01 mV, latency=53.55 ms, recovery soma=-73.12 mV, adaptation=0.9965537047713107
+  120 pA: AIS spikes=6, soma spikes=6, freq=12.00 Hz, AIS peak=23.44 mV, latency=44.25 ms, recovery soma=-72.90 mV, adaptation=0.9880683650444839
+
+Interpretation:
+The tuned model should be selected only if it improves recovery, stability, and feature targets compared with Step 4. Because the L796 experimental paper does not provide exact conductance densities, this remains an exploratory feature-tuned active model.

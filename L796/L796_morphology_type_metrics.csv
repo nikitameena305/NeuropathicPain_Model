@@ -1,0 +1,4 @@
+swc_type,type_name,node_count,total_length_um,segment_area_um2,mean_radius_um,min_radius_um,max_radius_um
+1,soma,4,41.2450,3826.4559,14.5980,11.8280,19.0030
+2,axon,1818,8171.7309,12734.3270,0.2319,0.0950,1.0200
+3,basal_dendrite,2484,7927.7997,26792.7525,0.3559,0.0450,4.9200

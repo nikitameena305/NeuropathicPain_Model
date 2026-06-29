@@ -1,0 +1,17 @@
+metric,value,unit
+target_RMP,-72.8,mV
+target_RIN,0.77,GOhm
+stim_amp,-0.01,nA
+stim_delay,100.0,ms
+stim_duration,500.0,ms
+cm,1.0,uF/cm2
+Ra,200.0,ohm-cm
+e_pas,-72.8,mV
+total_area_NEURON,37085.7409,um2
+formula_gpas_estimate,3.5018885094e-06,S/cm2
+best_gpas,3.7855152493e-06,S/cm2
+simulated_RIN,0.769401,GOhm
+baseline_voltage,-72.800000,mV
+steady_voltage,-80.494012,mV
+delta_voltage,-7.694012,mV
+recovery_voltage,-76.640763,mV

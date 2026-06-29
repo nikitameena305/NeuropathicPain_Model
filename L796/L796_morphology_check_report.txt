@@ -1,0 +1,43 @@
+L796-ALT-PN SWC MORPHOLOGY CHECK
+=============================================
+SWC file: L796-ALT-PN.CNG.swc
+Total nodes: 4306
+Root nodes: 1
+Missing-parent edges: 0
+
+Node counts by SWC type:
+  Type 1 (soma): 4
+  Type 2 (axon): 1818
+  Type 3 (basal_dendrite): 2484
+
+Total cable length: 16140.78 µm
+Total segment surface area, frustum only: 43353.54 µm²
+Soma sphere area estimate: 11068.89 µm²
+Total area with soma sphere estimate: 54422.42 µm²
+
+Branch points: 98
+Terminal tips: 102
+
+Radius / diameter:
+  Min radius: 0.0450 µm
+  Max radius: 19.0030 µm
+  Mean radius: 0.3168 µm
+  Min diameter: 0.0900 µm
+  Max diameter: 38.0060 µm
+
+Bounding box:
+  x_min: -1141.30 µm
+  x_max: 127.63 µm
+  y_min: -370.21 µm
+  y_max: 2572.30 µm
+  z_min: -50.67 µm
+  z_max: 2497.80 µm
+  x_span: 1268.93 µm
+  y_span: 2942.51 µm
+  z_span: 2548.47 µm
+
+Interpretation:
+  [OK] Soma nodes present.
+  [OK] Dendritic nodes present.
+  [OK] Axon nodes present.
+  [OK] No missing-parent connectivity errors.

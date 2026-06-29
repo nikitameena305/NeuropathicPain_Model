@@ -1,0 +1,33 @@
+{
+  "passive": {
+    "e_pas_mV": -72.8,
+    "g_pas_S_per_cm2": 3.7855152493e-06,
+    "cm_uF_per_cm2": 1.0,
+    "Ra_ohm_cm": 200.0
+  },
+  "best_active_scales": {
+    "BNa_scale": 1.25,
+    "KDR_scale": 0.5,
+    "KCa_scale": 0.5,
+    "CaL_scale": 1.0
+  },
+  "base_conductance_densities_S_per_cm2": {
+    "AIS_BNa": 3.45,
+    "AIS_KDR": 0.076,
+    "soma_KDR": 0.001075,
+    "soma_iNaP": 0.0001,
+    "soma_CaL": 0.0001,
+    "soma_KCa": 0.0001,
+    "dend_KDR": 0.036,
+    "dend_CaAN": 9.1e-05,
+    "dend_CaL": 3e-05,
+    "dend_KCa": 0.001
+  },
+  "protocol": {
+    "stim_delay_ms": 100.0,
+    "stim_duration_ms": 500.0,
+    "tstop_ms": 800.0,
+    "dt_ms": 0.025,
+    "spike_threshold_mV": -20.0
+  }
+}

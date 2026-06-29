@@ -1,0 +1,6 @@
+metric,value,unit
+current_pA,-10.0,pA
+baseline_soma_mV,-72.66104934533821,mV
+steady_soma_mV,-80.2467940728548,mV
+delta_v_mV,-7.585744727516584,mV
+Rin_GOhm,0.7585744727516583,GOhm

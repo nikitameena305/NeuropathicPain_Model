@@ -1,0 +1,45 @@
+L796 STEP 3 ACTIVE GRID SEARCH REPORT
+=====================================
+
+Purpose:
+To add active conductances to the passively fitted L796 morphology and search for conductance combinations
+that produce projection-neuron-like tonic/repetitive firing.
+
+Fixed passive values:
+e_pas = -72.8 mV
+g_pas = 3.7855152493e-06 S/cm2
+cm = 1.0 uF/cm2
+Ra = 200.0 ohm-cm
+
+Active mechanisms used:
+B_Na in artificial AIS
+KDR in dendrite, soma, and AIS
+iNaP in soma
+iCaL in dendrite and soma
+iCaAN in dendrite
+iKCa in dendrite and soma
+CaIntraCellDyn in dendrite and soma
+
+Why artificial AIS:
+Medlock-style active mechanisms use a separate AIS compartment. The original traced axon was kept passive
+to avoid spreading AIS sodium conductance across the full axonal arbor.
+
+Main current tested:
+60.0 pA for 500.0 ms
+
+Grid tested:
+B_Na scales = [0.75, 1.0, 1.25, 1.5, 2.0]
+KDR scales = [0.25, 0.5, 0.75, 1.0, 1.25]
+KCa scales = [0.0, 0.5, 1.0, 2.0, 4.0]
+CaL scales = [0.5, 1.0, 2.0]
+
+Total combinations tested = 375
+Multi-spike candidates = 316
+
+Best candidate:
+{'current_nA': 0.06, 'BNa_scale': 1.25, 'KDR_scale': 0.5, 'KCa_scale': 0.5, 'CaL_scale': 1.0, 'rest_soma_mV': -72.66104934533821, 'rest_AIS_mV': -72.66034950450668, 'max_soma_mV': 0.5842558625943608, 'max_AIS_mV': 13.417177271334715, 'min_soma_mV': -72.61866777881819, 'min_AIS_mV': -72.61795911577374, 'plateau_soma_mV': -47.77282052345295, 'plateau_AIS_mV': -46.95719600755731, 'recovery_soma_mV': -72.73384754284453, 'recovery_AIS_mV': -72.73316292196314, 'AIS_spike_count': 4, 'soma_spike_count': 4, 'AIS_first_latency_ms': 96.39999999995831, 'rest_0nA_AIS_spike_count': 0, 'rest_0nA_max_AIS_mV': -72.28589529662644, 'score': 239.17294181238015}
+
+Interpretation:
+This is an exploratory active conductance search. The L796 paper gives experimental firing-pattern targets,
+but does not give complete active conductance densities. Therefore, active conductances were searched/tuned
+rather than copied as exact L796 biological values.

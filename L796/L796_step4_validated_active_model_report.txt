@@ -1,0 +1,40 @@
+L796 STEP 4 VALIDATED ACTIVE MODEL REPORT
+=======================================================
+
+Purpose:
+Validate the best active conductance candidate selected from Step 3.
+
+Fixed passive parameters:
+  e_pas = -72.8 mV
+  g_pas = 3.7855152493e-06 S/cm2
+  cm = 1.0 uF/cm2
+  Ra = 200.0 ohm-cm
+
+Selected active conductance scales:
+  BNa_scale = 1.25
+  KDR_scale = 0.5
+  KCa_scale = 0.5
+  CaL_scale = 1.0
+
+Rin check with active mechanisms inserted:
+  Current = -10.0 pA
+  Baseline soma voltage = -72.6610 mV
+  Steady soma voltage = -80.2468 mV
+  Delta V = -7.5857 mV
+  Rin = 0.7586 GOhm
+
+Current sweep summary:
+  0 pA: AIS spikes=0, soma spikes=0, max AIS=-72.29 mV, recovery soma=-72.26 mV
+  20 pA: AIS spikes=0, soma spikes=0, max AIS=-55.35 mV, recovery soma=-64.77 mV
+  40 pA: AIS spikes=2, soma spikes=2, max AIS=8.92 mV, recovery soma=-63.94 mV
+  60 pA: AIS spikes=4, soma spikes=4, max AIS=13.42 mV, recovery soma=-72.73 mV
+  80 pA: AIS spikes=5, soma spikes=5, max AIS=16.24 mV, recovery soma=-72.87 mV
+  100 pA: AIS spikes=6, soma spikes=6, max AIS=18.30 mV, recovery soma=-73.14 mV
+  120 pA: AIS spikes=6, soma spikes=6, max AIS=19.87 mV, recovery soma=-64.75 mV
+
+[OK] No spontaneous AIS firing at 0 pA.
+[OK] Repetitive AIS firing was present at 60 pA.
+At 60 pA, the model produced 4 AIS spikes and 4 soma spikes.
+
+Interpretation:
+The selected active parameter set was validated across multiple current steps. The model should be considered an exploratory tuned active L796 projection-neuron model, because the L796 experimental paper provides firing-pattern targets but does not provide exact active conductance-density values.

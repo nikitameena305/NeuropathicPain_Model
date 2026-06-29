@@ -1,0 +1,39 @@
+L796 PASSIVE FIT REPORT
+=======================
+
+Purpose:
+Fit passive leak conductance g_pas so that the L796 morphology reproduces the experimental
+projection-neuron input resistance reported in Luz et al. 2014.
+
+Experimental target:
+RMP target = -72.80 mV
+RIN target = 0.770 GOhm
+
+Protocol:
+Soma current clamp
+Current amplitude = -0.010 nA
+Current delay = 100.0 ms
+Current duration = 500.0 ms
+Simulation end = 800.0 ms
+
+Passive parameters:
+cm = 1.000 uF/cm2
+Ra = 200.000 ohm-cm
+e_pas = -72.800 mV
+fitted g_pas = 3.7855152493e-06 S/cm2
+
+Morphology:
+Total NEURON membrane area = 37085.741 um2
+Formula-based g_pas estimate = 3.5018885094e-06 S/cm2
+
+Simulation output:
+Baseline soma voltage = -72.8000 mV
+Steady soma voltage during pulse = -80.4940 mV
+Voltage deflection = -7.6940 mV
+Simulated input resistance = 0.7694 GOhm
+Recovery voltage = -76.6408 mV
+
+Interpretation:
+The fitted g_pas value was selected by simulation-based passive fitting, not by formula alone.
+The formula estimate was used only as a starting reference because branched morphology and axial
+resistance affect the input resistance measured at the soma.

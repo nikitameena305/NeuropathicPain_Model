@@ -1,0 +1,15 @@
+metric,value,unit
+total_nodes,4306,count
+root_nodes,1,count
+missing_parent_edges,0,count
+total_length,16140.7756,um
+segment_surface_area,43353.5354,um2
+soma_sphere_area_estimate,11068.8894,um2
+total_area_with_soma_sphere_estimate,54422.4248,um2
+branch_points,98,count
+terminal_tips,102,count
+min_diameter,0.0900,um
+max_diameter,38.0060,um
+x_span,1268.9300,um
+y_span,2942.5100,um
+z_span,2548.4700,um
