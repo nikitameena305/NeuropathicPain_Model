@@ -1,0 +1,7 @@
+|   current_pA | file                               | stim_window_ms   |   n_spikes_in_stim_window |   mean_AIS_lead_ms |   mean_AIS_minus_soma_peak_mV |   max_soma_peak_mV |   max_AIS_peak_mV |
+|-------------:|:-----------------------------------|:-----------------|--------------------------:|-------------------:|------------------------------:|-------------------:|------------------:|
+|           40 | best_I_40pA_ais_vs_soma_check.csv  | 100.0-600.0      |                         2 |              0.254 |                        13.102 |              0.817 |            13.97  |
+|           60 | best_I_60pA_ais_vs_soma_check.csv  | 100.0-600.0      |                         4 |              0.241 |                        14.053 |              3.313 |            17.653 |
+|           80 | best_I_80pA_ais_vs_soma_check.csv  | 100.0-600.0      |                         5 |              0.235 |                        14.537 |              5.005 |            20.16  |
+|          100 | best_I_100pA_ais_vs_soma_check.csv | 100.0-600.0      |                         6 |              0.232 |                        14.74  |              6.27  |            22.015 |
+|          120 | best_I_120pA_ais_vs_soma_check.csv | 100.0-600.0      |                         6 |              0.231 |                        14.816 |              7.258 |            23.441 |

@@ -1,0 +1,6 @@
+current_pA,file,n_spikes,mean_AIS_lead_ms,mean_AIS_minus_soma_peak_mV,max_soma_peak_mV,max_AIS_peak_mV
+40,best_I_40pA_ais_vs_soma_check.csv,3,0.25511051400617174,13.098597666666668,0.817068,13.96954
+60,best_I_60pA_ais_vs_soma_check.csv,4,0.24066345872910944,14.053183500000003,3.313439,17.652557
+80,best_I_80pA_ais_vs_soma_check.csv,5,0.23472247090904258,14.536575,5.004658,20.159855
+100,best_I_100pA_ais_vs_soma_check.csv,6,0.2322513023299374,14.739502833333333,6.270051,22.014692
+120,best_I_120pA_ais_vs_soma_check.csv,7,0.23678144153331002,14.501059714285715,7.25769,23.440836

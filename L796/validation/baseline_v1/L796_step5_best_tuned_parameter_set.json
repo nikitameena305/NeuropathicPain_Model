@@ -1,0 +1,82 @@
+{
+  "passive_fixed": {
+    "e_pas_mV": -72.8,
+    "g_pas_S_per_cm2": 3.7855152493e-06,
+    "cm_uF_per_cm2": 1.0,
+    "Ra_ohm_cm": 200.0
+  },
+  "tuned_active_scales": {
+    "BNa_scale": 1.45,
+    "KDR_scale": 0.5,
+    "KCa_scale": 0.25,
+    "CaL_scale": 1.25,
+    "iNaP_scale": 1.0,
+    "CaAN_scale": 1.25
+  },
+  "base_conductance_densities_S_per_cm2": {
+    "AIS_BNa": 3.45,
+    "AIS_KDR": 0.076,
+    "soma_KDR": 0.001075,
+    "soma_iNaP": 0.0001,
+    "soma_CaL": 0.0001,
+    "soma_KCa": 0.0001,
+    "dend_KDR": 0.036,
+    "dend_CaAN": 9.1e-05,
+    "dend_CaL": 3e-05,
+    "dend_KCa": 0.001
+  },
+  "search_values": {
+    "BNa_scale": [
+      1.05,
+      1.15,
+      1.25,
+      1.35,
+      1.45
+    ],
+    "KDR_scale": [
+      0.35,
+      0.45,
+      0.5,
+      0.55,
+      0.65
+    ],
+    "KCa_scale": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5
+    ],
+    "CaL_scale": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "iNaP_scale": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "CaAN_scale": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ]
+  },
+  "target_spikes": {
+    "0": 0,
+    "20": 0,
+    "40": 2,
+    "60": 4,
+    "80": 5,
+    "100": 6,
+    "120": 6
+  },
+  "best_score": 793.294238669828
+}
