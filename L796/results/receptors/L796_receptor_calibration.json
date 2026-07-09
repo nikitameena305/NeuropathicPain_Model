@@ -1,5 +1,5 @@
 {
-  "celsius": 6.3,
+  "celsius": 23.0,
   "dendrite_locations": {
     "proximal": {
       "section": "dend[69]",
@@ -15,11 +15,11 @@
     }
   },
   "w_ampa_unitary_uS": 0.0019203125000000001,
-  "amp_unitary_epsp_mV": 2.0327349045177954,
+  "amp_unitary_epsp_mV": 1.9947349811426989,
   "w_ampa_train_uS": 0.0038406250000000003,
   "w_nmda_ratio": 0.5,
-  "w_gaba_uS": 0.006128515625,
-  "w_gly_uS": 0.010025000000000001,
+  "w_gaba_uS": 0.007219531250000001,
+  "w_gly_uS": 0.011271875,
   "w_nachr_uS": 0.0002837890625,
   "amp_unitary_ipsp_mV": 2.0,
   "ecl_control_mV": -70.0,

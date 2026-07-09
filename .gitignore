@@ -1,30 +1,14 @@
-# Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 .ipynb_checkpoints/
-
-# NEURON compiled mechanisms
 x86_64/
 special
 *.o
 *.so
 *.dll
-*.nrn
 *.c
 *.cpp
-
-# Node / report build dependencies
 node_modules/
-
-# OS/editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Large intermediate sweeps
 COMBO_*.dat
 *_sweep_scale_*.dat
 *_sweep_individual_traces/
@@ -32,8 +16,10 @@ BNa_sweep_*
 KDR_sweep_*
 CaL_sweep_*
 CaAN_sweep_*
-
-# Temporary folders
 *_temp*/
 *.bak
 *.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

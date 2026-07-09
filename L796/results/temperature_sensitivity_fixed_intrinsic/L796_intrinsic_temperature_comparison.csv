@@ -1,0 +1,2 @@
+celsius,RMP_mV,Rin_GOhm,rheobase_pA,spikes_at_80pA,freq_at_80pA_Hz,first_latency_ms,AP_threshold_mV,AP_peak_mV,AP_amplitude_mV,AP_half_width_ms,AP_rise_ms,AP_decay_ms
+37.0,-72.594,0.757,100,1,1.0,22.85,-43.629,1.252,44.88,0.6,0.425,0.525

@@ -1,0 +1,14 @@
+feature,value
+celsius,6.3
+RMP_mV,-72.591
+Rin_GOhm,0.757
+rheobase_pA,40
+spikes_at_80pA,20
+freq_at_80pA_Hz,20.0
+first_latency_ms,20.73
+AP_threshold_mV,-44.643
+AP_peak_mV,36.81
+AP_amplitude_mV,81.454
+AP_half_width_ms,1.475
+AP_rise_ms,0.475
+AP_decay_ms,1.625
