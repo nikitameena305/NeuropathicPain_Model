@@ -1,0 +1,5 @@
+frequency_Hz,condition,n_pulses,weight_AMPA_nS,weight_NMDA_nS,peak_depolarization_mV,spike_fired,n_spikes
+20.0,AMPA+NMDA,5,3.840625,1.9203125,25.82852383720022,True,1
+20.0,AMPA-only,5,3.840625,0.0,-59.05435997264744,False,0
+50.0,AMPA+NMDA,5,3.840625,1.9203125,30.816376555257108,True,1
+50.0,AMPA-only,5,3.840625,0.0,-52.29882434514487,False,0

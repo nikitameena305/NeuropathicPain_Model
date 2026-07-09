@@ -1,0 +1,16 @@
+NEURON: morphology/L796-ALT-PN.CNG.swc :file is not open
+ near line 0
+ ^
+        File[0].eof()
+      Import3d_SWC_read[0].rdfile("morphology...")
+    Import3d_SWC_read[0].input("morphology...")
+Step 5: importing morphology and building active model...
+could not open morphology/L796-ALT-PN.CNG.swc
+Traceback (most recent call last):
+  File "/home/nikita/NeuropathicPain_Model/L796/scripts/L796_step5_fine_rheobase.py", line 821, in <module>
+    main()
+  File "/home/nikita/NeuropathicPain_Model/L796/scripts/L796_step5_fine_rheobase.py", line 592, in main
+    import_morphology()
+  File "/home/nikita/NeuropathicPain_Model/L796/scripts/L796_step5_fine_rheobase.py", line 122, in import_morphology
+    reader.input(SWC_FILE)
+RuntimeError: hocobj_call error: hoc_execerror: morphology/L796-ALT-PN.CNG.swc :file is not open

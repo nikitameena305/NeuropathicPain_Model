@@ -24,7 +24,6 @@ from neuron import h
 HERE = Path(__file__).resolve().parent
 os.chdir(HERE)
 
-PROJECT_ROOT = Path("/home/nikita/NeuropathicPain_Model/L796")
 SWC_FILE = "/home/nikita/NeuropathicPain_Model/L796/morphology/L796-ALT-PN.CNG.swc"
 
 # -----------------------------
@@ -626,7 +625,8 @@ def main():
         }
 
         # Store summary features for important currents.
-        for pA in [-10, 0, 40, 60, 80, 100, 120]:
+    for pA in [0, 20, 40, 60, 80, 100, 120]:
+    run_sim(soma, ais, pA, best_params, save_trace=True, prefix=f"one_sec_I_{pA}pA")
             feat = features_by_current.get(pA)
             if feat:
                 prefix = f"I{pA}"

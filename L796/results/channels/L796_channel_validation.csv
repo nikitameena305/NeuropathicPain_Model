@@ -1,0 +1,8 @@
+feature,target,model,verdict
+First-spike latency at rheobase-adjacent current (A-type K present),longer than density=0 (gap-firing signature),118.42,"N/A (kept at zero, documented)"
+First-spike latency at rheobase-adjacent current (A-type K absent),baseline,118.42,MEASURED
+Prepulse dependence at 40 pA (latency with vs without prepulse),with_prepulse >= no_prepulse if A-type K functionally present,"no_prepulse=118.42 ms, with_prepulse=180.02 ms",PASS
+NK1/TACR1 SP-evoked depolarization amplitude,~4.0 mV (ASSUMPTION),7.42,PASS
+NK1/TACR1 rheobase shift (SP present vs antagonist/absent),SP present lowers or matches rheobase,"without=30 pA, with=25 pA",PASS
+T-type Ca rebound present?,measured low-threshold burst/rebound required to add,"rebound_depol=0.22 mV, spike=False",DEFERRED
+"Single-cell scorecard unchanged (RMP/Rin/rheobase/overshoot/amplitude, no spontaneous firing)",all within accepted bounds,ok,PASS

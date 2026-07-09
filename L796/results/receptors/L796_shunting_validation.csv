@@ -1,0 +1,3 @@
+condition,peak_depolarization_mV,spike_fired,n_spikes,inhibition_weight_multiplier
+EPSP train alone,30.816376555257108,True,1,0.0
+EPSP train + inhibition,-58.56270200115013,False,0,15.0

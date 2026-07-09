@@ -1,38 +1,53 @@
-# Computational Neuropathic Pain Model using NEURON
+# NeuropathicPain_Model
 
-This repository contains Week 1 work for a summer research project on computational modelling of neuropathic pain using the NEURON Simulation Environment.
+Computational modelling project for spinal dorsal horn pain circuitry.
 
-## Focus
+## Current completed module
 
-DRG-Spinal Dorsal Horn circuit modelling with emphasis on GABAergic inhibitory dorsal horn mechanisms.
+### L796 ALT-PN model
 
-## Week 1 Completed
+This folder contains a NEURON model of the rat lamina I anterolateral-tract projection neuron L796.
 
-- NEURON/Python environment setup
-- Ball-and-stick action potential demonstration
-- Simplified DRG normal vs neuropathic-like prototype
-- Simplified SDH normal vs neuropathic-like prototype
-- ModelDB 267056 SDH firing output analysis
-- ModelDB 2018004 AP parameter extraction and mechanism inventory
-- NeuroMorpho DRG/SDH candidate morphology table
-- Morphology decision and fallback logic
-- Required 5-point paper summaries
-- Advanced conceptual GABA disinhibition sweep
+Main components:
 
-## Biological idea
+- morphology import and validation
+- passive membrane fitting
+- active voltage-gated conductance fitting
+- somatic/proximal-dendritic B_Na correction
+- ligand-gated receptor testing
+- normal vs neuropathic synaptic manipulation
+- evidence-driven channel-complement audit
 
-Neuropathic pain involves abnormal excitability and central sensitization. In the SDH, reduced GABAergic/glycinergic inhibition can amplify pain signalling. This project uses NEURON-based modelling to explore how DRG input and SDH inhibitory balance affect output firing.
+## Current validation status
+
+The final L796 model passes:
+
+- RMP
+- input resistance
+- rheobase
+- AP overshoot
+- AP amplitude
+- no spontaneous firing at 0 pA
+
+Documented limitation:
+
+- AP half-width remains broad: 1.450 ms vs 0.87-1.14 ms target.
+
+## Important interpretation
+
+This model is suitable for excitability and synaptic-integration studies. It is not yet fully validated for precise AP waveform kinetics.
 
 ## Main folders
 
-- `python/` — analysis and simulation scripts
-- `figures/` — generated plots
-- `results/` — processed CSV/TXT outputs
-- `submission_week1/week1/` — final Week 1 deliverables
-- `deliverables/advanced/` — advanced exploratory outputs
-- `notes/` — summaries and documentation
-- `logs/` — command/output logs
+- `L796/morphology/` — SWC/HOC morphology files
+- `L796/mechanisms/mods/` — MOD mechanism source files
+- `L796/scripts/` — NEURON/Python simulation scripts
+- `L796/parameters/` — fitted parameter JSON files
+- `L796/results/` — validation CSV/JSON outputs
+- `L796/figures/` and `L796/plots/` — generated plots
+- `L796/reports/` — final reports
+- `L796/literature_targets/` — literature-based validation targets
 
-## Note
+## Next step
 
-Large raw ModelDB, SWC, and environment files are ignored from Git and kept locally.
+Build and validate a separate excitatory interneuron model, then connect it to L796 through AMPA/NMDA and Substance P/NK1 signalling.

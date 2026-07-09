@@ -1,0 +1,4 @@
+condition,peak_mV,depolarization_above_baseline_mV,spike_fired
+nAChR-like alone,-70.2089144340044,2.014174037896538,False
+AMPA+NMDA alone,-70.19035356738314,2.0327349045177954,False
+nAChR-like + AMPA+NMDA (combined),-68.25146560145063,3.971622870450304,False

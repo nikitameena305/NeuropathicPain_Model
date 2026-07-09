@@ -1,0 +1,41 @@
+{
+  "passive": {
+    "RMP_mV": {
+      "target": -72.8,
+      "tolerance": 3.0,
+      "source": "Luz, Szucs & Safronov 2014 (PN group); Li & Baccei 2012"
+    },
+    "Rin_GOhm": {
+      "target": 0.77,
+      "tolerance": 0.15,
+      "source": "Luz, Szucs & Safronov 2014 (PN group); Li & Baccei 2012"
+    }
+  },
+  "active": {
+    "AP_amplitude_mV": {
+      "min": 70,
+      "max": 78,
+      "source": "Zhang et al. 2021"
+    },
+    "AP_half_width_ms": {
+      "min": 0.87,
+      "max": 1.14,
+      "source": "Zhang et al. 2021"
+    },
+    "AP_overshoot_mV": {
+      "min": 5,
+      "max": 30,
+      "source": "Zhang et al. 2021"
+    },
+    "rheobase_pA": {
+      "min": 20,
+      "max": 60,
+      "source": "Zhang et al. 2021; general SDH projection-neuron literature"
+    },
+    "firing_pattern": {
+      "allowed": ["delayed", "tonic"],
+      "source": "Prescott & De Koninck 2002"
+    }
+  },
+  "notes": "Targets apply to somatic recordings from adult rat lamina I/superficial dorsal horn projection neurons. AP_overshoot_mV is defined relative to 0 mV (peak voltage). AP_amplitude_mV is defined as peak minus threshold (or peak minus RMP if threshold is not well defined)."
+}

@@ -1,0 +1,45 @@
+{
+  "celsius": 6.3,
+  "dendrite_locations": {
+    "proximal": {
+      "section": "dend[69]",
+      "distance_um": 131.40135060137973
+    },
+    "mid": {
+      "section": "dend[41]",
+      "distance_um": 395.0133174133119
+    },
+    "distal": {
+      "section": "dend[32]",
+      "distance_um": 562.9554322735643
+    }
+  },
+  "w_ampa_unitary_uS": 0.0019203125000000001,
+  "amp_unitary_epsp_mV": 2.0327349045177954,
+  "w_ampa_train_uS": 0.0038406250000000003,
+  "w_nmda_ratio": 0.5,
+  "w_gaba_uS": 0.006128515625,
+  "w_gly_uS": 0.010025000000000001,
+  "w_nachr_uS": 0.0002837890625,
+  "amp_unitary_ipsp_mV": 2.0,
+  "ecl_control_mV": -70.0,
+  "holding_current_nA": 0.014,
+  "ampa_kinetics": {
+    "tau_rise": 0.5,
+    "tau_decay": 2.5,
+    "e": 0.0
+  },
+  "nmda_kinetics": {
+    "tau_rise": 5.0,
+    "tau_decay": 70.0,
+    "e": 0.0
+  },
+  "gabaa_kinetics": {
+    "tau_rise": 1.0,
+    "tau_decay": 20.0
+  },
+  "glycine_kinetics": {
+    "tau_rise": 1.0,
+    "tau_decay": 10.0
+  }
+}

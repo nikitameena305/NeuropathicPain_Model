@@ -1,0 +1,93 @@
+{
+  "passive_fixed": {
+    "e_pas_mV": -72.8,
+    "g_pas_S_per_cm2": 3.7855152493e-06,
+    "cm_uF_per_cm2": 1.0,
+    "Ra_ohm_cm": 200.0
+  },
+  "tuned_active_scales": {
+    "BNa_scale_AIS": 1.45,
+    "KDR_scale": 2.0,
+    "KCa_scale": 0.25,
+    "CaL_scale": 1.25,
+    "iNaP_scale": 1.0,
+    "CaAN_scale": 1.25
+  },
+  "soma_BNa_S_per_cm2": 0.04,
+  "proximal_dendrite_BNa_S_per_cm2": 0.04,
+  "proximal_dendrite_sections": [
+    "dend[0]",
+    "dend[75]",
+    "dend[76]"
+  ],
+  "base_conductance_densities_S_per_cm2": {
+    "AIS_BNa": 3.45,
+    "AIS_KDR": 0.076,
+    "soma_KDR": 0.001075,
+    "soma_iNaP": 0.0001,
+    "soma_CaL": 0.0001,
+    "soma_KCa": 0.0001,
+    "dend_KDR": 0.036,
+    "dend_CaAN": 9.1e-05,
+    "dend_CaL": 3e-05,
+    "dend_KCa": 0.001
+  },
+  "winning_grid": "refinement",
+  "search_grid_primary_task_specified": {
+    "soma_BNa_values": [
+      0.05,
+      0.1,
+      0.2,
+      0.35,
+      0.5
+    ],
+    "KDR_scale_values": [
+      0.5,
+      0.7,
+      0.9
+    ]
+  },
+  "search_grid_refinement_extension": {
+    "soma_BNa_values": [
+      0.04,
+      0.05,
+      0.06
+    ],
+    "KDR_scale_values": [
+      0.9,
+      1.2,
+      1.6,
+      2.0,
+      2.5
+    ]
+  },
+  "search_constraints": {
+    "RMP_accept_mV": [
+      -76.0,
+      -70.0
+    ],
+    "Rin_accept_GOhm": [
+      0.6,
+      1.0
+    ],
+    "rheobase_accept_pA": [
+      20.0,
+      60.0
+    ]
+  },
+  "ap_targets": {
+    "overshoot_mV": [
+      5.0,
+      30.0
+    ],
+    "half_width_ms": [
+      0.87,
+      1.14
+    ],
+    "amplitude_mV": [
+      70.0,
+      78.0
+    ]
+  },
+  "best_total_ap_error": 1.1481481481432645
+}

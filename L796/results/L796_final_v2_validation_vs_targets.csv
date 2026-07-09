@@ -1,0 +1,14 @@
+feature,target,acceptable_range,model,verdict
+RMP (mV),-72.8,-76.0 to -70.0,-72.434,PASS
+Input resistance Rin (GOhm),0.77,0.6 to 1.0,0.890,PASS
+Membrane tau (ms),not specified (informational),n/a,212.667,MEASURED
+Rheobase (pA),20-60,20.0 to 60.0,40,PASS
+"AP threshold (mV, dV/dt>=10 mV/ms)",not specified (informational),n/a,-42.305,MEASURED
+AP overshoot / peak (mV),positive overshoot,5.0 to 30.0,27.958,PASS
+AP amplitude (mV),70-78,70.0 to 78.0,70.264,PASS
+AP half-width (ms),0.87-1.14,0.87 to 1.14,1.450,FAIL
+AHP depth from threshold (mV),not specified (informational),n/a,35.245,MEASURED
+AHP depth from rest/RMP (mV),not specified (informational),n/a,5.116,MEASURED
+Firing frequency at ~2x rheobase (Hz),not specified (informational),n/a,10.000,MEASURED
+Adaptation ratio (last ISI / first ISI),not specified (informational),n/a,1.026,MEASURED
+First-spike latency (ms),not specified (informational),n/a,118.425,MEASURED
