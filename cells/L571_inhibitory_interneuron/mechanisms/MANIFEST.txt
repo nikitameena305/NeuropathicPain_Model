@@ -1,0 +1,6 @@
+modeldb.science/267056 | l571_na.mod | fast sodium | rates adapted from B_NA.mod; explicit configurable Q10 restored; L571 density is fitted/model-derived
+modeldb.science/267056 | l571_kdr.mod | delayed rectifier potassium | rates adapted from KDRI.mod; commented source Q10 exposed; L571 density is fitted/model-derived
+modeldb.science/267056 | ../../../shared/mechanisms/medlock_267056/B_NA.mod | reference only | canonical shared downloaded source; not compiled with the L571-specific variants
+modeldb.science/267056 | ../../../shared/mechanisms/medlock_267056/KDRI.mod | reference only | canonical shared downloaded source; not compiled with the L571-specific variants
+modeldb.science/267056 | ../../../shared/mechanisms/medlock_267056/B_DR.mod | reference only | canonical shared downloaded source; not compiled with the L571-specific variants
+modeldb.science/267056 | ../../../shared/mechanisms/medlock_267056/KDR.mod | reference only | canonical shared downloaded source; not compiled with the L571-specific variants

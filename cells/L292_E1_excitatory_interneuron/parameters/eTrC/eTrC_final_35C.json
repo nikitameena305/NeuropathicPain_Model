@@ -1,0 +1,27 @@
+{
+  "extends": "eTrC_final_23C.json",
+  "model_name": "RatLCN_L292E1__Medlock_eTrC__temperature_translated_35C",
+  "protocol": {
+    "current_steps_nA": [-0.02, 0.0, 0.75, 0.87, 0.88, 0.9, 1.0, 1.5],
+    "range_reason": "Final 35 C series containing active Rin, zero-current stability, subthreshold, the 0.87-0.88 nA rheobase bracket, and moderate/strong transient responses."
+  },
+  "simulation": {
+    "celsius": 35.0,
+    "seed": 292035
+  },
+  "status": "VALIDATED_ETRC_35C",
+  "temperature_translation": {
+    "claim": "35 C temperature-translated prediction, not direct experimental validation",
+    "policy": "Only mechanism-implemented temperature handling is applied; no universal Q10.",
+    "source_audit": "docs/temperature_audit.md"
+  },
+  "validation_record_35C": {
+    "initial_full_result": "results/35C/eTrC/final_initial_translation",
+    "rheobase_bracket_nA": [0.87, 0.88],
+    "rheobase_resolution_nA": 0.01,
+    "rheobase_refinements": [
+      "results/35C/eTrC/rheobase_refinement_50pA",
+      "results/35C/eTrC/rheobase_refinement_10pA"
+    ]
+  }
+}

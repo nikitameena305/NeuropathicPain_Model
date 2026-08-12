@@ -1,0 +1,5 @@
+adaptation_ratio_last_over_first_isi,ahp_mV,amplitude_nA,ap_amplitude_mV,ap_half_width_ms,ap_peak_mV,ap_threshold_mV,depolarization_block_flag,firing_rate_Hz,first_spike_latency_ms,input_capacitance_pF,isi_cv,last_spike_time_ms,late_step_mean_voltage_mV,max_dvdt_V_s,mean_isi_ms,post_step_recovery_error_mV,post_step_recovery_mean_mV,rin_MOhm,rmp_mV,spike_count,spontaneous_spike_count,steady_state_mV,tau_ms
+,,-0.005,,,,,False,0.0,,293.42217224339925,,,-65.50226205179942,-4.720845936372932e-09,,-0.002483858267638084,-65.00248385826764,100.45253149948792,-65.0,0,0,-65.50226265749744,29.47499999992823
+,,-0.01,,,,,False,0.0,,293.42217224340754,,,-66.00452410359884,-9.441691872745863e-09,,-0.004967716535276168,-65.00496771653528,100.45253149948508,-65.0,0,0,-66.00452531499485,29.47499999992823
+,,-0.02,,,,,False,0.0,,293.4221722434013,,,-67.00904820719772,-1.888281531130312e-08,,-0.009935433070552335,-65.00993543307055,100.45253149948721,-65.0,0,0,-67.00905062998974,29.47499999992823
+,,0.0,,,,,False,0.0,,,,,-65.0,0.0,,0.0,-65.0,,-65.0,0,0,-65.0,

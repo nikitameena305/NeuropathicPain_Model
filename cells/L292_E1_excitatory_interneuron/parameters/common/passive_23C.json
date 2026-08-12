@@ -1,0 +1,137 @@
+{
+  "discretization": {
+    "d_lambda": 0.1,
+    "frequency_Hz": 100.0
+  },
+  "evidence": {
+    "Ra_ohm_cm": "C: copied from the Medlock excitatory cell rule; not L292-E1-specific",
+    "cm_uF_cm2": "C: Medlock paper and ModelDB rule",
+    "e_pas_mV": "C: Medlock excitatory rule",
+    "g_pas_S_cm2": "C: eTrC EXinitialRule starting value; must be fitted on reconstructed morphology"
+  },
+  "fitting": {
+    "allowed_order": [
+      "e_pas_mV",
+      "g_pas_S_cm2"
+    ],
+    "history": [
+      {
+        "evidence_level": "C: Medlock-derived starting value tested on the reconstructed morphology",
+        "g_pas_S_cm2": 4.2e-05,
+        "reason": "Starting value produced Rin below the 100 MOhm lower gate while RMP and tau passed.",
+        "result": {
+          "rin_MOhm": 72.9048200796,
+          "rmp_mV": -65.0,
+          "status": "FAIL_RIN_BELOW_TARGET",
+          "tau_ms": 20.125
+        },
+        "result_path": "results/23C/passive/trials/starting_medlock_gpas"
+      },
+      {
+        "evidence_level": "D: bounded fit proposal requiring validation",
+        "g_pas_S_cm2": 3e-05,
+        "reason": "Reduce leak alone to raise Rin above 100 MOhm while retaining predicted tau below 30 ms.",
+        "result": {
+          "rin_MOhm": 97.5385736544,
+          "rmp_mV": -65.0,
+          "status": "FAIL_RIN_SLIGHTLY_BELOW_TARGET",
+          "tau_ms": 28.475
+        },
+        "result_path": "results/23C/passive/trials/candidate_gpas_3e-5"
+      },
+      {
+        "evidence_level": "D: bounded leak-only fit proposal requiring validation",
+        "g_pas_S_cm2": 2.9e-05,
+        "reason": "One small refinement from 3e-5 to cross the 100 MOhm lower gate while keeping predicted tau below 30 ms.",
+        "result": {
+          "capacitance_pF": 293.420889658,
+          "rin_MOhm": 100.4529705921,
+          "rmp_mV": -65.0,
+          "status": "PASS",
+          "tau_ms": 29.475
+        },
+        "result_path": "results/23C/passive/trials/candidate_gpas_2p9e-5"
+      }
+    ],
+    "starting_values": {
+      "Ra_ohm_cm": 150.0,
+      "cm_uF_cm2": 1.0,
+      "e_pas_mV": -65.0,
+      "g_pas_S_cm2": 4.2e-05
+    },
+    "rule": "Fit passive behavior only. Keep Ra and cm at their supported values unless new evidence requires a change, then recalculate nseg."
+  },
+  "identity_statement": "The L292-E1-LCN reconstruction is a rat lamina-I local-circuit morphological scaffold. ePKCgamma/eVGLUT3/eDOR/eSST/eCR/eTrC labels refer to computational Medlock population identity and are not molecular identities experimentally confirmed for L292-E1-LCN.",
+  "intrinsic_phenotype": "passive",
+  "mechanisms": {
+    "directory": "../../shared/mechanisms/medlock_267056"
+  },
+  "model_name": "RatLCN_L292E1__passive_23C",
+  "morphology": {
+    "neuromorpho_id": "NMO_34021",
+    "path": "morphology/primary/L292-E1-LCN.CNG.swc",
+    "role": "rat lamina-I local-circuit morphology scaffold"
+  },
+  "numerical_convergence": {
+    "baseline": {
+      "d_lambda": 0.1,
+      "dt_ms": 0.025
+    },
+    "criterion_note": "D: project numerical acceptance proposal, not an experimental target",
+    "current_nA": -0.01,
+    "d_lambda": [
+      0.2,
+      0.1,
+      0.05
+    ],
+    "dt_ms": [
+      0.05,
+      0.025,
+      0.0125
+    ],
+    "relative_tolerance_fraction": 0.01,
+    "rmp_absolute_tolerance_mV": 0.1
+  },
+  "passive": {
+    "Ra_ohm_cm": 150.0,
+    "cm_uF_cm2": 1.0,
+    "e_pas_mV": -65.0,
+    "g_pas_S_cm2": 2.9e-05
+  },
+  "protocol": {
+    "current_steps_nA": [
+      -0.005,
+      -0.01,
+      -0.02,
+      0.0
+    ],
+    "delay_ms": 200.0,
+    "duration_ms": 500.0,
+    "range_reason": "Small hyperpolarizing steps for linear subthreshold passive measurements plus a zero-current stability trace.",
+    "tstop_ms": 900.0
+  },
+  "simulation": {
+    "celsius": 23.0,
+    "dt_ms": 0.025,
+    "seed": 292000,
+    "v_init_mV": -65.0
+  },
+  "status": "VALIDATED_PASSIVE_23C",
+  "temperature_C": 23.0,
+  "validation_targets": {
+    "post_step_recovery_tolerance_mV": 0.1,
+    "post_step_recovery_tolerance_note": "D: project numerical acceptance proposal; not an experimental target",
+    "rmp_mV": [
+      -65.0,
+      -55.0
+    ],
+    "rin_MOhm": [
+      100.0,
+      400.0
+    ],
+    "tau_ms": [
+      10.0,
+      30.0
+    ]
+  }
+}

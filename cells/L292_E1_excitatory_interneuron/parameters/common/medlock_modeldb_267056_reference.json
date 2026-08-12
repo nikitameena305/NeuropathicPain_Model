@@ -1,0 +1,3358 @@
+{
+  "all_connection_rules": {
+    "Ab_SAII_AMPA->DYN": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DYN"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00208312
+    },
+    "Ab_SAII_AMPA->PKC": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0221559
+    },
+    "Ab_SAII_AMPA->PV": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PV"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00208312
+    },
+    "Ab_SAII_AMPA->VGLUT3": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "VGLUT3"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0221559
+    },
+    "Ab_SAII_NMDA->PKC": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.015
+    },
+    "Ab_SAII_NMDA->PV": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PV"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.0098189
+    },
+    "Ab_SAII_NMDA->VGLUT3": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "VGLUT3"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAII"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.015
+    },
+    "Ab_SAI_AMPA->DYN": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DYN"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00208312
+    },
+    "Ab_SAI_AMPA->PKC": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0221559
+    },
+    "Ab_SAI_AMPA->PV": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PV"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00208312
+    },
+    "Ab_SAI_AMPA->VGLUT3": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "VGLUT3"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0221559
+    },
+    "Ab_SAI_NMDA->PKC": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.015
+    },
+    "Ab_SAI_NMDA->PV": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PV"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.0098189
+    },
+    "Ab_SAI_NMDA->VGLUT3": {
+      "delay": 1.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "VGLUT3"
+      },
+      "preConds": {
+        "popLabel": "Ab_SAI"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.015
+    },
+    "Ad_AMPA->CR": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 1.5e-05
+    },
+    "Ad_AMPA->DOR": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 1.5e-05
+    },
+    "Ad_AMPA->SOM": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 1.5e-05
+    },
+    "Ad_NMDA->CR": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 1.5e-05
+    },
+    "Ad_NMDA->DOR": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 1.5e-05
+    },
+    "Ad_NMDA->SOM": {
+      "delay": 5.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "Ad"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 1.5e-05
+    },
+    "CR_AMPA->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "CR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 8.82981e-06
+    },
+    "CR_NK1->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "CR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NK13",
+      "weight": 9.2715e-07
+    },
+    "CR_NMDA->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "CR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 2.6699e-05
+    },
+    "C_NP_AMPA->CR": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00067115
+    },
+    "C_NP_AMPA->DYN": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DYN"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.184135
+    },
+    "C_NP_AMPA->ISLET": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "ISLET"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.123535
+    },
+    "C_NP_AMPA->SOM": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00067115
+    },
+    "C_NP_AMPA->TrC": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "TrC"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.164705
+    },
+    "C_NP_NMDA->CR": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.000407345
+    },
+    "C_NP_NMDA->SOM": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "C_NP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.000407345
+    },
+    "C_PEP_AMPA->CR": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00067115
+    },
+    "C_PEP_AMPA->DYN": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DYN"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.184135
+    },
+    "C_PEP_AMPA->ISLET": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "ISLET"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.123535
+    },
+    "C_PEP_AMPA->NK1": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 9e-05
+    },
+    "C_PEP_AMPA->SOM": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00067115
+    },
+    "C_PEP_AMPA->TrC": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "TrC"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.164705
+    },
+    "C_PEP_NK1->NK1": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NK13",
+      "weight": 3.2414e-08
+    },
+    "C_PEP_NMDA->CR": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.000407345
+    },
+    "C_PEP_NMDA->NK1": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 8.7447e-05
+    },
+    "C_PEP_NMDA->SOM": {
+      "delay": 10.0,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "C_PEP"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.000407345
+    },
+    "DOR_AMPA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "DOR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00225
+    },
+    "DOR_AMPA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "DOR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00225
+    },
+    "DOR_NMDA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "DOR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.00225
+    },
+    "DOR_NMDA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "DOR"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.00225
+    },
+    "DYN_GABA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 4.5e-05
+    },
+    "DYN_GABA->ISLET": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "ISLET"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 0.36182
+    },
+    "DYN_GABA->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 6.372e-06
+    },
+    "DYN_GABA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 4.5e-05
+    },
+    "DYN_GLY->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GLY",
+      "weight": 4.5e-05
+    },
+    "DYN_GLY->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GLY",
+      "weight": 2.3608e-06
+    },
+    "DYN_GLY->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "DYN"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GLY",
+      "weight": 4.5e-05
+    },
+    "ISLET_GABA->DYN": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DYN"
+      },
+      "preConds": {
+        "popLabel": "ISLET"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 0.34293
+    },
+    "ISLET_GABA->TrC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "TrC"
+      },
+      "preConds": {
+        "popLabel": "ISLET"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 0.34293
+    },
+    "PKC_AMPA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "PKC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0021
+    },
+    "PKC_AMPA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "PKC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0021
+    },
+    "PKC_AMPA->TrC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "TrC"
+      },
+      "preConds": {
+        "popLabel": "PKC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.0021
+    },
+    "PKC_NMDA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "PKC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.00315
+    },
+    "PKC_NMDA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "PKC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.00315
+    },
+    "PV_GABA->DOR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "PV"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 0.29416
+    },
+    "PV_GABA->PKC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "PV"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GABA",
+      "weight": 0.29416
+    },
+    "PV_GLY->DOR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "PV"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GLY",
+      "weight": 0.011521
+    },
+    "PV_GLY->PKC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "PV"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "GLY",
+      "weight": 0.011521
+    },
+    "SOM_AMPA->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "SOM"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 8.82981e-06
+    },
+    "SOM_NK1->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "SOM"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NK13",
+      "weight": 9.2715e-07
+    },
+    "SOM_NMDA->NK1": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "NK1"
+      },
+      "preConds": {
+        "popLabel": "SOM"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 2.6699e-05
+    },
+    "TrC_AMPA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "TrC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00225
+    },
+    "TrC_AMPA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "TrC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.00225
+    },
+    "TrC_NMDA->CR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "CR"
+      },
+      "preConds": {
+        "popLabel": "TrC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.003
+    },
+    "TrC_NMDA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "TrC"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.003
+    },
+    "VGLUT3_AMPA->DOR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.16629
+    },
+    "VGLUT3_AMPA->PKC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 0.16629
+    },
+    "VGLUT3_AMPA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "AMPA",
+      "weight": 6e-05
+    },
+    "VGLUT3_NMDA->DOR": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "DOR"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.15549
+    },
+    "VGLUT3_NMDA->PKC": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "PKC"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 0.15549
+    },
+    "VGLUT3_NMDA->SOM": {
+      "delay": 0.5,
+      "loc": 0.5,
+      "oneSynPerNetcon": true,
+      "postConds": {
+        "popLabel": "SOM"
+      },
+      "preConds": {
+        "popLabel": "VGLUT3"
+      },
+      "probability": 0.2,
+      "sec": "dend",
+      "synMech": "NMDA",
+      "weight": 6e-05
+    }
+  },
+  "cell_rules": {
+    "CRRule": {
+      "conds": {
+        "cellType": "CR"
+      },
+      "globals": {},
+      "secLists": {},
+      "secs": {
+        "dend": {
+          "geom": {
+            "L": 400.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 3.0,
+            "nseg": 5
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 2.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.144,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 9.6e-06
+            },
+            "borgka": {
+              "gkabar": 0.0009333
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 0.0
+          }
+        },
+        "hillock": {
+          "geom": {
+            "L": 9.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 1.5,
+            "nseg": 3
+          },
+          "ions": {
+            "k": {
+              "e": -77.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.03
+            },
+            "HH2": {
+              "gkbar": 0.304,
+              "gnabar": 0.02375,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.01547
+            },
+            "borgka": {
+              "gkabar": 0.112
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 1.0
+          }
+        },
+        "soma": {
+          "geom": {
+            "L": 20.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 20.0,
+            "nseg": 3
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.0001652
+            },
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 1.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0043,
+              "gnabar": 0.08548,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.000111
+            },
+            "borgka": {
+              "gkabar": 0.0109
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {}
+        }
+      }
+    },
+    "EXdelayedRule": {
+      "conds": {
+        "cellType": "EXdl"
+      },
+      "globals": {},
+      "secLists": {},
+      "secs": {
+        "dend": {
+          "geom": {
+            "L": 400.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 3.0,
+            "nseg": 5
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 2.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.144,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 9.6e-06
+            },
+            "borgka": {
+              "gkabar": 0.0009333
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 0.0
+          }
+        },
+        "hillock": {
+          "geom": {
+            "L": 9.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 1.5,
+            "nseg": 3
+          },
+          "ions": {
+            "k": {
+              "e": -77.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.03
+            },
+            "HH2": {
+              "gkbar": 0.304,
+              "gnabar": 0.02375,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.01547
+            },
+            "borgka": {
+              "gkabar": 0.112
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 1.0
+          }
+        },
+        "soma": {
+          "geom": {
+            "L": 20.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 20.0,
+            "nseg": 3
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.0001652
+            },
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 1.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0043,
+              "gnabar": 0.08548,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.000111
+            },
+            "borgka": {
+              "gkabar": 0.0109
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {}
+        }
+      }
+    },
+    "EXinitialRule": {
+      "conds": {
+        "cellType": "EXib"
+      },
+      "globals": {},
+      "secLists": {},
+      "secs": {
+        "dend": {
+          "geom": {
+            "L": 400.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 3.0,
+            "nseg": 5
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 2.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.2061
+            },
+            "borgka": {
+              "gkabar": 0.0001584
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 4.2e-05
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 0.0
+          }
+        },
+        "hillock": {
+          "geom": {
+            "L": 9.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 1.5,
+            "nseg": 3
+          },
+          "ions": {
+            "k": {
+              "e": -77.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 6.713,
+              "beta_shift": 9.906,
+              "gnabar": 5.147
+            },
+            "HH2": {
+              "gkbar": 0.0,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.2171
+            },
+            "borgka": {
+              "gkabar": 0.0005
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 4.2e-05
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 1.0
+          }
+        },
+        "soma": {
+          "geom": {
+            "L": 20.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 20.0,
+            "nseg": 3
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 6.713,
+              "beta_shift": 9.906,
+              "gnabar": 0.3066
+            },
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 1.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 1.06e-05
+            },
+            "borgka": {
+              "gkabar": 0.04957
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 4.2e-05
+            }
+          },
+          "topol": {}
+        }
+      }
+    },
+    "PKCRule": {
+      "conds": {
+        "cellType": "PKC"
+      },
+      "globals": {},
+      "secLists": {},
+      "secs": {
+        "dend": {
+          "geom": {
+            "L": 400.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 3.0,
+            "nseg": 5
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 2.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.144,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 9.6e-06
+            },
+            "borgka": {
+              "gkabar": 0.0009333
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 0.0
+          }
+        },
+        "hillock": {
+          "geom": {
+            "L": 9.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 1.5,
+            "nseg": 3
+          },
+          "ions": {
+            "k": {
+              "e": -77.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.03
+            },
+            "HH2": {
+              "gkbar": 0.304,
+              "gnabar": 0.02375,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.01547
+            },
+            "borgka": {
+              "gkabar": 0.112
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 1.0
+          }
+        },
+        "soma": {
+          "geom": {
+            "L": 20.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 20.0,
+            "nseg": 3
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.0001652
+            },
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 1.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0043,
+              "gnabar": 0.08548,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.000111
+            },
+            "borgka": {
+              "gkabar": 0.0109
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {}
+        }
+      }
+    },
+    "SOMRule": {
+      "conds": {
+        "cellType": "SOM"
+      },
+      "globals": {},
+      "secLists": {},
+      "secs": {
+        "dend": {
+          "geom": {
+            "L": 400.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 3.0,
+            "nseg": 5
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 2.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.144,
+              "gnabar": 0.0,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 9.6e-06
+            },
+            "borgka": {
+              "gkabar": 0.0009333
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 0.0
+          }
+        },
+        "hillock": {
+          "geom": {
+            "L": 9.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 1.5,
+            "nseg": 3
+          },
+          "ions": {
+            "k": {
+              "e": -77.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.03
+            },
+            "HH2": {
+              "gkbar": 0.304,
+              "gnabar": 0.02375,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.01547
+            },
+            "borgka": {
+              "gkabar": 0.112
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {
+            "childX": 0.0,
+            "parentSec": "soma",
+            "parentX": 1.0
+          }
+        },
+        "soma": {
+          "geom": {
+            "L": 20.0,
+            "Ra": 150.0,
+            "cm": 1.0,
+            "diam": 20.0,
+            "nseg": 3
+          },
+          "ions": {
+            "ca": {
+              "e": 132.4579341637009,
+              "i": 5e-05,
+              "o": 2.0
+            },
+            "k": {
+              "e": -70.0,
+              "i": 54.4,
+              "o": 2.5
+            },
+            "na": {
+              "e": 50.0,
+              "i": 10.0,
+              "o": 140.0
+            }
+          },
+          "mechs": {
+            "B_Na": {
+              "alpha_shift": 0.0,
+              "beta_shift": 0.0,
+              "gnabar": 0.0001652
+            },
+            "CaIntraCellDyn": {
+              "cai_inf": 5e-05,
+              "cai_tau": 1.0,
+              "depth": 0.1
+            },
+            "HH2": {
+              "gkbar": 0.0043,
+              "gnabar": 0.08548,
+              "vtraub": -50.2
+            },
+            "KDRI": {
+              "gkbar": 0.000111
+            },
+            "borgka": {
+              "gkabar": 0.0109
+            },
+            "iKCa": {
+              "gbar": 0.002,
+              "gk": 0.0
+            },
+            "pas": {
+              "e": -65.0,
+              "g": 9.6e-07
+            }
+          },
+          "topol": {}
+        }
+      }
+    }
+  },
+  "connectivity_by_population": {
+    "CR": {
+      "inputs": [
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_PEP_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "C_PEP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00067115
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_PEP_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "C_PEP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.000407345
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_NP_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "C_NP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00067115
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_NP_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "C_NP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.000407345
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DYN_GABA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DYN"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GABA",
+          "weight": 4.5e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DYN_GLY->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DYN"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GLY",
+          "weight": 4.5e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.003
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00315
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00225
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "CR_AMPA->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "CR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 8.82981e-06
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "CR_NMDA->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "CR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 2.6699e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "CR_NK1->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "CR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NK13",
+          "weight": 9.2715e-07
+        }
+      ]
+    },
+    "DOR": {
+      "inputs": [
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_AMPA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_NMDA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PV_GABA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "PV"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GABA",
+          "weight": 0.29416
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PV_GLY->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "PV"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GLY",
+          "weight": 0.011521
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.16629
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.15549
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00225
+        }
+      ]
+    },
+    "PKC": {
+      "inputs": [
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAI_AMPA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAI"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0221559
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAI_NMDA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAI"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.015
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAII_AMPA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAII"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0221559
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAII_NMDA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAII"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.015
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.16629
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.15549
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PV_GABA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "PV"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GABA",
+          "weight": 0.29416
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PV_GLY->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "PV"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GLY",
+          "weight": 0.011521
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->TrC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "TrC"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00315
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00315
+        }
+      ]
+    },
+    "SOM": {
+      "inputs": [
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 5.0,
+          "loc": 0.5,
+          "name": "Ad_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "Ad"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 1.5e-05
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_PEP_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "C_PEP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00067115
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_PEP_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "C_PEP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.000407345
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_NP_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "C_NP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00067115
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_NP_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "C_NP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.000407345
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DYN_GABA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DYN"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GABA",
+          "weight": 4.5e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DYN_GLY->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DYN"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GLY",
+          "weight": 4.5e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.003
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00315
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 6e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 6e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "DOR_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "DOR"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.00225
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "SOM_AMPA->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "SOM"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 8.82981e-06
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "SOM_NMDA->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "SOM"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 2.6699e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "SOM_NK1->NK1",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "NK1"
+          },
+          "preConds": {
+            "popLabel": "SOM"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NK13",
+          "weight": 9.2715e-07
+        }
+      ]
+    },
+    "TrC": {
+      "inputs": [
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_PEP_AMPA->TrC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "TrC"
+          },
+          "preConds": {
+            "popLabel": "C_PEP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.164705
+        },
+        {
+          "delay": 10.0,
+          "loc": 0.5,
+          "name": "C_NP_AMPA->TrC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "TrC"
+          },
+          "preConds": {
+            "popLabel": "C_NP"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.164705
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "PKC_AMPA->TrC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "TrC"
+          },
+          "preConds": {
+            "popLabel": "PKC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0021
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "ISLET_GABA->TrC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "TrC"
+          },
+          "preConds": {
+            "popLabel": "ISLET"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "GABA",
+          "weight": 0.34293
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.003
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_AMPA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.00225
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "TrC_NMDA->CR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "CR"
+          },
+          "preConds": {
+            "popLabel": "TrC"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.003
+        }
+      ]
+    },
+    "VGLUT3": {
+      "inputs": [
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAI_AMPA->VGLUT3",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "VGLUT3"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAI"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0221559
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAI_NMDA->VGLUT3",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "VGLUT3"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAI"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.015
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAII_AMPA->VGLUT3",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "VGLUT3"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAII"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.0221559
+        },
+        {
+          "delay": 1.0,
+          "loc": 0.5,
+          "name": "Ab_SAII_NMDA->VGLUT3",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "VGLUT3"
+          },
+          "preConds": {
+            "popLabel": "Ab_SAII"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.015
+        }
+      ],
+      "outputs": [
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.16629
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->PKC",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "PKC"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.15549
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 0.16629
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->DOR",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "DOR"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 0.15549
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_AMPA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "AMPA",
+          "weight": 6e-05
+        },
+        {
+          "delay": 0.5,
+          "loc": 0.5,
+          "name": "VGLUT3_NMDA->SOM",
+          "oneSynPerNetcon": true,
+          "postConds": {
+            "popLabel": "SOM"
+          },
+          "preConds": {
+            "popLabel": "VGLUT3"
+          },
+          "probability": 0.2,
+          "sec": "dend",
+          "synMech": "NMDA",
+          "weight": 6e-05
+        }
+      ]
+    }
+  },
+  "delayed_rule_equivalence": {
+    "CRRule": true,
+    "EXdelayedRule": true,
+    "PKCRule": true,
+    "SOMRule": true
+  },
+  "executed_configuration": {
+    "celsius": 36,
+    "default_spike_threshold_mV": -30,
+    "dt_ms": 0.025,
+    "network_duration_ms": 5000,
+    "record_step_ms": 0.025,
+    "v_init_mV": -60
+  },
+  "population_count_total": 109,
+  "population_mappings": {
+    "eCR": {
+      "cell_type": "CR",
+      "count": 20,
+      "modeldb_population": "CR",
+      "rule": "CRRule"
+    },
+    "eDOR": {
+      "cell_type": "EXdl",
+      "count": 30,
+      "modeldb_population": "DOR",
+      "rule": "EXdelayedRule"
+    },
+    "ePKCgamma": {
+      "cell_type": "PKC",
+      "count": 30,
+      "modeldb_population": "PKC",
+      "rule": "PKCRule"
+    },
+    "eSST": {
+      "cell_type": "SOM",
+      "count": 15,
+      "modeldb_population": "SOM",
+      "rule": "SOMRule"
+    },
+    "eTrC": {
+      "cell_type": "EXib",
+      "count": 10,
+      "modeldb_population": "TrC",
+      "rule": "EXinitialRule"
+    },
+    "eVGLUT3": {
+      "cell_type": "EXdl",
+      "count": 4,
+      "modeldb_population": "VGLUT3",
+      "rule": "EXdelayedRule"
+    }
+  },
+  "source": {
+    "commit": "6286892a9e7aa67ad80f2c5d86007350f900c644",
+    "file_sha256": {
+      "cells.py": "084bd59bba46e91cb4a5927553d6507f9b8855b2811c602b8e73311661033441",
+      "cfg_mechanical.py": "e2b382740a48751c2d9487ab7237089b5da4ddc75c3f34d87ce1922be2efc8c5",
+      "netParams_mechanical.py": "502c978fdc8300d8eed4b800e406ad7cca83e8cf8603e47bf1a8cfab37076f7e"
+    },
+    "modeldb_accession": 267056,
+    "repository": "https://github.com/ModelDBRepository/267056"
+  },
+  "synaptic_mechanisms": {
+    "AMPA": {
+      "mod": "AMPA_DynSyn",
+      "tau_decay": 5,
+      "tau_rise": 0.1
+    },
+    "GABA": {
+      "e": -70,
+      "mod": "GABAa_DynSyn",
+      "tau_decay": 20,
+      "tau_rise": 0.1
+    },
+    "GLY": {
+      "e": -70,
+      "mod": "Glycine_DynSyn",
+      "tau_decay": 10,
+      "tau_rise": 0.1
+    },
+    "NK13": {
+      "mod": "NK1_DynSyn",
+      "tau_decay": 1000,
+      "tau_rise": 100
+    },
+    "NK23": {
+      "mod": "NK1_DynSyn",
+      "tau_decay": 3000,
+      "tau_rise": 200
+    },
+    "NMDA": {
+      "mod": "NMDA_DynSyn",
+      "tau_decay": 100,
+      "tau_rise": 2
+    }
+  }
+}

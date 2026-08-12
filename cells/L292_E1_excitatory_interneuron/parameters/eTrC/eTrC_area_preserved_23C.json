@@ -1,0 +1,91 @@
+{
+  "active": {
+    "mapping_note": "D-level morphology transform: retain Medlock EXinitialRule mechanisms, kinetics, reversals, and within-region conductance ratios while multiplying maximum conductance densities by Medlock compartment area / reconstructed mapped-region area. This preserves released total maximum conductance per region and requires validation.",
+    "regions": {
+      "axon_distal": {
+        "conductance_scale": 1.0,
+        "ions": {
+          "k": {"e_mV": -77.0, "i_mM": 54.4, "o_mM": 2.5},
+          "na": {"e_mV": 50.0, "i_mM": 10.0, "o_mM": 140.0}
+        },
+        "mechanisms": {}
+      },
+      "dendrite": {
+        "conductance_scale": 0.13540680091470814,
+        "ions": {
+          "ca": {"e_mV": 132.4579341637009, "i_mM": 5e-05, "o_mM": 2.0},
+          "k": {"e_mV": -70.0, "i_mM": 54.4, "o_mM": 2.5},
+          "na": {"e_mV": 50.0, "i_mM": 10.0, "o_mM": 140.0}
+        },
+        "mechanisms": {
+          "CaIntraCellDyn": {"cai_inf": 5e-05, "cai_tau": 2.0, "depth": 0.1},
+          "KDRI": {"gkbar": 0.2061},
+          "borgka": {"gkabar": 0.0001584},
+          "iKCa": {"gbar": 0.002}
+        }
+      },
+      "proximal_axon_candidate": {
+        "conductance_scale": 0.5482909817394275,
+        "ions": {
+          "k": {"e_mV": -77.0, "i_mM": 54.4, "o_mM": 2.5},
+          "na": {"e_mV": 50.0, "i_mM": 10.0, "o_mM": 140.0}
+        },
+        "max_path_from_axon_origin_um": 9.0,
+        "maximum_segment_length_um": 3.0,
+        "mechanisms": {
+          "B_Na": {"alpha_shift": 6.713, "beta_shift": 9.906, "gnabar": 5.147, "tau_factor": 1.0},
+          "KDRI": {"gkbar": 0.2171},
+          "borgka": {"gkabar": 0.0005}
+        }
+      },
+      "soma": {
+        "conductance_scale": 0.4408547604160334,
+        "ions": {
+          "ca": {"e_mV": 132.4579341637009, "i_mM": 5e-05, "o_mM": 2.0},
+          "k": {"e_mV": -70.0, "i_mM": 54.4, "o_mM": 2.5},
+          "na": {"e_mV": 50.0, "i_mM": 10.0, "o_mM": 140.0}
+        },
+        "mechanisms": {
+          "B_Na": {"alpha_shift": 6.713, "beta_shift": 9.906, "gnabar": 0.3066, "tau_factor": 1.0},
+          "CaIntraCellDyn": {"cai_inf": 5e-05, "cai_tau": 1.0, "depth": 0.1},
+          "KDRI": {"gkbar": 1.06e-05},
+          "borgka": {"gkabar": 0.04957},
+          "iKCa": {"gbar": 0.002}
+        }
+      }
+    },
+    "source": "Medlock ModelDB 267056 cells.py EXinitialRule at commit 6286892a9e7aa67ad80f2c5d86007350f900c644",
+    "transform_provenance": "results/23C/eTrC/geometry_mapping_audit_refined_axon.json"
+  },
+  "discretization": {"d_lambda": 0.1, "frequency_Hz": 100.0},
+  "identity_statement": "The L292-E1-LCN reconstruction is a rat lamina-I local-circuit morphological scaffold. ePKCgamma/eVGLUT3/eDOR/eSST/eCR/eTrC labels refer to computational Medlock population identity and are not molecular identities experimentally confirmed for L292-E1-LCN.",
+  "intrinsic_phenotype": "transient",
+  "mechanisms": {"directory": "../../shared/mechanisms/medlock_267056"},
+  "model_name": "RatLCN_L292E1__Medlock_eTrC__area_preserved",
+  "morphology": {
+    "neuromorpho_id": "NMO_34021",
+    "path": "morphology/primary/L292-E1-LCN.CNG.swc",
+    "role": "generic rat lamina-I local-circuit morphology scaffold"
+  },
+  "passive": {"Ra_ohm_cm": 150.0, "cm_uF_cm2": 1.0, "e_pas_mV": -65.0, "g_pas_S_cm2": 2.9e-05},
+  "passive_provenance": "Validated on reconstructed L292-E1-LCN at 23 C; see parameters/common/passive_23C.json and reports/L292_E1_passive_23C.md",
+  "protocol": {
+    "current_steps_nA": [-0.02, 0.0, 0.05, 0.1, 0.2, 0.4],
+    "delay_ms": 200.0,
+    "duration_ms": 500.0,
+    "range_reason": "Bounded first validation of the total-conductance-preserving morphology transform; no optimizer or automatic tuning.",
+    "tstop_ms": 900.0
+  },
+  "simulation": {"celsius": 23.0, "dt_ms": 0.025, "seed": 292011, "v_init_mV": -65.0},
+  "status": "D_LEVEL_AREA_PRESERVING_CANDIDATE_REQUIRES_VALIDATION",
+  "validation_targets": {
+    "ap_half_width_ms": [0.4, 1.0],
+    "ap_peak_mV": [10.0, 30.0],
+    "ap_threshold_mV": [-45.0, -35.0],
+    "medlock_spike_height_from_start_mV": 107.0,
+    "medlock_transient_definition": "1-2 spikes within 100 ms of current onset",
+    "post_step_recovery_tolerance_mV": 0.1,
+    "post_step_recovery_tolerance_note": "D: project numerical acceptance proposal, not an experimental target",
+    "rmp_mV": [-69.0, -59.0]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "delayed_excitatory_final_35C.json",
+  "active": {
+    "regions": {
+      "proximal_axon_candidate": {"mechanisms": {"B_Na": {"gnabar": 0.036}, "HH2": {"gnabar": 0.0285}}},
+      "soma": {"mechanisms": {"B_Na": {"gnabar": 0.00019824}, "HH2": {"gnabar": 0.102576}}}
+    }
+  },
+  "model_name": "delayed_35C_diagnostic_sodium_plus20pct",
+  "protocol": {"tstop_ms": 900.0},
+  "status": "ONE_FACTOR_35C_DIAGNOSTIC_NOT_A_MODEL"
+}

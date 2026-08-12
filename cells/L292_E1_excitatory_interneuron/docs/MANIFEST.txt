@@ -1,0 +1,12 @@
+source_repository | commit | filename | mechanism | role | reason_included
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | B_NA.mod | B_Na | fast sodium | exact eTrC and delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | HH2.mod | HH2 | Traub fast sodium and delayed-rectifier potassium | exact delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | borgka.mod | borgka | A-type potassium | exact eTrC and delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | KDRI.mod | KDRI | inactivating delayed-rectifier potassium | exact eTrC and delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | CaIntraCellDyn.mod | CaIntraCellDyn | calcium concentration dynamics | exact eTrC and delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | iKCa.mod | iKCa | slow calcium-dependent potassium | exact eTrC and delayed ModelDB rule
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | AMPA_DynSyn.mod | AMPA_DynSyn | excitatory synapse | later Medlock synapse unit tests
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | NMDA_DynSyn.mod | NMDA_DynSyn | NMDA synapse with magnesium block | later Medlock synapse unit tests
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | GABAa_DynSyn.mod | GABAa_DynSyn | inhibitory synapse | later Medlock synapse unit tests
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | Glycine_DynSyn.mod | Glycine_DynSyn | inhibitory synapse | later Medlock synapse unit tests
+https://github.com/ModelDBRepository/267056 | 6286892a9e7aa67ad80f2c5d86007350f900c644 | NK1_DynSyn.mod | NK1_DynSyn | substance-P/NK1 empirical synapse | later Medlock connectivity replication

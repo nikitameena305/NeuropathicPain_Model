@@ -1,0 +1,24 @@
+source | filename | channel_class | reason_included
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | AMPA_DynSyn.mod | AMPA synapse | L796 receptor tests and later L292 synapse unit tests
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | B_A.mod | A-type potassium | L796 channel diagnostic
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | B_DR.mod | delayed rectifier potassium | retained canonical source/reference
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | B_NA.mod | fast sodium | L796 and L292 active rules
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | CaIntraCellDyn.mod | calcium dynamics | L796 and L292 calcium-dependent mechanisms
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | GABAa_DynSyn.mod | GABA-A synapse | L796 receptor tests and later synapse unit tests
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | GABAb_DynSyn.mod | GABA-B empirical synapse | retained L796 mechanism/reference
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | Glycine_DynSyn.mod | glycine synapse | L796 receptor tests and later synapse unit tests
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 plus project analytic singularity correction | HH2.mod | fast sodium and delayed potassium | corrected canonical L292 delayed rule; compatible replacement for removable singularities
+ModelDB 267056-derived project source | HH2new.mod | historical HH2 variant | retained because L796 model history references it
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | KDR.mod | delayed rectifier potassium | L796 active model and reference
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | KDRI.mod | inactivating delayed rectifier potassium | L292 active rules and reference
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | NK1_DynSyn.mod | substance-P/NK1 empirical synapse | L796 receptor tests and later connectivity work
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | NMDA_DynSyn.mod | NMDA synapse | L796 receptor tests and later synapse unit tests
+ModelDB 267056-derived project source | SS.mod | synaptic mechanism | retained L796 mechanism dependency/history
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | borgka.mod | A-type potassium | L292 initial/delayed active rules
+ModelDB 267056-derived project source | iCaAN.mod | calcium-activated nonspecific current | L796 active model
+ModelDB 267056-derived project source | iCaL.mod | L-type calcium | L796 active model
+ModelDB 267056 commit 6286892a9e7aa67ad80f2c5d86007350f900c644 | iKCa.mod | calcium-activated potassium | L796 and L292 active rules
+ModelDB 267056-derived project source | iNaP.mod | persistent sodium | L796 active model
+ModelDB 267056-derived project source | vecevent.mod | event utility | retained L796 mechanism dependency/history
+ModelDB 267056-derived project source | vsource.mod | voltage-source utility | retained L796 mechanism dependency/history
+

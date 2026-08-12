@@ -1,0 +1,9 @@
+# Source commit: https://github.com/ModelDBRepository/267056/tree/6286892a9e7aa67ad80f2c5d86007350f900c644
+# Retrieved: 2026-07-24
+# Format: filename | suffix | class | reason | sha256
+B_NA.mod | B_Na | fast sodium | soma/hillock sodium mechanism | 7177506EFAD6B6F60F1B9AC86686617BF5FFC94B8754585E2BB1E3AE6AE77496
+HH2.mod | HH2 | fast sodium + delayed potassium | shared excitability mechanism | 8610826D2F69D7BAE61780022490DB020D5A5BEEFFBECB8CAA396A404E1E27BA
+KDRI.mod | KDRI | delayed rectifier potassium | delayed/initial firing phenotype | FC6E0B93628D41F318C64AB134DDAA3E4F9E840BE180FE5857A528AE75A3CE36
+borgka.mod | borgka | A-type potassium | spike delay and accommodation | 11229AF171B80435E0D20A472D1D64EEBE90B4ACDC5533877C8804F212A4910D
+iKCa.mod | iKCa | calcium-activated potassium | afterhyperpolarization mechanism | 7EF01E9F2129281B83AA4F3080C06203D1096C45F041EADF5B7221C105EC61C8
+CaIntraCellDyn.mod | CaIntraCellDyn | calcium dynamics | supplies intracellular calcium to iKCa | 7A6578DF5A3122EDF4536FF98EDBB42A769C4D23B981A32FC82C1F1779FB6BD5

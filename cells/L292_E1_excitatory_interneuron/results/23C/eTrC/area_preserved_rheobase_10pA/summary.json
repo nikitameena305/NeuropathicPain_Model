@@ -1,0 +1,223 @@
+{
+  "assessment": {
+    "all_executed_gates_pass": true,
+    "checks": {
+      "medlock_transient_1_to_2_spikes_within_100_ms": true,
+      "no_depolarization_block_in_tested_steps": true,
+      "no_spontaneous_firing": null,
+      "rmp_in_target": null,
+      "spikes_at_one_or_more_positive_steps": true
+    },
+    "classification": "STAGE_GATE_PASSED",
+    "note": "A stage pass is not final model readiness and does not confirm molecular identity or 35C translation."
+  },
+  "configuration_status": "D_LEVEL_AREA_PRESERVING_CANDIDATE_REQUIRES_VALIDATION",
+  "identity_statement": "The L292-E1-LCN reconstruction is a rat lamina-I local-circuit morphological scaffold. ePKCgamma/eVGLUT3/eDOR/eSST/eCR/eTrC labels refer to computational Medlock population identity and are not molecular identities experimentally confirmed for L292-E1-LCN.",
+  "initiation_by_current": {
+    "0.56": {
+      "earliest_recorded_site": "soma",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 217.2999999999393,
+        "proximal_dendrite": 217.32499999993928,
+        "soma": 217.2999999999393
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": 0.0,
+      "provisional_ais_precedes_soma": false
+    },
+    "0.57": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 215.92499999994055,
+        "proximal_dendrite": 215.94999999994053,
+        "soma": 215.94999999994053
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.024999999999977263,
+      "provisional_ais_precedes_soma": true
+    },
+    "0.58": {
+      "earliest_recorded_site": "soma",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 215.02499999994137,
+        "proximal_dendrite": 215.04999999994135,
+        "soma": 215.02499999994137
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": 0.0,
+      "provisional_ais_precedes_soma": false
+    },
+    "0.59": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 214.29999999994203,
+        "proximal_dendrite": 214.34999999994199,
+        "soma": 214.324999999942
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.024999999999977263,
+      "provisional_ais_precedes_soma": true
+    }
+  },
+  "model_name": "RatLCN_L292E1__Medlock_eTrC__area_preserved",
+  "morphology": {
+    "axon_sections": 503,
+    "connectivity": {
+      "all_axons_connected": true,
+      "all_dendrites_connected": true,
+      "external_parent_sections": [],
+      "one_connected_morphology": true,
+      "root_sections": [
+        "<rat_lcn.RatLCN_L292E1 object at 0x7ba4a05a2650>.soma[0]"
+      ],
+      "soma_is_root": true,
+      "unreachable_sections": []
+    },
+    "dendrite_sections": 446,
+    "maximum_segment_electrotonic_fraction": 0.09987119740171084,
+    "minimum_segment_diameter_um": 0.18999999761581318,
+    "path": "/mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/morphology/primary/L292-E1-LCN.CNG.swc",
+    "proximal_axon_candidate_segment_count": 3,
+    "section_count": 950,
+    "soma_sections": 1,
+    "total_nseg": 4312
+  },
+  "passive_only": false,
+  "passive_reference": null,
+  "per_current": [
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 27.350619419555606,
+      "amplitude_nA": 0.56,
+      "ap_amplitude_mV": 61.83516500095707,
+      "ap_half_width_ms": 0.8283798633501078,
+      "ap_peak_mV": 22.23233135056249,
+      "ap_threshold_mV": -39.60283365039458,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 17.299999999939303,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 17.299999999939303,
+      "late_step_mean_voltage_mV": -52.663066975465554,
+      "max_dvdt_V_s": 163.616764621331,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.041098530014721746,
+      "post_step_recovery_mean_mV": -66.4510880171868,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        217.2999999999393
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.65339931610722,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 26.88254060942201,
+      "amplitude_nA": 0.57,
+      "ap_amplitude_mV": 62.90210077446396,
+      "ap_half_width_ms": 0.8299302360517231,
+      "ap_peak_mV": 22.883689851245496,
+      "ap_threshold_mV": -40.01841092321847,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 15.94999999994053,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 15.94999999994053,
+      "late_step_mean_voltage_mV": -52.56075138325904,
+      "max_dvdt_V_s": 168.33730028633445,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.04111815803852892,
+      "post_step_recovery_mean_mV": -66.451068389163,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        215.94999999994053
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.551014855781496,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 26.792748002868358,
+      "amplitude_nA": 0.58,
+      "ap_amplitude_mV": 63.360824452581696,
+      "ap_half_width_ms": 0.8286122310278756,
+      "ap_peak_mV": 23.296906214920252,
+      "ap_threshold_mV": -40.06391823766145,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 15.024999999941372,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 15.024999999941372,
+      "late_step_mean_voltage_mV": -52.46034568564617,
+      "max_dvdt_V_s": 170.99877401896106,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.04113298919558872,
+      "post_step_recovery_mean_mV": -66.45105355800594,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        215.02499999994137
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.45054785650262,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 26.492936909710465,
+      "amplitude_nA": 0.59,
+      "ap_amplitude_mV": 63.86494247621083,
+      "ap_half_width_ms": 0.8309396800036382,
+      "ap_peak_mV": 23.541824139444362,
+      "ap_threshold_mV": -40.32311833676647,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 14.324999999942008,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 14.324999999942008,
+      "late_step_mean_voltage_mV": -52.36167793983325,
+      "max_dvdt_V_s": 172.58012627982825,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.041143512463833076,
+      "post_step_recovery_mean_mV": -66.4510430347377,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        214.324999999942
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.35180652899494,
+      "tau_ms": null
+    }
+  ],
+  "protocol": {
+    "current_steps_nA": [
+      0.56,
+      0.57,
+      0.58,
+      0.59
+    ],
+    "d_lambda": 0.1,
+    "delay_ms": 200.0,
+    "dt_ms": 0.025,
+    "duration_ms": 500.0,
+    "frequency_Hz": 100.0,
+    "tstop_ms": 900.0
+  },
+  "rheobase_nA_with_tested_resolution": 0.56,
+  "software": {
+    "neuron": "9.0.1",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.10.20"
+  },
+  "temperature_C": 23.0,
+  "temperature_label": "experimental-source-temperature"
+}

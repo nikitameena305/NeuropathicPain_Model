@@ -1,0 +1,161 @@
+# Standardization file for L571-LCN.CNG.swc created with StdSwc version 1.31 on 5/19/14.
+#
+# code   irregularity_description. (action taken)
+#     irregularity_type     coordinates
+#
+4.3  Radius of line 6 at 1.855 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -4.37  -18.68  -8.26
+4.3  Radius of line 7 at 1.855 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -4.53  -19.49  -8.26
+4.3  Radius of line 17 at 1.855 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -6.19  -36.48  -5.44
+4.3  Radius of line 18 at 1.855 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -6.69  -37.73  -5.44
+4.3  Radius of line 1841 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -5.73  -35.83  -2.61
+4.3  Radius of line 1842 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -6.19  -36.41  -2.61
+4.3  Radius of line 1843 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -6.86  -37.29  -2.61
+4.3  Radius of line 1844 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -7.5  -37.5  -5.23
+4.3  Radius of line 1845 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -7.87  -37.69  -6.84
+4.3  Radius of line 1846 at 0.835 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -9.4  -38.14  -7.86
+4.3  Radius of line 1847 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -11.48  -38.4  -9.06
+4.3  Radius of line 1848 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -12.49  -38.79  -10.88
+4.3  Radius of line 1849 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -13.43  -39.7  -11.28
+4.3  Radius of line 1850 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -14.45  -41.02  -11.89
+4.3  Radius of line 1851 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -15.51  -42.07  -12.28
+4.3  Radius of line 1852 at 0.65 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -16.26  -43.37  -12.48
+4.3  Radius of line 1853 at 0.465 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -16.76  -44.61  -12.89
+4.3  Radius of line 1854 at 0.465 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -17.52  -45.9  -13.1
+4.3  Radius of line 1910 at 0.93 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -6.35  -107.32  -68.55
+4.3  Radius of line 2953 at 0.555 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -326.98  -433.18  -468.33
+4.3  Radius of line 3012 at 0.74 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -446.75  -412.14  -491.67
+4.3  Radius of line 3356 at 0.555 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -1151.9  -4.6  -322.02
+4.3  Radius of line 3357 at 0.93 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  -1152.5  -5.34  -322.94
+4.3  Radius of line 4280 at 0.555 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  163.07  -424.31  -320.7
+4.3  Radius of line 4281 at 0.555 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  162.09  -424.71  -321.0
+4.3  Radius of line 4282 at 1.3 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  161.56  -425.48  -322.82
+4.5  Radius of terminal line 4283 at 1.3 >= 5.0 stdevs above the mean.  (no action taken)
+     B1      X, Y, Z:  161.02  -425.86  -322.82
+2.4  Length of segment ending at point 6 >= 6.0 stdevs above mean at 12.1326.  (no action taken)
+     B1      X, Y, Z:  -4.37  -18.68  -8.26
+2.4  Length of segment ending at point 177 >= 6.0 stdevs above mean at 10.2983.  (no action taken)
+     B1      X, Y, Z:  -95.73  -170.7  -151.85
+2.4  Length of segment ending at point 758 >= 6.0 stdevs above mean at 11.3769.  (no action taken)
+     B1      X, Y, Z:  -11.09  -10.94  -2.26
+2.4  Length of segment ending at point 1102 >= 6.0 stdevs above mean at 9.8222.  (no action taken)
+     B1      X, Y, Z:  1.22  0.94  -0.57
+2.4  Length of segment ending at point 1394 >= 6.0 stdevs above mean at 9.1396.  (no action taken)
+     B1      X, Y, Z:  8.77  338.49  13.65
+2.4  Length of segment ending at point 1505 >= 6.0 stdevs above mean at 9.1059.  (no action taken)
+     B1      X, Y, Z:  -53.44  152.34  14.26
+2.4  Length of segment ending at point 1841 >= 6.0 stdevs above mean at 28.1357.  (no action taken)
+     B1      X, Y, Z:  -5.73  -35.83  -2.61
+2.4  Length of segment ending at point 3099 >= 6.0 stdevs above mean at 34.6236.  (no action taken)
+     B1      X, Y, Z:  -595.72  -332.61  -449.55
+2.4  Length of segment ending at point 3197 >= 6.0 stdevs above mean at 27.7802.  (no action taken)
+     B1      X, Y, Z:  -777.57  -214.15  -383.61
+2.4  Length of segment ending at point 3356 >= 6.0 stdevs above mean at 15.1412.  (no action taken)
+     B1      X, Y, Z:  -1151.9  -4.6  -322.02
+2.4  Length of segment ending at point 4699 >= 6.0 stdevs above mean at 14.0728.  (no action taken)
+     B1      X, Y, Z:  -820.97  189.55  -106.31
+2.4  Length of segment ending at point 5111 >= 6.0 stdevs above mean at 17.7554.  (no action taken)
+     B1      X, Y, Z:  112.65  -194.37  -130.8
+2.4  Length of segment ending at point 6503 >= 6.0 stdevs above mean at 13.646.  (no action taken)
+     B1      X, Y, Z:  951.57  -383.26  -239.66
+2.4  Length of segment ending at point 7344 >= 6.0 stdevs above mean at 14.4727.  (no action taken)
+     B1      X, Y, Z:  67.75  -85.99  -115.94
+2.4  Length of segment ending at point 7827 >= 6.0 stdevs above mean at 16.748.  (no action taken)
+     B1      X, Y, Z:  -115.66  -0.17  -34.22
+2.4  Length of segment ending at point 8144 >= 6.0 stdevs above mean at 18.4877.  (no action taken)
+     B1      X, Y, Z:  95.5  -97.15  -47.68
+2.4  Length of segment ending at point 8171 >= 6.0 stdevs above mean at 17.718.  (no action taken)
+     B1      X, Y, Z:  87.55  -69.45  -39.81
+2.4  Length of segment ending at point 8281 >= 6.0 stdevs above mean at 14.8418.  (no action taken)
+     B1      X, Y, Z:  252.68  -71.91  -63.74
+2.4  Length of segment ending at point 8289 >= 6.0 stdevs above mean at 13.8332.  (no action taken)
+     B1      X, Y, Z:  291.77  -72.03  -67.15
+2.4  Length of segment ending at point 8290 >= 6.0 stdevs above mean at 13.7596.  (no action taken)
+     B1      X, Y, Z:  305.02  -75.74  -67.15
+2.4  Length of segment ending at point 8666 >= 6.0 stdevs above mean at 19.2265.  (no action taken)
+     B1      X, Y, Z:  -156.74  26.84  -47.68
+2.4  Length of segment ending at point 8775 >= 6.0 stdevs above mean at 14.585.  (no action taken)
+     B1      X, Y, Z:  -360.28  115.4  -17.89
+2.4  Length of segment ending at point 8994 >= 6.0 stdevs above mean at 13.8206.  (no action taken)
+     B1      X, Y, Z:  -489.85  109.96  -26.36
+2.4  Length of segment ending at point 9037 >= 6.0 stdevs above mean at 17.529.  (no action taken)
+     B1      X, Y, Z:  -716.12  186.53  -23.13
+2.4  Length of segment ending at point 9038 >= 6.0 stdevs above mean at 18.5893.  (no action taken)
+     B1      X, Y, Z:  -732.87  194.59  -22.94
+2.4  Length of segment ending at point 9271 >= 6.0 stdevs above mean at 13.7717.  (no action taken)
+     B1      X, Y, Z:  142.83  -172.4  -131.41
+2.4  Length of segment ending at point 9855 >= 6.0 stdevs above mean at 19.3992.  (no action taken)
+     B1      X, Y, Z:  807.76  -399.16  -260.27
+4.4  Line 32 of rad 1.39 links to 31 of rad 0.555.  (no action taken)
+     B1      X, Y, Z:  -11.28  -59.71  -20.54
+4.4  Line 79 of rad 1.3 links to 78 of rad 0.37.  (no action taken)
+     B1      X, Y, Z:  -49.74  -106.32  -73.16
+4.4  Line 85 of rad 0.465 links to 84 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  -54.92  -108.97  -75.77
+4.4  Line 266 of rad 0.74 links to 265 of rad 0.37.  (no action taken)
+     B1      X, Y, Z:  15.99  -76.7  -41.9
+4.4  Line 320 of rad 0.465 links to 319 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  25.83  -128.19  -95.68
+4.4  Line 382 of rad 0.28 links to 381 of rad 0.095.  (no action taken)
+     B1      X, Y, Z:  70.65  -171.16  -107.12
+4.4  Line 518 of rad 0.37 links to 517 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  59.23  -76.48  -61.52
+4.4  Line 712 of rad 1.205 links to 711 of rad 0.465.  (no action taken)
+     B1      X, Y, Z:  48.01  -5.7  -2.22
+4.4  Line 722 of rad 0.74 links to 721 of rad 0.28.  (no action taken)
+     B1      X, Y, Z:  57.21  -15.64  -3.23
+4.4  Line 808 of rad 1.205 links to 807 of rad 0.555.  (no action taken)
+     B1      X, Y, Z:  -71.26  -22.1  -11.68
+4.4  Line 851 of rad 1.115 links to 850 of rad 0.37.  (no action taken)
+     B1      X, Y, Z:  -102.81  -38.88  -38.08
+4.4  Line 866 of rad 0.465 links to 865 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  -111.62  -41.55  -47.68
+4.4  Line 1218 of rad 0.37 links to 1217 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  -22.92  157.32  10.93
+4.4  Line 1462 of rad 0.65 links to 1461 of rad 0.28.  (no action taken)
+     B1      X, Y, Z:  -13.36  284.98  -0.87
+4.4  Line 1647 of rad 0.28 links to 1646 of rad 0.095.  (no action taken)
+     B1      X, Y, Z:  -46.92  25.33  -15.92
+4.4  Line 1720 of rad 0.37 links to 1719 of rad 0.095.  (no action taken)
+     B1      X, Y, Z:  1.38  56.76  -1.8
+4.4  Line 1910 of rad 0.93 links to 1909 of rad 0.28.  (no action taken)
+     B1      X, Y, Z:  -6.35  -107.32  -68.55
+4.4  Line 2953 of rad 0.555 links to 2952 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  -326.98  -433.18  -468.33
+4.4  Line 3012 of rad 0.74 links to 3011 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  -446.75  -412.14  -491.67
+4.4  Line 3356 of rad 0.555 links to 3355 of rad 0.095.  (no action taken)
+     B1      X, Y, Z:  -1151.9  -4.6  -322.02
+4.4  Line 4280 of rad 0.555 links to 4279 of rad 0.185.  (no action taken)
+     B1      X, Y, Z:  163.07  -424.31  -320.7
+4.4  Line 4282 of rad 1.3 links to 4281 of rad 0.555.  (no action taken)
+     B1      X, Y, Z:  161.56  -425.48  -322.82
+2.1  Line 1 has 8 daughters.  Type is 1.  (no action taken)
+     B1      X, Y, Z:  -0.12  -8.28  -3.68
+ 
+ 

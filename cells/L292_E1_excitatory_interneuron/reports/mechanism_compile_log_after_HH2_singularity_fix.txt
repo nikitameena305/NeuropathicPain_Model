@@ -1,0 +1,13 @@
+/mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/mechanisms
+cfiles =
+Mod files: "AMPA_DynSyn.mod" "B_NA.mod" "CaIntraCellDyn.mod" "GABAa_DynSyn.mod" "Glycine_DynSyn.mod" "HH2.mod" "KDRI.mod" "NK1_DynSyn.mod" "NMDA_DynSyn.mod" "borgka.mod" "iKCa.mod"
+
+MODOBJS= ./AMPA_DynSyn.o ./B_NA.o ./CaIntraCellDyn.o ./GABAa_DynSyn.o ./Glycine_DynSyn.o ./HH2.o ./KDRI.o ./NK1_DynSyn.o ./NMDA_DynSyn.o ./borgka.o ./iKCa.o
+ -> [32mCompiling[0m mod_func.cpp
+ -> [32mNMODL[0m ../HH2.mod
+Translating HH2.mod into /mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/mechanisms/x86_64/HH2.cpp
+Notice: VERBATIM blocks are not thread safe
+Notice: This mechanism cannot be used with CVODE
+ -> [32mCompiling[0m /mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/mechanisms/x86_64/HH2.cpp
+ => [32mLINKING[0m shared library "/mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/mechanisms/x86_64/./libnrnmech.so"
+Successfully created x86_64/special

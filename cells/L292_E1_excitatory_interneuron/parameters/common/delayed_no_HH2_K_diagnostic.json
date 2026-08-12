@@ -1,0 +1,13 @@
+{
+  "extends": "delayed_excitatory_area_preserved_23C.json",
+  "active": {
+    "regions": {
+      "dendrite": {"mechanisms": {"HH2": {"gkbar": 0.0}}},
+      "proximal_axon_candidate": {"mechanisms": {"HH2": {"gkbar": 0.0}}},
+      "soma": {"mechanisms": {"HH2": {"gkbar": 0.0}}}
+    }
+  },
+  "model_name": "delayed_diagnostic_no_HH2_K",
+  "protocol": {"tstop_ms": 900.0},
+  "status": "MECHANISM_CONTRIBUTION_DIAGNOSTIC_NOT_A_MODEL"
+}

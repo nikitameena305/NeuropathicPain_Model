@@ -1,14 +1,37 @@
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 .ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# NEURON/NMODL generated build products
 x86_64/
+arm64/
+i686/
 special
+nrnmech.dll
 *.o
 *.so
+*.dylib
 *.dll
-*.c
-*.cpp
-node_modules/
+
+# Environments
+venv/
+.venv/
+pain_neuron_env/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Historical sweep scratch patterns
 COMBO_*.dat
 *_sweep_scale_*.dat
 *_sweep_individual_traces/
@@ -17,9 +40,5 @@ KDR_sweep_*
 CaL_sweep_*
 CaAN_sweep_*
 *_temp*/
-*.bak
-*.tmp
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+node_modules/
+

@@ -56,6 +56,11 @@ def parse_args() -> argparse.Namespace:
         metavar="LABEL|PATH|DESTINATION",
         help="Audit a read-only source collection before import; repeat as needed.",
     )
+    parser.add_argument(
+        "--final",
+        action="store_true",
+        help="Generate final retained-file, duplicate, and deletion manifests.",
+    )
     return parser.parse_args()
 
 
@@ -198,6 +203,18 @@ def classify_model(path: str) -> str:
         ``classify_model("L796/results/fi.csv")``
     """
     lowered = path.lower()
+    if lowered.startswith("cells/l796_projection_neuron/"):
+        return "L796-ALT-PN"
+    if lowered.startswith("cells/l292_e1_excitatory_interneuron/"):
+        return "L292-E1-LCN"
+    if lowered.startswith("cells/l571_inhibitory_interneuron/"):
+        return "L571-LCN"
+    if lowered.startswith("shared/mechanisms/"):
+        return "shared mechanisms"
+    if lowered.startswith("external/"):
+        return "external Medlock reproduction"
+    if lowered.startswith("archive/"):
+        return "archived scientific history"
     if lowered.startswith("l796/"):
         return "L796-ALT-PN"
     if "2018004" in lowered or "drg" in lowered:
@@ -599,6 +616,359 @@ def write_source_markdown(path: Path, specs: list[SourceSpec], entries: list[Ent
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def retained_files(root: Path) -> list[Path]:
+    """List retained regular files while excluding Git and generated build/cache products.
+
+    Args:
+        root: Repository root.
+
+    Returns:
+        Sorted retained paths.
+
+    Example:
+        ``paths = retained_files(Path.cwd())``
+    """
+    excluded_dirs = {".git", "__pycache__", "x86_64", "arm64", "i686", "node_modules"}
+    excluded_names = {
+        "repository_manifest.csv",
+        "repository_manifest.md",
+        "duplicate_file_audit.csv",
+        "deletion_manifest.md",
+    }
+    files: list[Path] = []
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root)
+        if any(part in excluded_dirs for part in relative.parts):
+            continue
+        if relative.parent == Path("docs") and relative.name in excluded_names:
+            continue
+        files.append(path)
+    return sorted(files)
+
+
+def final_status(path: str) -> tuple[str, str, str]:
+    """Classify final-file status, origin, and current/history role.
+
+    Args:
+        path: POSIX-style repository path.
+
+    Returns:
+        Status, source/generated, and current/historical labels.
+
+    Example:
+        ``final_status('cells/L571/parameters/final.json')``
+    """
+    lowered = path.lower()
+    file_type = classify_type(path)
+    source_generated = "generated" if file_type in {
+        "simulation/validation data",
+        "figure",
+        "rendered report",
+        "execution/compilation log",
+    } else "source"
+    if lowered.startswith("archive/"):
+        return "retained archive", source_generated, "historical"
+    if "delayed_excitatory_final_35c.json" in lowered:
+        return "retained failed gate", "source", "current failed gate"
+    if any(token in lowered for token in ("/diagnostic", "one_factor", "/trials/", "step3_", "initial_")):
+        return "retained development evidence", source_generated, "historical/diagnostic"
+    selected = {
+        "l796_final_parameter_set.json",
+        "etrc_final_23c.json",
+        "etrc_final_35c.json",
+        "delayed_excitatory_final_23c.json",
+        "l571_final_23c.json",
+        "l571_final_35c.json",
+    }
+    if PurePosixPath(lowered).name in selected:
+        return "selected/current", source_generated, "current"
+    return "retained", source_generated, "current/supporting"
+
+
+def build_final_entries(root: Path) -> list[Entry]:
+    """Build entries for every retained final file.
+
+    Args:
+        root: Repository root.
+
+    Returns:
+        Final inventory entries.
+
+    Example:
+        ``entries = build_final_entries(Path.cwd())``
+    """
+    entries: list[Entry] = []
+    for full_path in retained_files(root):
+        relative = full_path.relative_to(root).as_posix()
+        file_type = classify_type(relative)
+        status, source_generated, history = final_status(relative)
+        entries.append(
+            Entry(
+                path=relative,
+                file_type=file_type,
+                size=full_path.stat().st_size,
+                sha256=sha256_file(full_path),
+                model=classify_model(relative),
+                purpose=describe_purpose(relative, file_type),
+                decision=status,
+                reason=source_generated,
+                destination=history,
+            )
+        )
+    return entries
+
+
+def write_final_manifest(path: Path, entries: list[Entry]) -> None:
+    """Write the final retained-file CSV manifest.
+
+    Args:
+        path: CSV destination.
+        entries: Final entries.
+
+    Returns:
+        None.
+
+    Example:
+        ``write_final_manifest(Path('manifest.csv'), entries)``
+    """
+    fields = [
+        "path",
+        "cell_model",
+        "purpose",
+        "SHA256",
+        "size_bytes",
+        "status",
+        "source_generated",
+        "current_historical",
+    ]
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for entry in entries:
+            writer.writerow(
+                {
+                    "path": entry.path,
+                    "cell_model": entry.model,
+                    "purpose": entry.purpose,
+                    "SHA256": entry.sha256,
+                    "size_bytes": entry.size,
+                    "status": entry.decision,
+                    "source_generated": entry.reason,
+                    "current_historical": entry.destination,
+                }
+            )
+
+
+def write_final_manifest_markdown(path: Path, entries: list[Entry]) -> None:
+    """Write a concise summary of the final retained-file manifest.
+
+    Args:
+        path: Markdown destination.
+        entries: Final entries.
+
+    Returns:
+        None.
+
+    Example:
+        ``write_final_manifest_markdown(Path('manifest.md'), entries)``
+    """
+    by_model: dict[str, int] = defaultdict(int)
+    for entry in entries:
+        by_model[entry.model] += 1
+    lines = [
+        "# Repository manifest",
+        "",
+        "The machine-readable CSV records every retained regular file except the manifest files themselves,",
+        "which are self-excluded to avoid recursive hashes. Generated Git-ignored build/cache products are also excluded.",
+        "",
+        f"- Retained files: {len(entries)}",
+        f"- Retained bytes: {sum(entry.size for entry in entries)}",
+        "",
+        "## Files by model/scope",
+        "",
+    ]
+    for model, count in sorted(by_model.items()):
+        lines.append(f"- {model}: {count}")
+    lines.extend(["", "See `repository_manifest.csv` for paths, purposes, SHA-256 values, sizes, and status labels.", ""])
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def final_duplicate_decision(paths: list[str]) -> tuple[str, str, str]:
+    """Explain one duplicate group remaining after cleanup.
+
+    Args:
+        paths: Final paths sharing one digest.
+
+    Returns:
+        Decision, canonical path, and reason.
+
+    Example:
+        ``final_duplicate_decision(['shared/a.mod', 'external/a.mod'])``
+    """
+    canonical = sorted(paths, key=lambda item: (item.startswith("archive/"), len(item), item))[0]
+    if any(item.startswith("external/medlock_267056_excitatory_scaffold/") for item in paths):
+        shared = [item for item in paths if item.startswith("shared/mechanisms/")]
+        if shared:
+            return "retain justified snapshot duplicate", shared[0], "External scaffold remains independently runnable and preserves its audited upstream snapshot."
+    if any("/validation/baseline_v1/" in item for item in paths):
+        return "retain validated snapshot", canonical, "Immutable baseline package preserves model-of-record context."
+    if any("/results/" in item for item in paths):
+        return "retain experiment-context duplicate", canonical, "Byte-identical output occurs in distinct documented protocols or stage directories."
+    if all(item.startswith("archive/") for item in paths):
+        return "retain archive-context duplicate", canonical, "Historical package context remains scientifically useful."
+    return "reviewed and retained", canonical, "No safe context-free deletion was justified after structural deduplication."
+
+
+def write_final_duplicates(path: Path, entries: list[Entry]) -> None:
+    """Write duplicate groups remaining in the final repository.
+
+    Args:
+        path: CSV destination.
+        entries: Final inventory entries.
+
+    Returns:
+        None.
+
+    Example:
+        ``write_final_duplicates(Path('duplicates.csv'), entries)``
+    """
+    groups: dict[str, list[Entry]] = defaultdict(list)
+    for entry in entries:
+        if entry.size > 0:
+            groups[entry.sha256].append(entry)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        fields = ["SHA256", "paths", "size", "decision", "canonical_path", "reason"]
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for digest, group in sorted(groups.items()):
+            if len(group) < 2:
+                continue
+            paths = [entry.path for entry in group]
+            decision, canonical, reason = final_duplicate_decision(paths)
+            writer.writerow(
+                {
+                    "SHA256": digest,
+                    "paths": " | ".join(sorted(paths)),
+                    "size": group[0].size,
+                    "decision": decision,
+                    "canonical_path": canonical,
+                    "reason": reason,
+                }
+            )
+
+
+def old_to_final(path: str) -> str:
+    """Map an original tracked path to its planned final location.
+
+    Args:
+        path: Original repository path.
+
+    Returns:
+        Expected final path.
+
+    Example:
+        ``old_to_final('L796/README.md')``
+    """
+    if path in {"README.md", ".gitignore"}:
+        return path
+    if path.startswith("L796/"):
+        return "cells/L796_projection_neuron/" + path[len("L796/") :]
+    return "archive/other_exploratory_models/early_project_work/" + path
+
+
+def duplicate_replacements(output: Path) -> dict[str, str]:
+    """Read pre-cleanup duplicate groups into noncanonical-to-canonical mappings.
+
+    Args:
+        output: Documentation directory.
+
+    Returns:
+        Original path replacement mapping.
+
+    Example:
+        ``mapping = duplicate_replacements(Path('docs'))``
+    """
+    mapping: dict[str, str] = {}
+    audit = output / "duplicate_file_audit_before_cleanup.csv"
+    with audit.open("r", encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle):
+            if not row["decision"].startswith("remove"):
+                continue
+            canonical = row["canonical_path"]
+            for candidate in row["paths"].split(" | "):
+                if candidate != canonical:
+                    mapping[candidate] = old_to_final(canonical)
+    mapping.update(
+        {
+            "L796/scripts/L796_step5_all_tuning_candidates.csv": "cells/L796_projection_neuron/results/step5_final_model/L796_step5_all_tuning_candidates.csv",
+            "L796/scripts/L796_step5_best_model_features.csv": "cells/L796_projection_neuron/results/step5_final_model/L796_step5_best_model_features.csv",
+            "L796/scripts/L796_step5_best_tuned_parameter_set.json": "cells/L796_projection_neuron/parameters/L796_step5_best_tuned_parameter_set.json",
+            "L796/scripts/L796_step5_top20_tuned_candidates.csv": "cells/L796_projection_neuron/results/step5_final_model/L796_step5_top20_tuned_candidates.csv",
+            "L796/scripts/L796_step5_tuned_AIS_trace_overlay.png": "cells/L796_projection_neuron/figures/step5_final_model/L796_step5_tuned_AIS_trace_overlay.png",
+            "L796/scripts/L796_step5_tuned_FI_curve.png": "cells/L796_projection_neuron/figures/step5_final_model/L796_step5_tuned_FI_curve.png",
+            "L796/scripts/L796_step5_tuned_frequency_curve.png": "cells/L796_projection_neuron/figures/step5_final_model/L796_step5_tuned_frequency_curve.png",
+            "L796/scripts/L796_step5_tuning_report.txt": "cells/L796_projection_neuron/reports/L796_step5_tuning_report.txt",
+            "python/01_ball_stick_ap_demo.py.save": "archive/other_exploratory_models/early_project_work/python/01_ball_stick_ap_demo.py",
+        }
+    )
+    return mapping
+
+
+def write_deletion_manifest(root: Path, output: Path) -> int:
+    """Write one explanation for every deleted original tracked entry.
+
+    Args:
+        root: Repository root.
+        output: Documentation directory.
+
+    Returns:
+        Number of deleted entries.
+
+    Example:
+        ``count = write_deletion_manifest(Path.cwd(), Path('docs'))``
+    """
+    replacements = duplicate_replacements(output)
+    historical_save = "archive/L796/historical_scripts/L796_step5_1sec_sweep_fixed_1000ms_historical.py"
+    shared_prefix = "shared/mechanisms/medlock_267056/"
+    rows: list[tuple[str, str, str]] = []
+    audit_path = output / "repository_audit_before_cleanup.csv"
+    with audit_path.open("r", encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle):
+            original = row["current_path"]
+            if original == "modeldb/2018004":
+                rows.append((original, row["reason"], "archive/other_exploratory_models/early_project_work/modeldb/2018004_GITLINK_NOTE.md"))
+                continue
+            if original == "L796/scripts/L796_step5_1sec_sweep.py.save" and (root / historical_save).is_file():
+                continue
+            if original.startswith("L796/mechanisms/mods/"):
+                expected = shared_prefix + PurePosixPath(original).name
+            else:
+                expected = old_to_final(original)
+            if (root / expected).exists():
+                continue
+            replacement = replacements.get(original, "")
+            reason = row["reason"]
+            if replacement:
+                reason = "Byte-identical redundant copy removed after SHA-256 verification."
+            rows.append((original, reason, replacement))
+    lines = [
+        "# Deletion manifest",
+        "",
+        "Every deleted path from the pre-cleanup tracked tree is listed below. Moves and the renamed historical",
+        "1000 ms L796 script variant are not deletions. Original content remains recoverable from Git commit `c58e004`.",
+        "",
+        "| Old path | Reason | Replacement/canonical path |",
+        "|---|---|---|",
+    ]
+    for old, reason, replacement in rows:
+        lines.append(f"| `{old}` | {reason.replace('|', '/')} | `{replacement}` |")
+    lines.append("")
+    (output / "deletion_manifest.md").write_text("\n".join(lines), encoding="utf-8")
+    return len(rows)
+
+
 def main() -> int:
     """Generate all before-cleanup inventory artifacts.
 
@@ -612,11 +982,12 @@ def main() -> int:
     root = args.root.resolve()
     output = (root / args.output_dir).resolve()
     output.mkdir(parents=True, exist_ok=True)
-    entries = build_repository_entries(root)
-    write_csv(output / "repository_audit_before_cleanup.csv", entries)
-    write_markdown(output / "repository_audit_before_cleanup.md", entries)
-    write_duplicates(output / "duplicate_file_audit.csv", entries)
-    print(f"Audited {len(entries)} tracked entries in {root}")
+    if not args.final:
+        entries = build_repository_entries(root)
+        write_csv(output / "repository_audit_before_cleanup.csv", entries)
+        write_markdown(output / "repository_audit_before_cleanup.md", entries)
+        write_duplicates(output / "duplicate_file_audit.csv", entries)
+        print(f"Audited {len(entries)} tracked entries in {root}")
     specs = [parse_source_spec(value) for value in args.source]
     if specs:
         source_entries = [entry for spec in specs for entry in build_source_entries(spec)]
@@ -624,6 +995,13 @@ def main() -> int:
         write_source_markdown(output / "source_collections_before_import.md", specs, source_entries)
         write_duplicates(output / "source_collection_duplicate_audit.csv", source_entries)
         print(f"Audited {len(source_entries)} source-collection files")
+    if args.final:
+        final_entries = build_final_entries(root)
+        write_final_manifest(output / "repository_manifest.csv", final_entries)
+        write_final_manifest_markdown(output / "repository_manifest.md", final_entries)
+        write_final_duplicates(output / "duplicate_file_audit.csv", final_entries)
+        deleted = write_deletion_manifest(root, output)
+        print(f"Final retained files: {len(final_entries)}; deleted original entries: {deleted}")
     return 0
 
 
