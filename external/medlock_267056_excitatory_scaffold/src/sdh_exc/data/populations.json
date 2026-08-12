@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source": {
+    "modeldb_accession": "267056",
+    "repository": "https://github.com/ModelDBRepository/267056",
+    "commit": "6286892a9e7aa67ad80f2c5d86007350f900c644"
+  },
+  "populations": [
+    {
+      "cell_type": "eTrC",
+      "display_name": "eTrC",
+      "modeldb_label": "TrC",
+      "base_rule": "initial",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 2,
+        "production": 10
+      }
+    },
+    {
+      "cell_type": "ePKCgamma",
+      "display_name": "ePKCγ",
+      "modeldb_label": "PKC",
+      "base_rule": "delayed",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 3,
+        "production": 30
+      }
+    },
+    {
+      "cell_type": "eVGLUT3",
+      "display_name": "eVGLUT3",
+      "modeldb_label": "VGLUT3",
+      "base_rule": "delayed",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 1,
+        "production": 4
+      }
+    },
+    {
+      "cell_type": "eDOR",
+      "display_name": "eDOR",
+      "modeldb_label": "DOR",
+      "base_rule": "delayed",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 3,
+        "production": 30
+      }
+    },
+    {
+      "cell_type": "eSST",
+      "display_name": "eSST",
+      "modeldb_label": "SOM",
+      "base_rule": "delayed",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 2,
+        "production": 15
+      }
+    },
+    {
+      "cell_type": "eCR",
+      "display_name": "eCR",
+      "modeldb_label": "CR",
+      "base_rule": "delayed",
+      "counts": {
+        "exemplar": 1,
+        "smoke": 2,
+        "production": 20
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ The machine-readable CSV records every retained regular file except the manifest
 which are self-excluded to avoid recursive hashes. Generated Git-ignored build/cache products are also excluded.
 
 - Retained files: 1089
-- Retained bytes: 602618770
+- Retained bytes: 602619048
 
 ## Files by model/scope
 

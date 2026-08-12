@@ -13,7 +13,7 @@ special
 
 # Simulation output
 results/
-data/
+/data/
 *.pkl
 
 # Editors and operating systems

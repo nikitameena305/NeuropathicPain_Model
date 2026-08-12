@@ -32,6 +32,11 @@ copy was repaired by restoring the feature-summary loop indentation and
 removing the misplaced call that referenced `best_params` before assignment;
 no scientific parameter was changed.
 
+The preserved Medlock six-population scaffold also passed all eight of its
+catalog, rule-independence, and MOD-source hash tests. Its packaged
+`src/sdh_exc/data/populations.json` catalog is explicitly retained even though
+root-level simulation `data/` output remains ignored.
+
 ## NEURON smoke tests
 
 `bash scripts/run_smoke_tests.sh` passed in the environment above:
