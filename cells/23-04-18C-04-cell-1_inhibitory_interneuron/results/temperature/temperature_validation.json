@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "rows": [
+    {
+      "temperature_c": 21.0,
+      "classification": "EXPERIMENTAL-RANGE MODEL COMPARISON",
+      "rheobase_na": 0.05,
+      "spikes_at_0p12_na": 27,
+      "frequency_hz_at_0p12_na": 33.75,
+      "tonic_persistence_at_0p12_na": 0.9856562500019834,
+      "ap_threshold_mv": -35.23960615497011,
+      "ap_peak_mv": 4.039721292044303,
+      "ap_half_width_ms": 1.2499999999988631,
+      "q10_na": 3.0,
+      "q10_kdr": 3.0,
+      "reference_temperature_c": 23.0
+    },
+    {
+      "temperature_c": 23.0,
+      "classification": "EXPERIMENTAL-RANGE MODEL COMPARISON",
+      "rheobase_na": 0.05,
+      "spikes_at_0p12_na": 30,
+      "frequency_hz_at_0p12_na": 37.5,
+      "tonic_persistence_at_0p12_na": 0.9684062500019206,
+      "ap_threshold_mv": -34.839411579748024,
+      "ap_peak_mv": -1.3257035199173306,
+      "ap_half_width_ms": 1.0749999999990223,
+      "q10_na": 3.0,
+      "q10_kdr": 3.0,
+      "reference_temperature_c": 23.0
+    },
+    {
+      "temperature_c": 24.0,
+      "classification": "EXPERIMENTAL-RANGE MODEL COMPARISON",
+      "rheobase_na": 0.05,
+      "spikes_at_0p12_na": 32,
+      "frequency_hz_at_0p12_na": 40.0,
+      "tonic_persistence_at_0p12_na": 0.9865000000019865,
+      "ap_threshold_mv": -33.76414761589586,
+      "ap_peak_mv": -6.089360365843482,
+      "ap_half_width_ms": 0.9999999999990905,
+      "q10_na": 3.0,
+      "q10_kdr": 3.0,
+      "reference_temperature_c": 23.0
+    },
+    {
+      "temperature_c": 35.0,
+      "classification": "35 C MODEL PREDICTION",
+      "rheobase_na": 0.15,
+      "spikes_at_0p12_na": 0,
+      "frequency_hz_at_0p12_na": 0.0,
+      "tonic_persistence_at_0p12_na": 0.0,
+      "ap_threshold_mv": -37.888721073233576,
+      "ap_peak_mv": -17.641564160151443,
+      "ap_half_width_ms": 0.6249999999994316,
+      "q10_na": 3.0,
+      "q10_kdr": 3.0,
+      "reference_temperature_c": 23.0
+    }
+  ],
+  "interpretation": "21-24 C is the reported experimental range; 35 C is a MODEL PREDICTION."
+}

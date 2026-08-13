@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "model_id": "NMO_170087",
+  "cell_name": "23-04-18C-04-cell-1",
+  "status": "engineering_ready_biologically_provisional",
+  "random_seed": 170087,
+  "temperature_c": 23.0,
+  "morphology": {
+    "file": "morphology/model/23-04-18C-04-cell-1.model.swc",
+    "source_file": "morphology/primary/23-04-18C-04-cell-1.CNG.swc",
+    "source_sha256": "e2ecaffc1ebcf9c88b72224fa4172aa93dfb013edb3ad40ee2bfadebe06ec915",
+    "model_sha256": "0e05613af9b747d3ca856d1b643c7c776d8207df2397637d302144834ea8c9f2",
+    "transformation": "blank lines removed only",
+    "synthetic_axon": false,
+    "axon_status": "native reconstructed axon retained; NeuroMorpho marks it incomplete"
+  },
+  "discretization": {
+    "method": "d_lambda",
+    "frequency_hz": 100.0,
+    "d_lambda": 0.1
+  },
+  "passive": {
+    "ra_ohm_cm": 150.0,
+    "cm_uf_cm2": 0.5,
+    "g_pas_s_cm2": 0.00006076828312277793,
+    "e_pas_mv": -60.0,
+    "classification": {
+      "ra_ohm_cm": "MODEL-ASSUMED",
+      "cm_uf_cm2": "MODEL-ASSUMED at lower restrained boundary",
+      "g_pas_s_cm2": "MODEL-FITTED to adult PV population input resistance",
+      "e_pas_mv": "MODEL-ASSUMED/FITTED to experimental holding condition; not RMP"
+    }
+  },
+  "ions": {
+    "ena_mv": 60.0,
+    "ek_mv": -84.0
+  },
+  "active": {
+    "enabled": true,
+    "minimal_channel_set": ["l571_na", "l571_kdr", "pas"],
+    "mechanism_dependency": "cells/L571_inhibitory_interneuron/mechanisms",
+    "kinetic_source": "Medlock et al. ModelDB 267056 equations as transparently adapted in existing project l571_na/l571_kdr mechanisms",
+    "density_source": "Cell 1 coarse/refined deterministic search; not inherited L571 densities",
+    "temperature_scaling": true,
+    "q10_na": 3.0,
+    "q10_kdr": 3.0,
+    "reference_temperature_c": 23.0,
+    "temperature_equation": "rate_multiplier = Q10^((celsius - Tref)/10); maximal conductance is unchanged",
+    "ais_proxy_max_distance_um": 30.0,
+    "ais_label": "MODEL-DEFINED proximal-axon spike-initiation proxy; not an anatomically confirmed AIS",
+    "conductance_s_cm2": {
+      "soma": {"na": 0.006, "kdr": 0.003},
+      "dendrite": {"na": 0.0, "kdr": 0.002},
+      "ais_proxy": {"na": 0.4, "kdr": 0.03},
+      "distal_axon": {"na": 0.02, "kdr": 0.01}
+    }
+  },
+  "simulation": {
+    "dt_ms": 0.025,
+    "v_init_mv": -60.0,
+    "stim_delay_ms": 250.0,
+    "stim_duration_ms": 800.0,
+    "post_stim_ms": 250.0,
+    "spike_crossing_mv": -20.0
+  },
+  "protocols": {
+    "passive_current_na": -0.02,
+    "fi_currents_na": [-0.02, 0.0, 0.02, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.12, 0.15, 0.2, 0.3, 0.4],
+    "representative_current_na": 0.12,
+    "strong_current_na": 0.4
+  },
+  "evidence_scope": {
+    "morphology_and_markers": "same reconstructed cell",
+    "passive_and_active_targets": "same genetically identified population; population level",
+    "conductance_values": "model fitted",
+    "35c_behavior": "model predicted"
+  }
+}

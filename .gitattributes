@@ -1,0 +1,3 @@
+# Preserve deposited morphology bytes and their recorded SHA256 checksums.
+cells/23-04-18C-04-cell-1_inhibitory_interneuron/morphology/primary/*.swc -text
+cells/23-04-18C-04-cell-1_inhibitory_interneuron/morphology/model/*.swc -text

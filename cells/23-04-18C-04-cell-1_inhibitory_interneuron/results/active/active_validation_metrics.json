@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "configuration": "parameters/final/NMO_170087_final_23C.json",
+  "neuron_version": "NEURON -- VERSION 9.0.1 HEAD (b12a541+) 2025-11-14",
+  "temperature_c": 23.0,
+  "morphology_inventory": {
+    "sections": {
+      "total": 64,
+      "soma": 1,
+      "dendrite": 54,
+      "axon": 9
+    },
+    "segments": {
+      "total": 118,
+      "soma": 1,
+      "dendrite": 92,
+      "axon": 25
+    },
+    "area_um2": {
+      "soma": 427.4078292816355,
+      "dendrite": 6203.457607121057,
+      "axon": 965.3280633804616,
+      "total": 7596.193499783154
+    },
+    "geometric_capacitance_pf": 37.98096749891578,
+    "axon_root": "<pv_cell.MorphologyHolder object at 0x7dc332459960>.axon[0]",
+    "axon_root_length_um": 69.06229158890888,
+    "axon_record_x": 0.2895936340926735,
+    "proximal_dendrite": "<pv_cell.MorphologyHolder object at 0x7dc332459960>.dend[0]",
+    "source_swc_unchanged": true,
+    "synthetic_axon_added": false
+  },
+  "active_baseline_mv_model_prediction": -60.03314950887021,
+  "active_input_resistance_probe": {
+    "baseline_equilibrium_mv": -60.033149287277766,
+    "steady_state_mv": -64.42790821708039,
+    "delta_v_mv": -4.39475892980262,
+    "rin_mohm": 219.737946490131,
+    "tau_ms_monoexponential": 7.218514349365493,
+    "tau_fit_rmse_mv": 0.012267159516891826,
+    "equivalent_capacitance_from_tau_rin_pf": 32.85055888009627
+  },
+  "rheobase_na": 0.05,
+  "rheobase_resolution_na": 0.01,
+  "rheobase_action_potential": {
+    "available": true,
+    "threshold_mv_dvdt_20_v_s": -34.839411579748024,
+    "peak_mv": -1.3257035199173306,
+    "amplitude_peak_minus_threshold_mv": 33.51370805983069,
+    "half_width_ms": 1.0749999999990223,
+    "ahp_min_mv": -71.71671926070943,
+    "ahp_relative_to_threshold_mv": -36.8773076809614,
+    "max_dvdt_v_s": 70.97785681758478,
+    "soma_crossing_time_ms": 268.49999999989274,
+    "axon_crossing_time_ms": 268.3249999998929,
+    "axon_lead_ms": 0.17499999999984084
+  },
+  "representative_firing_at_2x_rheobase": {
+    "current_na": 0.12,
+    "spike_count": 30,
+    "frequency_hz": 37.5,
+    "first_spike_latency_ms": 6.174999999903946,
+    "last_spike_time_ms": 774.7250000015365,
+    "mean_isi_ms": 26.501724137987328,
+    "adaptation_ratio_last_over_first": 1.0371093750047162,
+    "tonic_persistence_fraction": 0.9684062500019206,
+    "spike_times_relative_ms": [
+      6.174999999903946,
+      31.774999999880663,
+      58.02499999985679,
+      84.49999999983271,
+      111.04999999980856,
+      137.57499999978444,
+      164.1249999997603,
+      190.67499999973614,
+      217.224999999712,
+      243.77499999968785,
+      270.3249999997015,
+      296.8749999997981,
+      323.4249999998947,
+      349.97499999999127,
+      376.52500000008786,
+      403.07500000018445,
+      429.62500000028103,
+      456.15000000037753,
+      482.7000000004741,
+      509.2500000005707,
+      535.8000000006673,
+      562.3500000007639,
+      588.9000000008605,
+      615.4500000009571,
+      642.0000000010536,
+      668.5250000011501,
+      695.0750000012467,
+      721.6250000013433,
+      748.1750000014399,
+      774.7250000015365
+    ]
+  },
+  "strong_current_firing": {
+    "current_na": 0.4,
+    "spike_count": 1,
+    "frequency_hz": 1.25,
+    "first_spike_latency_ms": 2.1249999999076294,
+    "last_spike_time_ms": 2.1249999999076294,
+    "mean_isi_ms": null,
+    "adaptation_ratio_last_over_first": null,
+    "tonic_persistence_fraction": 0.002656249999884537,
+    "spike_times_relative_ms": [
+      2.1249999999076294
+    ]
+  },
+  "fi_curve": [
+    {
+      "current_na": -0.02,
+      "spike_count": 0,
+      "frequency_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.0,
+      "spike_count": 0,
+      "frequency_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.02,
+      "spike_count": 0,
+      "frequency_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.04,
+      "spike_count": 0,
+      "frequency_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.05,
+      "spike_count": 1,
+      "frequency_hz": 1.25,
+      "first_spike_latency_ms": 18.499999999892736,
+      "last_spike_time_ms": 18.499999999892736,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.02312499999986592,
+      "spike_times_relative_ms": [
+        18.499999999892736
+      ]
+    },
+    {
+      "current_na": 0.06,
+      "spike_count": 1,
+      "frequency_hz": 1.25,
+      "first_spike_latency_ms": 13.324999999897443,
+      "last_spike_time_ms": 13.324999999897443,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.016656249999871805,
+      "spike_times_relative_ms": [
+        13.324999999897443
+      ]
+    },
+    {
+      "current_na": 0.07,
+      "spike_count": 1,
+      "frequency_hz": 1.25,
+      "first_spike_latency_ms": 10.899999999899649,
+      "last_spike_time_ms": 10.899999999899649,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.01362499999987456,
+      "spike_times_relative_ms": [
+        10.899999999899649
+      ]
+    },
+    {
+      "current_na": 0.08,
+      "spike_count": 1,
+      "frequency_hz": 1.25,
+      "first_spike_latency_ms": 9.349999999901058,
+      "last_spike_time_ms": 9.349999999901058,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.011687499999876323,
+      "spike_times_relative_ms": [
+        9.349999999901058
+      ]
+    },
+    {
+      "current_na": 0.09,
+      "spike_count": 2,
+      "frequency_hz": 2.5,
+      "first_spike_latency_ms": 8.224999999902082,
+      "last_spike_time_ms": 40.09999999987309,
+      "mean_isi_ms": 31.87499999997101,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.050124999999841366,
+      "spike_times_relative_ms": [
+        8.224999999902082,
+        40.09999999987309
+      ]
+    },
+    {
+      "current_na": 0.1,
+      "spike_count": 7,
+      "frequency_hz": 8.75,
+      "first_spike_latency_ms": 7.374999999902855,
+      "last_spike_time_ms": 194.69999999973248,
+      "mean_isi_ms": 31.220833333304938,
+      "adaptation_ratio_last_over_first": 1.1601731601731602,
+      "tonic_persistence_fraction": 0.2433749999996656,
+      "spike_times_relative_ms": [
+        7.374999999902855,
+        36.24999999987659,
+        66.54999999984904,
+        97.5999999998208,
+        129.1499999997921,
+        161.19999999976295,
+        194.69999999973248
+      ]
+    },
+    {
+      "current_na": 0.12,
+      "spike_count": 30,
+      "frequency_hz": 37.5,
+      "first_spike_latency_ms": 6.174999999903946,
+      "last_spike_time_ms": 774.7250000015365,
+      "mean_isi_ms": 26.501724137987328,
+      "adaptation_ratio_last_over_first": 1.0371093750047162,
+      "tonic_persistence_fraction": 0.9684062500019206,
+      "spike_times_relative_ms": [
+        6.174999999903946,
+        31.774999999880663,
+        58.02499999985679,
+        84.49999999983271,
+        111.04999999980856,
+        137.57499999978444,
+        164.1249999997603,
+        190.67499999973614,
+        217.224999999712,
+        243.77499999968785,
+        270.3249999997015,
+        296.8749999997981,
+        323.4249999998947,
+        349.97499999999127,
+        376.52500000008786,
+        403.07500000018445,
+        429.62500000028103,
+        456.15000000037753,
+        482.7000000004741,
+        509.2500000005707,
+        535.8000000006673,
+        562.3500000007639,
+        588.9000000008605,
+        615.4500000009571,
+        642.0000000010536,
+        668.5250000011501,
+        695.0750000012467,
+        721.6250000013433,
+        748.1750000014399,
+        774.7250000015365
+      ]
+    },
+    {
+      "current_na": 0.15,
+      "spike_count": 34,
+      "frequency_hz": 42.5,
+      "first_spike_latency_ms": 4.999999999905015,
+      "last_spike_time_ms": 779.1750000015527,
+      "mean_isi_ms": 23.459848484898416,
+      "adaptation_ratio_last_over_first": 1.0329670329717304,
+      "tonic_persistence_fraction": 0.9739687500019408,
+      "spike_times_relative_ms": [
+        4.999999999905015,
+        27.749999999884324,
+        50.99999999986318,
+        74.42499999984187,
+        97.89999999982052,
+        121.39999999979915,
+        144.8749999997778,
+        168.37499999975643,
+        191.87499999973505,
+        215.37499999971368,
+        238.84999999969233,
+        262.3499999996725,
+        285.849999999758,
+        309.3249999998434,
+        332.8249999999289,
+        356.32500000001437,
+        379.80000000009977,
+        403.30000000018526,
+        426.80000000027076,
+        450.27500000035616,
+        473.77500000044165,
+        497.27500000052714,
+        520.7500000006125,
+        544.250000000698,
+        567.7500000007835,
+        591.2250000008689,
+        614.7250000009544,
+        638.2250000010399,
+        661.7000000011253,
+        685.2000000012108,
+        708.7000000012963,
+        732.1750000013817,
+        755.6750000014672,
+        779.1750000015527
+      ]
+    },
+    {
+      "current_na": 0.2,
+      "spike_count": 38,
+      "frequency_hz": 47.5,
+      "first_spike_latency_ms": 3.874999999906038,
+      "last_spike_time_ms": 781.8500000015624,
+      "mean_isi_ms": 21.026351351396116,
+      "adaptation_ratio_last_over_first": 1.0498753117254724,
+      "tonic_persistence_fraction": 0.977312500001953,
+      "spike_times_relative_ms": [
+        3.874999999906038,
+        23.924999999887802,
+        44.57499999986902,
+        65.49999999984999,
+        86.49999999983089,
+        107.57499999981172,
+        128.62499999979258,
+        149.6999999997734,
+        170.77499999975424,
+        191.84999999973508,
+        212.9249999997159,
+        233.99999999969674,
+        255.07499999967757,
+        276.1499999997227,
+        297.1999999997993,
+        318.27499999987594,
+        339.3499999999526,
+        360.4250000000293,
+        381.50000000010596,
+        402.5750000001826,
+        423.6500000002593,
+        444.72500000033597,
+        465.77500000041255,
+        486.8500000004892,
+        507.9250000005659,
+        529.0000000006426,
+        550.0750000007192,
+        571.1500000007959,
+        592.2250000008726,
+        613.2750000009491,
+        634.3500000010258,
+        655.4250000011025,
+        676.5000000011792,
+        697.5750000012558,
+        718.6500000013325,
+        739.7250000014092,
+        760.8000000014858,
+        781.8500000015624
+      ]
+    },
+    {
+      "current_na": 0.3,
+      "spike_count": 2,
+      "frequency_hz": 2.5,
+      "first_spike_latency_ms": 2.7249999999070837,
+      "last_spike_time_ms": 20.499999999890917,
+      "mean_isi_ms": 17.774999999983834,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.025624999999863646,
+      "spike_times_relative_ms": [
+        2.7249999999070837,
+        20.499999999890917
+      ]
+    },
+    {
+      "current_na": 0.4,
+      "spike_count": 1,
+      "frequency_hz": 1.25,
+      "first_spike_latency_ms": 2.1249999999076294,
+      "last_spike_time_ms": 2.1249999999076294,
+      "mean_isi_ms": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.002656249999884537,
+      "spike_times_relative_ms": [
+        2.1249999999076294
+      ]
+    }
+  ],
+  "validation_gates": [
+    {
+      "metric": "rheobase",
+      "experimental_target": "77 +/- 7 pA",
+      "source": "Gradwell aging adult PV population",
+      "model_value": 50.0,
+      "acceptance_criterion": "63-91 pA (mean +/- 2 SEM)",
+      "status": "FAIL",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "AP threshold",
+      "experimental_target": "-34.9 +/- 1.3 mV",
+      "source": "Gradwell aging adult PV population",
+      "model_value": -34.839411579748024,
+      "acceptance_criterion": "-37.5 to -32.3 mV (mean +/- 2 SEM)",
+      "status": "PASS",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "AP amplitude",
+      "experimental_target": "44.8 +/- 1.6 mV",
+      "source": "Gradwell aging adult PV population",
+      "model_value": 33.51370805983069,
+      "acceptance_criterion": "41.6-48.0 mV (mean +/- 2 SEM)",
+      "status": "FAIL",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "AP half-width",
+      "experimental_target": "1.4 +/- 0.1 ms",
+      "source": "Gradwell aging adult PV population",
+      "model_value": 1.0749999999990223,
+      "acceptance_criterion": "1.2-1.6 ms (mean +/- 2 SEM)",
+      "status": "FAIL",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "AHP relative to threshold",
+      "experimental_target": "-17.6 +/- 1.6 mV",
+      "source": "Gradwell aging adult PV population",
+      "model_value": -36.8773076809614,
+      "acceptance_criterion": "-20.8 to -14.4 mV (mean +/- 2 SEM)",
+      "status": "FAIL",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "tonic persistence",
+      "experimental_target": "tonic in 55% adult and 64.2% broader PV cohorts",
+      "source": "Gradwell 2022 studies",
+      "model_value": 0.9684062500019206,
+      "acceptance_criterion": ">=3 spikes and last spike after 80% of 800-ms pulse at 2x rheobase",
+      "status": "PASS",
+      "evidence_level": "SP/PL"
+    },
+    {
+      "metric": "strong-current recovery",
+      "experimental_target": "no quantitative target",
+      "source": "engineering gate",
+      "model_value": 1,
+      "acceptance_criterion": "spikes present and post-stimulus voltage returns within 5 mV of baseline",
+      "status": "PASS",
+      "evidence_level": "engineering"
+    }
+  ],
+  "gate_counts": {
+    "pass": 3,
+    "fail": 4
+  },
+  "active_status": "PARTIAL: population-supported tonic phenotype and threshold reproduced; waveform/rheobase gates reported individually",
+  "claim_scope": "No electrophysiological trace is linked to NMO_170087; all comparisons are population-level."
+}

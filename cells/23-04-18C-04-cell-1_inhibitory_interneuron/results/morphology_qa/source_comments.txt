@@ -1,0 +1,12 @@
+# SWC to SWC conversion from L-Measure. Sridevi Polavaram: spolavar@gmu.edu
+# Original fileName:C:\NMO_dev\data_proc\Hughes_Final\Source_Temp1//23-04-18C-04-cell-1.CNG.swc
+#
+# SWC to SWC conversion from L-Measure. Sridevi Polavaram: spolavar@gmu.edu
+# Original fileName:C:\NMO_dev\data_proc\Auto swc//23-04-18C-04-cell-1.asc.swc.CNG.swc
+#
+# Original file C:\NMO_dev\data_proc\Temp_LMeasure\23-04-18C-04-cell-1.asc.swc edited using StdSwc version 1.31 on 11/23/21.
+# Irregularities and fixes documented in C:\NMO_dev\data_proc\Temp_LMeasure\23-04-18C-04-cell-1.asc.swc.std.  See StdSwc1.31.doc for more information.
+#
+# Neurolucida to SWC conversion from L-Measure. Sridevi Polavaram: spolavar@gmu.edu
+# Original fileName:C:\NMO_dev\data_proc\Source_Temp1//23-04-18C-04-cell-1.asc
+# The original file has 9 soma contours that are averaged into 9 soma points
