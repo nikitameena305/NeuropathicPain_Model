@@ -1,0 +1,87 @@
+{
+  "file": {
+    "comment_lines": 30,
+    "format": "SWC text",
+    "path": "cells/eTrc/morphology/26-11-14-A-A6.CNG.swc",
+    "sha256": "3f74c3796e9992b63dabb4f9c8430695658f35bd03f824bb47a58ce1c625726e",
+    "size_bytes": 379678
+  },
+  "geometry": {
+    "bounds_um": {
+      "x": [
+        -46.68,
+        38.17
+      ],
+      "y": [
+        -129.58,
+        293.48
+      ],
+      "z": [
+        -52.79,
+        5.0
+      ]
+    },
+    "extent_um": {
+      "x": 84.85,
+      "y": 423.06000000000006,
+      "z": 57.79
+    },
+    "length_um_by_child_type": {
+      "1": 10.838889347909225,
+      "2": 1520.5010285351627,
+      "3": 1760.6070496413054
+    },
+    "radius_range_um": [
+      0.075,
+      5.209
+    ],
+    "surface_area_um2_by_child_type_approx": {
+      "1": 265.3275201567371,
+      "2": 2655.332885716403,
+      "3": 4397.211877710269
+    },
+    "total_cable_length_um": 3291.946967524377,
+    "total_surface_area_um2_approx": 7317.872283583409
+  },
+  "identity": {
+    "axon_interpretation": "native reconstructed axon; partial/moderate physical integrity",
+    "cell_name": "26-11-14-A-A6",
+    "known_identity": "GRP-positive excitatory interneuron",
+    "neuromorpho_id": "NMO_109005",
+    "physical_integrity": "Dendrites & Axon Moderate",
+    "region": "mid-lumbar spinal dorsal horn, lamina II",
+    "source": "NeuroMorpho.Org API record 109005; Todd archive; Dickie et al. 2019",
+    "species": "mouse"
+  },
+  "integrity": {
+    "component_sizes": [
+      10314
+    ],
+    "connected_component_count": 1,
+    "duplicate_coordinate_rows_beyond_first": 0,
+    "invalid_rows": [],
+    "nonpositive_radius_node_ids": [],
+    "orphan_parent_node_ids": [],
+    "pass": true,
+    "root_ids": [
+      1
+    ],
+    "valid_swc_rows": 10314,
+    "zero_length_edges": []
+  },
+  "population_comparison_note": "The reconstructed geometry is retained without rescaling; Dickie et al. Table 3 GRP values are population mean +/- SD, not same-cell targets.",
+  "topology": {
+    "axon_origins": 1,
+    "axon_present": true,
+    "branch_points": 83,
+    "dendrites_present": true,
+    "endpoints": 87,
+    "primary_dendrite_origins": 3,
+    "soma_present": true,
+    "type_counts": {
+      "1": 9,
+      "2": 3249,
+      "3": 7056
+    }
+  }
+}

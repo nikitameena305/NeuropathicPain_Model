@@ -1,0 +1,105 @@
+{
+  "model_name": "eTrC-like — NMO_109005",
+  "identity": {
+    "cell": "26-11-14-A-A6",
+    "neuromorpho_id": "NMO_109005",
+    "species": "mouse",
+    "region": "mid-lumbar spinal dorsal horn, lamina II",
+    "known_identity": "GRP-positive excitatory interneuron",
+    "interpretation": "GRP-positive lamina-II excitatory interneuron used as a biologically informed transient-central/eTrC-like model",
+    "warning": "GRP identity is supported; exact eTrC membership and same-cell electrophysiology are not established for NMO_109005."
+  },
+  "morphology": {
+    "path": "cells/eTrc/morphology/26-11-14-A-A6.CNG.swc",
+    "sha256": "3f74c3796e9992b63dabb4f9c8430695658f35bd03f824bb47a58ce1c625726e",
+    "axon": "native reconstructed partial/moderate axon",
+    "geometry_modified": false
+  },
+  "temperature_C": 35.0,
+  "temperature_claim": "35°C temperature-translated model prediction constrained by room-temperature GRP population electrophysiology",
+  "passive": {
+    "Ra_ohm_cm": 100.0,
+    "cm_uF_cm2": 0.7,
+    "g_pas_S_cm2": 1e-05,
+    "e_pas_mV": -52.89,
+    "provenance": "bounded fit to Dickie et al. GRP population RMP and Rin; capacitance mismatch preserved"
+  },
+  "active_domain": {
+    "label": "MODEL-DEFINED PROXIMAL ACTIVE CHANNEL DOMAIN",
+    "description": "soma plus native axon segments at path distance <=20 µm from soma; no synthetic geometry",
+    "proximal_axon_cutoff_um": 20.0,
+    "proximal_axon_max_segment_length_um": 3.0
+  },
+  "active_mechanisms": [
+    {
+      "mechanism": "B_Na",
+      "ion": "Na",
+      "source_file": "cells/eTrc/mechanisms/B_NA.mod",
+      "source": "Medlock/ModelDB 267056 mechanism; kinetics attributed in source comments to dorsal-horn sodium-current models",
+      "biological_evidence": "fast Na current is required for action-potential initiation; density is fitted, not measured in this cell",
+      "reason_retained": "required for stable, overshooting action potentials",
+      "distribution": {
+        "soma_gnabar_S_cm2": 0.2,
+        "proximal_native_axon_gnabar_S_cm2": 0.4,
+        "elsewhere_gnabar_S_cm2": 0.0
+      },
+      "parameters": {
+        "ena_mV": 53.0,
+        "tau_factor": 1.0,
+        "alpha_shift_mV": 0.0,
+        "beta_shift_mV": 0.0,
+        "usetable": 0
+      },
+      "temperature_handling": "MOD computes tadj with Q10=3 relative to 23°C, but gate tau uses tau_factor instead; audited kinetics are effectively temperature-independent."
+    },
+    {
+      "mechanism": "B_DR",
+      "ion": "K",
+      "source_file": "cells/eTrc/mechanisms/B_DR.mod",
+      "source": "Medlock/ModelDB 267056 mechanism; source cites Safronov et al. 2000",
+      "biological_evidence": "delayed-rectifier K current is required for repolarization; density is fitted, not measured in this cell",
+      "reason_retained": "prevents runaway excitation and supports stable recovery",
+      "distribution": {
+        "soma_gkbar_S_cm2": 0.6,
+        "proximal_native_axon_gkbar_S_cm2": 1.2,
+        "elsewhere_gkbar_S_cm2": 0.0
+      },
+      "parameters": {
+        "ek_mV": -84.0,
+        "usetable": 0
+      },
+      "temperature_handling": "MOD computes a Q10=3 tadj relative to 23°C but does not apply it to rates; audited kinetics are effectively temperature-independent."
+    }
+  ],
+  "discretization": {
+    "policy": "odd nseg by d-lambda, with finer proximal native axon sampling",
+    "frequency_Hz": 100.0,
+    "d_lambda": 0.1,
+    "dt_ms": 0.025,
+    "solver": "fixed step"
+  },
+  "current_protocol": {
+    "holding_current_pA": -5.3,
+    "holding_target_mV": -60.0,
+    "primary_delay_ms": 500.0,
+    "primary_duration_ms": 1000.0,
+    "recovery_test_delay_ms": 1700.0,
+    "recovery_test_duration_ms": 100.0,
+    "recovery_test_current_pA": 36.0,
+    "stop_ms": 1950.0,
+    "current_series_pA": [0.0, 14.0, 16.0, 17.0, 18.0, 22.5, 27.0, 36.0, 50.0]
+  },
+  "biological_targets": {
+    "source": "Dickie et al. 2019, PAIN 160:442–462, DOI 10.1097/j.pain.0000000000001406",
+    "rmp_mV": {"mean": -52.89, "sem": 0.78, "n": 230},
+    "rin_MOhm": {"mean": 1588.0, "sem": 85.0, "n": 232},
+    "whole_cell_capacitance_pF": {"mean": 5.12, "sem": 0.11, "n": 232},
+    "rheobase_pA": {"mean": 18.30, "sem": 1.07, "n": 155},
+    "first_spike_latency_ms": {"mean": 137.1, "sem": 6.2, "n": 155},
+    "primary_firing_phenotype": "transient",
+    "secondary_acceptable_phenotype": "single-spike"
+  },
+  "model_status": "ENGINEERING READY / BIOLOGICALLY PROVISIONAL",
+  "network_ready": "NO",
+  "status_reason": "Morphology, passive RMP/Rin, rheobase, single-spike stability, recovery, and numerical execution are established; capacitance, active-model Rin, and first-spike latency do not match population constraints."
+}

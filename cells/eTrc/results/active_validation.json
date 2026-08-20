@@ -1,0 +1,383 @@
+{
+  "decision": "ENGINEERING READY / BIOLOGICALLY PROVISIONAL",
+  "final_35C": {
+    "acceptance": {
+      "latency_within_population_mean_plus_minus_2SEM": false,
+      "not_depolarization_block": true,
+      "phenotype_transient_or_single": true,
+      "recovery_pass": true,
+      "rheobase_within_population_mean_plus_minus_2SEM": true
+    },
+    "active_domain": {
+      "description": "soma plus native axon segments at path distance <=20 \u00b5m from soma; no synthetic geometry",
+      "label": "MODEL-DEFINED PROXIMAL ACTIVE CHANNEL DOMAIN",
+      "proximal_axon_cutoff_um": 20.0,
+      "proximal_axon_max_segment_length_um": 3.0
+    },
+    "active_rest": {
+      "rin_MOhm": 464.24033099735595,
+      "rmp_mV": -55.6669730481009,
+      "test_current_pA": -1.0
+    },
+    "claim": "35\u00b0C temperature-translated model prediction constrained by room-temperature GRP population electrophysiology",
+    "current_series": [
+      {
+        "classification": "silent",
+        "current_pA": 0.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 0.0,
+        "first_spike_latency_ms": null,
+        "last_spike_time_from_onset_ms": null,
+        "late_step_voltage_mV": -59.94010341267161,
+        "peak_voltage_mV": -59.94010341267087,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.94010341267087,
+        "recovery_voltage_pass": true,
+        "spike_count": 0,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 0,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "silent",
+        "current_pA": 14.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 0.0,
+        "first_spike_latency_ms": null,
+        "last_spike_time_from_onset_ms": null,
+        "late_step_voltage_mV": -53.3573489634521,
+        "peak_voltage_mV": -50.589353542009384,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.7982355397036,
+        "recovery_voltage_pass": true,
+        "spike_count": 0,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 0,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "silent",
+        "current_pA": 16.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 0.0,
+        "first_spike_latency_ms": null,
+        "last_spike_time_from_onset_ms": null,
+        "late_step_voltage_mV": -53.02671951305322,
+        "peak_voltage_mV": -48.81653570407939,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.79967177573499,
+        "recovery_voltage_pass": true,
+        "spike_count": 0,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 0,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "silent",
+        "current_pA": 17.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 0.0,
+        "first_spike_latency_ms": null,
+        "last_spike_time_from_onset_ms": null,
+        "late_step_voltage_mV": -52.87576355847272,
+        "peak_voltage_mV": -47.22533415255742,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.80044798280596,
+        "recovery_voltage_pass": true,
+        "spike_count": 0,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 0,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "single-spike",
+        "current_pA": 18.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 25.24999999971942,
+        "last_spike_time_from_onset_ms": 25.24999999971942,
+        "late_step_voltage_mV": -52.73295794815488,
+        "peak_voltage_mV": 10.180102558113692,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.80124863736654,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "single-spike",
+        "current_pA": 22.5,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 17.59999999969159,
+        "last_spike_time_from_onset_ms": 17.59999999969159,
+        "late_step_voltage_mV": -52.17096934036033,
+        "peak_voltage_mV": 17.20441206119551,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.80499532744931,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "single-spike",
+        "current_pA": 27.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 14.324999999679676,
+        "last_spike_time_from_onset_ms": 14.324999999679676,
+        "late_step_voltage_mV": -51.706369802214454,
+        "peak_voltage_mV": 19.201180548223853,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.80877741000125,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "single-spike",
+        "current_pA": 36.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 10.724999999672434,
+        "last_spike_time_from_onset_ms": 10.724999999672434,
+        "late_step_voltage_mV": -50.96274700712051,
+        "peak_voltage_mV": 21.28725687601098,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.81609493733845,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      },
+      {
+        "classification": "single-spike",
+        "current_pA": 50.0,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 7.874999999675026,
+        "last_spike_time_from_onset_ms": 7.874999999675026,
+        "late_step_voltage_mV": -50.09627684867973,
+        "peak_voltage_mV": 22.99260307779726,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.82669251078523,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      }
+    ],
+    "first_spike_latency_ms": 25.24999999971942,
+    "known_failures": [
+      "first-spike latency is substantially shorter than the GRP population target",
+      "active-model input resistance is lower than the GRP population target",
+      "morphology-derived capacitance is much larger than the whole-cell population value",
+      "B_Na and B_DR kinetics are effectively temperature-independent despite celsius/tadj variables in their source"
+    ],
+    "mechanism_library": "mechanisms/x86_64/libnrnmech.so",
+    "model": "eTrC-like \u2014 NMO_109005",
+    "model_status": "ENGINEERING READY / BIOLOGICALLY PROVISIONAL",
+    "network_ready": "NO",
+    "overall_target_status": "PARTIAL",
+    "proximal_active_section_count": 1,
+    "proximal_active_segment_count": 5,
+    "rheobase_classification": "single-spike",
+    "rheobase_metrics": {
+      "classification": "single-spike",
+      "current_pA": 18.0,
+      "dt_ms": 0.025,
+      "firing_frequency_Hz": 1.0,
+      "first_spike_latency_ms": 25.24999999971942,
+      "last_spike_time_from_onset_ms": 25.24999999971942,
+      "late_step_voltage_mV": -52.73295794815488,
+      "peak_voltage_mV": 10.180102558113692,
+      "pre_step_voltage_mV": -59.940284015004565,
+      "recovery_pass": true,
+      "recovery_test_spike_count": 1,
+      "recovery_voltage_mV": -59.80124863736654,
+      "recovery_voltage_pass": true,
+      "spike_count": 1,
+      "spikes_after_100_ms": 0,
+      "spikes_first_100_ms": 1,
+      "temperature_C": 35.0
+    },
+    "rheobase_pA": 18.0,
+    "temperature_C": 35.0
+  },
+  "identity_interpretation": "GRP-positive lamina-II excitatory interneuron used as a biologically informed transient-central/eTrC-like model",
+  "model": "eTrC-like \u2014 NMO_109005",
+  "native_vs_model_defined_active_domain": {
+    "native_full_axon": "Tested first. Stable single spikes were possible, but activating the entire partial axon strongly perturbed resting/subthreshold behavior.",
+    "selected": {
+      "description": "soma plus native axon segments at path distance <=20 \u00b5m from soma; no synthetic geometry",
+      "label": "MODEL-DEFINED PROXIMAL ACTIVE CHANNEL DOMAIN",
+      "proximal_axon_cutoff_um": 20.0,
+      "proximal_axon_max_segment_length_um": 3.0
+    },
+    "selection": "The unchanged native axon is retained; only the distribution of active conductance is model-defined. No synthetic AIS geometry was added."
+  },
+  "network_ready": "NO",
+  "robustness_status": "PARTIAL",
+  "staged_channel_evaluation": [
+    {
+      "channel_set": [
+        "pas",
+        "B_Na",
+        "B_DR"
+      ],
+      "evidence": "Fast Na and KDR were necessary and sufficient for stable overshooting spikes, repolarization, and recovery.",
+      "outcome": "RETAINED",
+      "selection_note": "A model-defined 20 \u00b5m proximal active domain on the unchanged native axon outperformed uniform activation of the entire partial axon; final densities were fitted de novo.",
+      "stage": "Model A \u2014 basic spiking",
+      "tested": true
+    },
+    {
+      "channel_set": [
+        "pas",
+        "B_Na",
+        "B_DR",
+        "B_A"
+      ],
+      "evidence": "IAr occurs in 40.9% of the GRP population, but is not established for NMO_109005.",
+      "outcome": "REJECTED",
+      "reason": "Restrained somatodendritic B_A shifted rest negative and raised rheobase; larger values silenced the model. It did not recover the population first-spike latency without degrading stronger constraints.",
+      "stage": "Model B \u2014 rapid A-type K",
+      "tested": true,
+      "tested_gkbar_S_cm2": [
+        0.001,
+        0.002,
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ]
+    },
+    {
+      "channel_set": [
+        "HCN"
+      ],
+      "evidence": "Ih occurs in 37.3% of GRP cells.",
+      "outcome": "NT",
+      "reason": "No appropriate audited HCN mechanism was available in the permitted local inventory; no sag/rebound target justified importing one.",
+      "stage": "Model C \u2014 HCN/Ih",
+      "tested": false
+    },
+    {
+      "channel_set": [
+        "T-type Ca"
+      ],
+      "evidence": "ICaT occurs in 33.3% of GRP cells.",
+      "outcome": "NT",
+      "reason": "The available iCaL mechanism is L-type, not T-type; the model had no validated low-threshold rebound target requiring a new mechanism.",
+      "stage": "Model D \u2014 T-type Ca",
+      "tested": false
+    },
+    {
+      "channel_set": [
+        "slow A-type K"
+      ],
+      "evidence": "IAs occurs in 25.8% of GRP cells.",
+      "outcome": "NT",
+      "reason": "No distinct audited slow-A mechanism was available and rapid B_A already failed to improve the constrained phenotype.",
+      "stage": "Model E \u2014 separate slow A-current",
+      "tested": false
+    },
+    {
+      "channel_set": [
+        "pas",
+        "Na/K",
+        "iCaL",
+        "CaIntraCellDyn",
+        "iKCa"
+      ],
+      "evidence": "Medlock-supported comparator, not a directly quantified GRP current.",
+      "outcome": "REJECTED",
+      "reason": "Paired Ca source, Ca handling, and KCa reduced firing but did not create a stable early transient; complexity was not justified.",
+      "stage": "Medlock KCa comparator",
+      "tested": true
+    },
+    {
+      "channel_set": [
+        "pas",
+        "HH2"
+      ],
+      "outcome": "REJECTED",
+      "reason": "Stable spiking was tonic across useful densities; high-K single-spike regimes were depolarization block and failed the recovery criterion.",
+      "stage": "HH2 comparator",
+      "tested": true
+    }
+  ],
+  "target_evidence_level": "Dickie et al. GRP population constraints; not same-cell electrophysiology for NMO_109005",
+  "temperature_comparison": {
+    "comparison_current_pA": 18.3,
+    "interpretation": "The traces are identical because the audited B_Na and B_DR source computes tadj but does not apply it to gate rates. h.celsius is set to 35\u00b0C, but this channel set is not a kinetic temperature translation.",
+    "max_absolute_voltage_difference_mV": 0.0,
+    "metrics": {
+      "23C": {
+        "classification": "single-spike",
+        "current_pA": 18.3,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 24.099999999715237,
+        "last_spike_time_from_onset_ms": 24.099999999715237,
+        "late_step_voltage_mV": -52.69157396353697,
+        "peak_voltage_mV": 11.728945877058015,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.801492453834044,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 23.0
+      },
+      "35C": {
+        "classification": "single-spike",
+        "current_pA": 18.3,
+        "dt_ms": 0.025,
+        "firing_frequency_Hz": 1.0,
+        "first_spike_latency_ms": 24.099999999715237,
+        "last_spike_time_from_onset_ms": 24.099999999715237,
+        "late_step_voltage_mV": -52.69157396353697,
+        "peak_voltage_mV": 11.728945877058015,
+        "pre_step_voltage_mV": -59.940284015004565,
+        "recovery_pass": true,
+        "recovery_test_spike_count": 1,
+        "recovery_voltage_mV": -59.801492453834044,
+        "recovery_voltage_pass": true,
+        "spike_count": 1,
+        "spikes_after_100_ms": 0,
+        "spikes_first_100_ms": 1,
+        "temperature_C": 35.0
+      }
+    },
+    "time_vectors_equal": true
+  }
+}

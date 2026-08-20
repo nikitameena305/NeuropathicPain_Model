@@ -1,0 +1,15 @@
+property,experimental value,units,n,source,evidence level,exact cell or population,used in model?,model value,35C value,PASS/FAIL/NT,notes
+RMP,-52.89 ± 0.78,mV,230,Dickie et al. 2019,primary experiment; mean ± SEM,GRP population,yes,-52.940 passive,-55.667 active,PASS passive / FAIL active,Population constraint; not same-cell.
+Rin,1588 ± 85,MOhm,232,Dickie et al. 2019,primary experiment; mean ± SEM,GRP population,yes,1574.08 passive,464.24 active,PASS passive / FAIL active,Active channels reduce apparent Rin.
+whole-cell capacitance,5.12 ± 0.11,pF,232,Dickie et al. 2019,primary experiment; mean ± SEM,GRP population,comparison,48.68,48.68,FAIL,Mismatch preserved; cm was not forced to an implausible value.
+rheobase,18.30 ± 1.07,pA,155,Dickie et al. 2019,primary experiment; mean ± SEM,GRP population,yes,18.0,18.0,PASS,Measured on the declared current grid from approximately -60 mV.
+first-spike latency,137.1 ± 6.2,ms,155,Dickie et al. 2019,primary experiment; mean ± SEM,GRP population,yes,25.25,25.25,FAIL,Not forced with unsupported conductances.
+firing distribution,transient 49.5%; single 32.9%; tonic 8.3%; reluctant 6.5%; delayed 2.8%,%,216,Dickie et al. 2019,primary experiment,GRP population,yes,single-spike,single-spike,PASS,Single-spike is the declared secondary acceptable phenotype.
+IAr prevalence,40.9,%,159,Dickie et al. 2019,primary experiment,GRP population,"tested, rejected",B_A comparator,not retained,NT,Population prevalence does not establish the current in NMO_109005.
+IAr amplitude,54.9 ± 4.6 results; 58.6 ± 4.6 figure caption,pA,65,Dickie et al. 2019,primary experiment; internal source discrepancy,GRP IAr-positive subset,comparison,not fitted,not retained,NT,Both paper values retained transparently.
+Ih prevalence,37.3,%,159,Dickie et al. 2019,primary experiment,GRP population,no,NT,NT,NT,No audited HCN mechanism and no sag/rebound target.
+Ih amplitude,-17.5 ± 1.1,pA,59,Dickie et al. 2019,primary experiment,GRP Ih-positive subset,no,NT,NT,NT,Not used.
+IAs prevalence,25.8,%,159,Dickie et al. 2019,primary experiment,GRP population,no,NT,NT,NT,No distinct audited slow-A mechanism.
+ICaT prevalence,33.3,%,159,Dickie et al. 2019,primary experiment,GRP population,no,NT,NT,NT,Available iCaL is not T-type.
+morphology metrics,NMO_109005 morphometry,mixed,1,NeuroMorpho.Org API record 109005,primary repository record,exact morphology,yes,10314 rows; 3291.95 µm,unchanged geometry,PASS,"One connected component; soma, dendrites, and native partial axon present."
+temperature,room-temperature population recording; 32°C tissue recovery only,°C,study,Dickie et al. 2019,primary methods,GRP population,yes,23°C reference,35°C project setting,PARTIAL,Final B_Na/B_DR gate rates are effectively temperature-independent after source audit.

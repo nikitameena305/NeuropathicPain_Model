@@ -1,0 +1,239 @@
+{
+  "acceptance": {
+    "checks": {
+      "rin_MOhm": true,
+      "rmp_mV": true,
+      "whole_cell_capacitance_pF": false
+    },
+    "criterion": "model value within GRP mean +/- 2 SEM; a population constraint, not a same-cell acceptance interval",
+    "overall": "PARTIAL"
+  },
+  "current_clamp_confirmation": {
+    "amplitude_nA": -0.005,
+    "delay_ms": 200.0,
+    "duration_ms": 500.0,
+    "rin_MOhm": 1583.4371730844325,
+    "rmp_mV": -52.88999999999948,
+    "steady_voltage_mV": -60.807185865421644
+  },
+  "limitation": "The reconstructed membrane area makes the morphology-derived capacitance far larger than the reported 5.12 pF population mean; this mismatch is preserved rather than hidden by an implausibly small cm.",
+  "morphology_area_um2": 6953.980217983569,
+  "morphology_derived_capacitance_pF": 48.67786152588499,
+  "nseg": {
+    "all_odd": true,
+    "total": 268
+  },
+  "search": {
+    "coarse_candidate_count": 144,
+    "coarse_top5": [
+      {
+        "candidate_index": 8,
+        "metrics": {
+          "rin_MOhm": 1574.0332942788625,
+          "rmp_mV": -52.940024298471066,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.299066992274772,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 44,
+        "metrics": {
+          "rin_MOhm": 1621.325590743876,
+          "rmp_mV": -52.97399733922532,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.4332671765047644,
+        "parameters": {
+          "Ra_ohm_cm": 150.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 56,
+        "metrics": {
+          "rin_MOhm": 1589.9709133588885,
+          "rmp_mV": -53.11836858151302,
+          "whole_cell_capacitance_pF": 69.5398021798357
+        },
+        "objective": 1.7876453253960258,
+        "parameters": {
+          "Ra_ohm_cm": 150.0,
+          "cm_uF_cm2": 1.0,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 20,
+        "metrics": {
+          "rin_MOhm": 1545.3696429207735,
+          "rmp_mV": -53.070749240760975,
+          "whole_cell_capacitance_pF": 69.53980217983569
+        },
+        "objective": 2.0066220766938327,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 1.0,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 80,
+        "metrics": {
+          "rin_MOhm": 1665.6242867952285,
+          "rmp_mV": -52.98759510582949,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 2.117593582103097,
+        "parameters": {
+          "Ra_ohm_cm": 200.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      }
+    ],
+    "local_candidate_count": 25,
+    "local_top5": [
+      {
+        "candidate_index": 13,
+        "metrics": {
+          "rin_MOhm": 1574.0332942788625,
+          "rmp_mV": -52.940024298471066,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.299066992274772,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.89,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 14,
+        "metrics": {
+          "rin_MOhm": 1574.0332895843896,
+          "rmp_mV": -52.74143146402499,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.331233643304693,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.69,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 12,
+        "metrics": {
+          "rin_MOhm": 1574.0332935616511,
+          "rmp_mV": -53.13861714975244,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.396549008054743,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -53.09,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 15,
+        "metrics": {
+          "rin_MOhm": 1574.0332911166133,
+          "rmp_mV": -52.54283860678691,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.4930489283996813,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -52.49,
+          "g_pas_S_cm2": 1e-05
+        }
+      },
+      {
+        "candidate_index": 11,
+        "metrics": {
+          "rin_MOhm": 1574.0332954524806,
+          "rmp_mV": -53.33720997980264,
+          "whole_cell_capacitance_pF": 48.67786152588499
+        },
+        "objective": 1.623679636648475,
+        "parameters": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.7,
+          "e_pas_mV": -53.29,
+          "g_pas_S_cm2": 1e-05
+        }
+      }
+    ],
+    "objective_note": "RMP and Rin use SEM-normalised error; capacitance uses a low-weight log error to prevent an absurd specific cm."
+  },
+  "selected_parameters": {
+    "Ra_ohm_cm": 100.0,
+    "cm_uF_cm2": 0.7,
+    "e_pas_mV": -52.89,
+    "g_pas_S_cm2": 1e-05
+  },
+  "target_evidence_level": "GRP population mean +/- SEM; not NMO_109005 same-cell electrophysiology",
+  "targets": {
+    "rin_MOhm": {
+      "mean": 1588.0,
+      "n": 232,
+      "sem": 85.0
+    },
+    "rmp_mV": {
+      "mean": -52.89,
+      "n": 230,
+      "sem": 0.78
+    },
+    "whole_cell_capacitance_pF": {
+      "mean": 5.12,
+      "n": 232,
+      "sem": 0.11
+    }
+  },
+  "voltage_clamp_iv": {
+    "command_voltages_mV": [
+      -70.0,
+      -67.5,
+      -65.0,
+      -62.5,
+      -60.0,
+      -57.5,
+      -55.0,
+      -52.5,
+      -50.0
+    ],
+    "holding_mV": -60.0,
+    "linear_intercept_nA": 0.03363216070602273,
+    "linear_slope_nA_per_mV": 0.0006352906443343846,
+    "rin_MOhm": 1574.0826799798597,
+    "rmp_mV": -52.93980165764958,
+    "steady_clamp_currents_nA": [
+      -0.010838184402296568,
+      -0.009249957781460379,
+      -0.007661731168519104,
+      -0.006073504571367669,
+      -0.0044852779584263975,
+      -0.0028970513346296095,
+      -0.0013088247335307163,
+      0.0002794018655944481,
+      0.001867628498273019
+    ],
+    "step_duration_ms": 100.0
+  }
+}

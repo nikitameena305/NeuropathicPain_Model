@@ -1,0 +1,3 @@
+mechanisms/x86_64/
+scripts/__pycache__/
+*.pyc

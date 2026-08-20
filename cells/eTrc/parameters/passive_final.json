@@ -1,0 +1,20 @@
+{
+  "discretization": {
+    "d_lambda": 0.1,
+    "frequency_Hz": 100.0
+  },
+  "identity": "GRP-positive lamina-II excitatory interneuron; population targets are not same-cell recordings",
+  "model": "NMO_109005 passive fit",
+  "morphology_path": "cells/eTrc/morphology/26-11-14-A-A6.CNG.swc",
+  "parameters": {
+    "Ra_ohm_cm": 100.0,
+    "cm_uF_cm2": 0.7,
+    "e_pas_mV": -52.89,
+    "g_pas_S_cm2": 1e-05
+  },
+  "provenance": {
+    "capacitance_policy": "whole-cell capacitance retained as a comparison; cm was not forced to an implausible value",
+    "parameter_type": "fitted to GRP population-level RMP and Rin with plausible cm/Ra bounds",
+    "targets": "Dickie et al. 2019, PAIN 160:442-462, DOI 10.1097/j.pain.0000000000001406"
+  }
+}
