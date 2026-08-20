@@ -1,0 +1,31 @@
+{
+  "area_ratios": {
+    "dendrite": {
+      "medlock_over_reconstructed_density_scale": 0.13540680091470814,
+      "reconstructed_over_medlock_area_ratio": 7.385153428370954
+    },
+    "proximal_axon_candidate": {
+      "medlock_over_reconstructed_density_scale": 0.5482909817394275,
+      "reconstructed_over_medlock_area_ratio": 1.8238490752256162
+    },
+    "soma": {
+      "medlock_over_reconstructed_density_scale": 0.4408547604160334,
+      "reconstructed_over_medlock_area_ratio": 2.2683207482126377
+    }
+  },
+  "identity_note": "This is a geometry audit, not evidence that L292-E1-LCN has eTrC molecular identity.",
+  "medlock_area_formula": "cylindrical lateral area = pi * diameter * length; end caps excluded as in cable sections",
+  "medlock_area_um2": {
+    "dendrite": 3769.9111843077517,
+    "proximal_axon_candidate": 42.411500823462205,
+    "soma": 1256.6370614359173
+  },
+  "proposal_note": "A region-wise Medlock/reconstructed area ratio can preserve each original compartment's total maximum conductance when mapping density to the reconstruction. This is a D-level computational proposal that requires active validation, not a source parameter.",
+  "provisional_ais_segment_count": 3,
+  "reconstructed_area_um2": {
+    "axon_distal": 34628.120656181454,
+    "dendrite": 27841.372507444394,
+    "proximal_axon_candidate": 77.352176555802,
+    "soma": 2850.4559194280505
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "total": 64,
+    "soma": 1,
+    "dendrite": 54,
+    "axon": 9
+  },
+  "segments": {
+    "total": 118,
+    "soma": 1,
+    "dendrite": 92,
+    "axon": 25
+  },
+  "area_um2": {
+    "soma": 427.4078292816355,
+    "dendrite": 6203.457607121057,
+    "axon": 965.3280633804616,
+    "total": 7596.193499783154
+  },
+  "geometric_capacitance_pf": 37.98096749891578,
+  "axon_root": "<pv_cell.MorphologyHolder object at 0x7480042fa050>.axon[0]",
+  "axon_root_length_um": 69.06229158890888,
+  "axon_record_x": 0.2895936340926735,
+  "proximal_dendrite": "<pv_cell.MorphologyHolder object at 0x7480042fa050>.dend[0]",
+  "source_swc_unchanged": true,
+  "synthetic_axon_added": false
+}

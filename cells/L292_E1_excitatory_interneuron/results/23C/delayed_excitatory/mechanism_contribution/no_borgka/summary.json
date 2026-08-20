@@ -1,0 +1,184 @@
+{
+  "assessment": {
+    "all_executed_gates_pass": true,
+    "checks": {
+      "latency_decreases_with_current": true,
+      "no_depolarization_block_in_tested_steps": true,
+      "no_spontaneous_firing": null,
+      "post_step_recovery_within_tolerance": true,
+      "rmp_in_target": null,
+      "spikes_at_one_or_more_positive_steps": true
+    },
+    "classification": "STAGE_GATE_PASSED",
+    "note": "A stage pass is not final model readiness and does not confirm molecular identity or 35C translation."
+  },
+  "configuration_status": "MECHANISM_CONTRIBUTION_DIAGNOSTIC_NOT_A_MODEL",
+  "identity_statement": "The L292-E1-LCN reconstruction is a rat lamina-I local-circuit morphological scaffold. ePKCgamma/eVGLUT3/eDOR/eSST/eCR/eTrC labels refer to computational Medlock population identity and are not molecular identities experimentally confirmed for L292-E1-LCN.",
+  "initiation_by_current": {
+    "0.4": {
+      "earliest_recorded_site": "soma",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 232.88147071883822,
+        "proximal_dendrite": 232.92528762167564,
+        "soma": 232.8611573364126
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": 0.02031338242562697,
+      "provisional_ais_precedes_soma": false
+    },
+    "0.75": {
+      "earliest_recorded_site": "soma",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 213.86299634015725,
+        "proximal_dendrite": 213.9059002691638,
+        "soma": 213.84364904884782
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": 0.019347291309429693,
+      "provisional_ais_precedes_soma": false
+    }
+  },
+  "model_name": "delayed_diagnostic_no_borgka",
+  "morphology": {
+    "axon_sections": 503,
+    "connectivity": {
+      "all_axons_connected": true,
+      "all_dendrites_connected": true,
+      "external_parent_sections": [],
+      "one_connected_morphology": true,
+      "root_sections": [
+        "<rat_lcn.RatLCN_L292E1 object at 0x74e16556f4f0>.soma[0]"
+      ],
+      "soma_is_root": true,
+      "unreachable_sections": []
+    },
+    "dendrite_sections": 446,
+    "maximum_segment_electrotonic_fraction": 0.19980199173697322,
+    "minimum_segment_diameter_um": 0.18999999761581368,
+    "path": "/mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/morphology/primary/L292-E1-LCN.CNG.swc",
+    "proximal_axon_candidate_segment_count": 3,
+    "section_count": 950,
+    "soma_sections": 1,
+    "total_nseg": 2616
+  },
+  "passive_only": false,
+  "passive_reference": null,
+  "per_current": [
+    {
+      "adaptation_ratio_last_over_first_isi": 0.9809104258435908,
+      "ahp_mV": 26.93111945628728,
+      "amplitude_nA": 0.4,
+      "ap_amplitude_mV": 57.140409161057846,
+      "ap_half_width_ms": 1.7611661221311863,
+      "ap_peak_mV": 28.276178038577882,
+      "ap_threshold_mV": -28.86423112247996,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 28.0,
+      "first_spike_latency_ms": 32.90000000003582,
+      "input_capacitance_pF": null,
+      "isi_cv": 0.005356860487255512,
+      "last_spike_time_ms": 467.6999999996666,
+      "late_step_mean_voltage_mV": -40.23418025588155,
+      "max_dvdt_V_s": 78.31730459008939,
+      "mean_isi_ms": 33.44615384612545,
+      "post_step_recovery_error_mV": 0.06531368278285754,
+      "post_step_recovery_mean_mV": -64.93394403121737,
+      "rin_MOhm": null,
+      "rmp_mV": -64.99925771400022,
+      "spike_count": 14,
+      "spike_times_ms": [
+        232.90000000003582,
+        266.9500000000311,
+        300.4500000000006,
+        333.8999999999702,
+        367.2999999999398,
+        400.69999999990944,
+        434.0499999998791,
+        467.4499999998487,
+        500.7999999998184,
+        534.199999999788,
+        567.5499999997577,
+        600.9499999997273,
+        634.299999999697,
+        667.6999999996666
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -40.205868389802404,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": 0.9541778975730392,
+      "ahp_mV": 24.189339230036065,
+      "amplitude_nA": 0.75,
+      "ap_amplitude_mV": 60.21348042882777,
+      "ap_half_width_ms": 1.8353584022227096,
+      "ap_peak_mV": 30.943076038894365,
+      "ap_threshold_mV": -29.270404389933407,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 56.0,
+      "first_spike_latency_ms": 13.850000000031486,
+      "input_capacitance_pF": null,
+      "isi_cv": 0.009005852010820478,
+      "last_spike_time_ms": 493.69999999964296,
+      "late_step_mean_voltage_mV": -34.69819635887567,
+      "max_dvdt_V_s": 83.33695163021908,
+      "mean_isi_ms": 17.77222222220783,
+      "post_step_recovery_error_mV": 0.07523042838901972,
+      "post_step_recovery_mean_mV": -64.9240272856112,
+      "rin_MOhm": null,
+      "rmp_mV": -64.99925771400022,
+      "spike_count": 28,
+      "spike_times_ms": [
+        213.85000000003149,
+        232.4000000000357,
+        250.35000000003978,
+        268.15000000003,
+        285.90000000001385,
+        303.6499999999977,
+        321.39999999998156,
+        339.1499999999654,
+        356.8999999999493,
+        374.5999999999332,
+        392.34999999991703,
+        410.0999999999009,
+        427.7999999998848,
+        445.54999999986865,
+        463.24999999985255,
+        480.9999999998364,
+        498.6999999998203,
+        516.4499999998042,
+        534.199999999788,
+        551.8999999997719,
+        569.6499999997558,
+        587.3499999997397,
+        605.0999999997235,
+        622.7999999997074,
+        640.5499999996913,
+        658.2499999996752,
+        675.999999999659,
+        693.699999999643
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -34.53596204837354,
+      "tau_ms": null
+    }
+  ],
+  "protocol": {
+    "current_steps_nA": [
+      0.4,
+      0.75
+    ],
+    "d_lambda": 0.2,
+    "delay_ms": 200.0,
+    "dt_ms": 0.05,
+    "duration_ms": 500.0,
+    "frequency_Hz": 100.0,
+    "tstop_ms": 900.0
+  },
+  "rheobase_nA_with_tested_resolution": 0.4,
+  "software": {
+    "neuron": "9.0.1",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.10.20"
+  },
+  "temperature_C": 23.0,
+  "temperature_label": "experimental-source-temperature"
+}

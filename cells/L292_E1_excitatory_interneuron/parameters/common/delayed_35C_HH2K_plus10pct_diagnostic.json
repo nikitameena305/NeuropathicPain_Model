@@ -1,0 +1,13 @@
+{
+  "extends": "delayed_excitatory_final_35C.json",
+  "active": {
+    "regions": {
+      "dendrite": {"mechanisms": {"HH2": {"gkbar": 0.1584}}},
+      "proximal_axon_candidate": {"mechanisms": {"HH2": {"gkbar": 0.3344}}},
+      "soma": {"mechanisms": {"HH2": {"gkbar": 0.00473}}}
+    }
+  },
+  "model_name": "delayed_35C_diagnostic_HH2K_plus10pct",
+  "protocol": {"tstop_ms": 900.0},
+  "status": "ONE_FACTOR_35C_DIAGNOSTIC_NOT_A_MODEL"
+}

@@ -1,0 +1,21 @@
+{
+  "extends": "delayed_excitatory_area_preserved_23C.json",
+  "model_name": "RatLCN_L292E1__Medlock_delayed__validated_23C",
+  "protocol": {
+    "current_steps_nA": [-0.02, 0.0, 0.37, 0.38, 0.39, 0.75, 1.0],
+    "range_reason": "Accepted delayed validation series: active Rin, zero-current stability, below-rheobase, rheobase, slightly suprathreshold, moderate, and strong drive with 500 ms post-step recovery."
+  },
+  "status": "VALIDATED_DELAYED_EXCITATORY_23C",
+  "validation_record": {
+    "accepted_mapping": "D-level region-wise total-maximum-conductance-preserving Medlock-to-reconstruction transform",
+    "mechanism_contribution_results": "results/23C/delayed_excitatory/mechanism_contribution",
+    "rheobase_bracket_nA": [0.37, 0.38],
+    "rheobase_resolution_nA": 0.01,
+    "source_results": [
+      "results/23C/delayed_excitatory/broad_initial_retry",
+      "results/23C/delayed_excitatory/rheobase_refinement_50pA",
+      "results/23C/delayed_excitatory/rheobase_refinement_10pA"
+    ],
+    "waveform_limitation": "Exact delayed-population threshold and half-width targets are unknown; eTrC-specific ranges were not imposed."
+  }
+}

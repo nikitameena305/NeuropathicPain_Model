@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68,<81", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdh-excitatory-interneurons"
+version = "0.1.0"
+description = "Minimal NetPyNE population scaffold for six SDH excitatory interneuron classes"
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+dependencies = [
+  "NEURON==8.2.4",
+  "netpyne==1.1.1",
+  "numpy>=1.21,<2",
+  "pandas>=1.3,<2",
+  "setuptools>=68,<81",
+]
+
+[project.scripts]
+sdh-exc = "sdh_exc.run:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sdh_exc = ["data/*.json"]

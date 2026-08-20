@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "model_id": "L571-LCN",
+  "status": "temperature_translated_candidate",
+  "random_seed": 571,
+  "temperature_c": 35.0,
+  "simulation": {
+    "dt_ms": 0.025,
+    "v_init_mv": -69.1,
+    "stim_delay_ms": 250.0,
+    "stim_duration_ms": 500.0,
+    "post_stim_ms": 250.0,
+    "spike_crossing_mv": -20.0
+  },
+  "morphology": {
+    "file": "morphology/L571-LCN.CNG.swc",
+    "sha256": "696b553d7c31f58f305c79e32bb05d14c7a385b48947b93518a9abe1c01b867f",
+    "repair": "none",
+    "z_shrinkage_correction": "none"
+  },
+  "discretization": {
+    "method": "d_lambda",
+    "frequency_hz": 100.0,
+    "d_lambda": 0.1,
+    "nseg_scale": 4.0
+  },
+  "passive": {
+    "ra_ohm_cm": 150.0,
+    "cm_uf_cm2": 1.0,
+    "g_pas_s_cm2": 7.5e-6,
+    "e_pas_mv": -71.0
+  },
+  "ions": {"ena_mv": 60.0, "ek_mv": -84.0},
+  "active": {
+    "enabled": true,
+    "temperature_scaling": true,
+    "q10_na": 1.0,
+    "q10_kdr": 1.0,
+    "reference_temperature_c": 23.0,
+    "ais_proxy_max_distance_um": 40.0,
+    "conductance_s_cm2": {
+      "soma": {"na": 0.008, "kdr": 0.0043},
+      "dendrite": {"na": 0.0, "kdr": 0.034},
+      "ais_proxy": {"na": 3.45, "kdr": 0.076},
+      "distal_axon": {"na": 0.10, "kdr": 0.040}
+    }
+  },
+  "protocols": {
+    "rin_current_na": -0.01,
+    "fi_currents_na": [
+      0.0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04,
+      0.045, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.12, 0.14,
+      0.16, 0.18, 0.20, 0.25, 0.30
+    ],
+    "representative_current_na": 0.10,
+    "strong_current_na": 0.30
+  },
+  "provenance": {
+    "temperature_translation": "D: h.celsius is 35 before initialization, but Q10 is set to 1 because neither selected Medlock mechanism has an experimentally established L571 correction and its executed source does not apply a temperature factor. This preserves the 23 C kinetics rather than inventing a universal Q10.",
+    "validation_scope": "D: no direct L571 or rat LCN 35 C electrophysiology target is available; results are plausibility checks only",
+    "conductance_parameters": "same fitted densities as 23 C; no temperature-dependent density refit"
+  }
+}

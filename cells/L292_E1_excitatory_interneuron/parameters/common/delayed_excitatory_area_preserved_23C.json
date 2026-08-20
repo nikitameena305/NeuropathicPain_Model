@@ -1,0 +1,26 @@
+{
+  "extends": "delayed_excitatory_23C.json",
+  "active": {
+    "mapping_note": "D-level morphology transform: retain the released delayed-rule mechanisms, kinetics, reversals, and within-region conductance ratios while multiplying maximum conductance densities by Medlock compartment area / reconstructed mapped-region area. This preserves released total maximum conductance per region and requires validation.",
+    "regions": {
+      "axon_distal": {"conductance_scale": 1.0},
+      "dendrite": {"conductance_scale": 0.13540680091470814},
+      "proximal_axon_candidate": {"conductance_scale": 0.5482909817394275},
+      "soma": {"conductance_scale": 0.4408547604160334}
+    },
+    "transform_provenance": "results/23C/eTrC/geometry_mapping_audit_refined_axon.json"
+  },
+  "model_name": "RatLCN_L292E1__Medlock_delayed__area_preserved",
+  "protocol": {
+    "current_steps_nA": [-0.02, 0.0, 0.05, 0.1, 0.2, 0.4, 0.75, 1.0],
+    "range_reason": "Bounded delayed-phenotype sweep spanning hyperpolarizing, zero, subthreshold, moderate, and strong drive; no optimizer or automatic tuning.",
+    "tstop_ms": 1200.0
+  },
+  "simulation": {"seed": 292012},
+  "status": "D_LEVEL_AREA_PRESERVING_DELAYED_CANDIDATE_REQUIRES_VALIDATION",
+  "validation_targets": {
+    "post_step_recovery_tolerance_mV": 0.1,
+    "post_step_recovery_tolerance_note": "D: project numerical acceptance proposal, not an experimental target",
+    "waveform_target_note": "Exact delayed-population threshold and half-width targets are unknown; metrics are reported without applying eTrC-specific ranges."
+  }
+}

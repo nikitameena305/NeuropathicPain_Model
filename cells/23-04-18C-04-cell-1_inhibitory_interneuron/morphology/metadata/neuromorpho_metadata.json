@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "retrieval_date": "2026-08-13",
+  "nmo_id": "NMO_170087",
+  "neuron_name": "23-04-18C-04-cell-1",
+  "archive": "Hughes",
+  "species": "mouse",
+  "strain_or_genotype": "Pvcre",
+  "sex": "Male/Female (archive cohort field; exact-cell sex is not resolved)",
+  "age": "young adult; 20-30 g archive range; exact-cell age is not reported",
+  "region": "lumbar spinal cord dorsal horn",
+  "lamina": "II-III",
+  "cell_class": "interneuron",
+  "confirmed_markers": [
+    "parvalbumin reporter positive",
+    "Pax2 positive"
+  ],
+  "inferred_identity": "inhibitory interneuron",
+  "medlock_mapping": "iPV",
+  "source_record_url": "https://neuromorpho.org/neuron_info.jsp?neuron_name=23-04-18C-04-cell-1",
+  "api_record_url": "https://neuromorpho.org/api/neuron/id/170087",
+  "api_morphometry_url": "https://neuromorpho.org/api/morphometry/id/170087",
+  "download_url": "https://neuromorpho.org/dableFiles/hughes/CNG%20version/23-04-18C-04-cell-1.CNG.swc",
+  "downloaded_file": "morphology/primary/23-04-18C-04-cell-1.CNG.swc",
+  "sha256": "e2ecaffc1ebcf9c88b72224fa4172aa93dfb013edb3ad40ee2bfadebe06ec915",
+  "source_publication": {
+    "citation": "Gradwell MA et al. Diversity of inhibitory and excitatory parvalbumin interneuron circuits in the dorsal horn. Pain. 2022;163:e432-e452.",
+    "doi": "10.1097/j.pain.0000000000002422",
+    "pmid": "34326298",
+    "pmcid": "PMC8832545"
+  },
+  "reconstruction": {
+    "stain": "immunostaining / Cre-dependent Brainbow labeling",
+    "protocol": "in vitro",
+    "section_orientation": "sagittal",
+    "section_thickness_um": 60,
+    "software": "Neurolucida",
+    "objective": "40x oil",
+    "original_format": "Neurolucida .dat",
+    "domains": ["soma", "dendrites", "axon"],
+    "archive_attributes": ["No Diameter", "3D", "Angles"]
+  },
+  "completeness": {
+    "soma": "present",
+    "dendrites": "moderate integrity",
+    "axon": "incomplete"
+  },
+  "reported_morphometry": {
+    "soma_surface_um2": 396.349,
+    "total_surface_um2": 7083.34,
+    "total_length_um": 2118.65,
+    "maximum_path_distance_um": 215.263,
+    "branch_order": 8
+  },
+  "transformation_status": "The original downloaded SWC is used without coordinate, topology, or diameter modification. NEURON Import3D performs an in-memory section conversion only."
+}

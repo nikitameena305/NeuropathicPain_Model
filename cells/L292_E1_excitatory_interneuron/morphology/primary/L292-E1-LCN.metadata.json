@@ -1,0 +1,43 @@
+{
+  "archive": "Szucs",
+  "cell_class": "interneuron; local circuit neuron; multipolar",
+  "cell_name": "L292-E1-LCN",
+  "development": "young",
+  "experimental_condition": "control",
+  "experimental_protocol": "in vitro",
+  "gender": "male/female",
+  "maximum_age_days": 24,
+  "minimum_age_days": 14,
+  "molecular_identity": "unknown; no direct confirmation of PKCgamma, VGLUT3, DOR, SST, CR, or TrC identity",
+  "neuromorpho_id": "NMO_34021",
+  "neuromorpho_measurements": {
+    "average_diameter_um": 0.47,
+    "bifurcations": 471,
+    "branches": 950,
+    "max_branch_order": 48,
+    "soma_surface_um2": 2537.75,
+    "stems": 9,
+    "total_length_um": 42761.5
+  },
+  "original_format": "Neurolucida.dat",
+  "physical_integrity": "Dendrites & Axon Complete",
+  "reconstruction_method": "Neurolucida",
+  "reference": {
+    "doi": "10.1002/cne.23311",
+    "pmcid": "PMC3738926",
+    "title": "Axon diversity of lamina I local-circuit neurons in the lumbar spinal cord",
+    "year": 2013
+  },
+  "region": "spinal cord; lumbar; lamina I",
+  "retrieved_utc_date": "2026-08-11",
+  "source_urls": {
+    "cell_page": "https://neuromorpho.org/neuron_info.jsp?neuron_name=L292-E1-LCN",
+    "original_neurolucida": "https://neuromorpho.org/dableFiles/szucs/Source-Version/L292-E1-LCN.dat",
+    "standardized_swc": "https://neuromorpho.org/dableFiles/szucs/CNG%20version/L292-E1-LCN.CNG.swc"
+  },
+  "species": "rat",
+  "staining_method": "biocytin",
+  "strain": "Wistar",
+  "structural_domains": "Dendrites, Soma, Axon",
+  "tissue_shrinkage": "reported 90% in z; not corrected"
+}

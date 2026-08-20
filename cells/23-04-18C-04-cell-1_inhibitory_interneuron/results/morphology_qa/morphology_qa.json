@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "source_file": "morphology/primary/23-04-18C-04-cell-1.CNG.swc",
+  "sha256": "e2ecaffc1ebcf9c88b72224fa4172aa93dfb013edb3ad40ee2bfadebe06ec915",
+  "thresholds": {
+    "zero_length_um": 1e-12,
+    "suspicious_neurite_diameter_um": 10.0
+  },
+  "node_count": 2897,
+  "node_counts_by_type": {
+    "soma": 9,
+    "axon": 648,
+    "dendrite": 2240
+  },
+  "root_count": 1,
+  "root_node_ids": [
+    1
+  ],
+  "orphan_count": 0,
+  "orphan_node_ids": [],
+  "connected_component_count": 1,
+  "connected_component_sizes": [
+    2897
+  ],
+  "duplicate_node_id_count": 0,
+  "duplicate_node_ids": [],
+  "duplicate_coordinate_group_count": 0,
+  "duplicate_coordinate_groups": [],
+  "duplicate_exact_record_group_count": 0,
+  "duplicate_exact_record_groups": [],
+  "zero_length_segment_count": 0,
+  "zero_length_segment_node_ids": [],
+  "nonpositive_radius_count": 0,
+  "nonpositive_radius_node_ids": [],
+  "suspicious_neurite_diameter_count": 0,
+  "suspicious_neurite_diameter_node_ids": [],
+  "branch_point_count": 30,
+  "branch_point_node_ids": [
+    1,
+    15,
+    91,
+    149,
+    193,
+    228,
+    352,
+    422,
+    439,
+    481,
+    681,
+    694,
+    698,
+    845,
+    854,
+    905,
+    956,
+    998,
+    1083,
+    1490,
+    1586,
+    1593,
+    1938,
+    2000,
+    2006,
+    2219,
+    2288,
+    2430,
+    2499,
+    2651
+  ],
+  "endpoint_count": 34,
+  "endpoint_node_ids": [
+    107,
+    152,
+    190,
+    282,
+    359,
+    375,
+    444,
+    471,
+    546,
+    585,
+    678,
+    850,
+    893,
+    910,
+    967,
+    1008,
+    1052,
+    1229,
+    1425,
+    1500,
+    1605,
+    1611,
+    1742,
+    1931,
+    1945,
+    2014,
+    2030,
+    2233,
+    2249,
+    2351,
+    2493,
+    2670,
+    2702,
+    2897
+  ],
+  "total_cable_length_um": 2129.9518857567496,
+  "cable_length_by_child_type_um": {
+    "axon": 390.99416094270435,
+    "dendrite": 1727.6542186659387,
+    "soma": 11.303506148108355
+  },
+  "maximum_root_path_distance_um": 215.26333273261483,
+  "cycle_detected": false,
+  "radius_um": {
+    "minimum": 0.145,
+    "median": 0.46,
+    "maximum": 6.53665
+  },
+  "neurite_diameter_um": {
+    "minimum": 0.29,
+    "median": 0.92,
+    "maximum": 3.21
+  },
+  "coordinate_extents_um": {
+    "x": {
+      "minimum_um": -34.88,
+      "maximum_um": 48.43,
+      "span_um": 83.31
+    },
+    "y": {
+      "minimum_um": -150.3,
+      "maximum_um": 177.68,
+      "span_um": 327.98
+    },
+    "z": {
+      "minimum_um": -28.0,
+      "maximum_um": 17.5,
+      "span_um": 45.5
+    }
+  },
+  "reported_neuromorpho_soma_surface_um2": 396.349,
+  "reported_neuromorpho_total_surface_um2": 7083.34,
+  "integrity_from_neuromorpho": {
+    "dendrites": "Moderate",
+    "axon": "Incomplete"
+  },
+  "structural_qa_pass": true,
+  "scientific_limitations": [
+    "NeuroMorpho marks the dendrites as moderate integrity and the axon as incomplete.",
+    "The deposited record is tagged 'No Diameter'; diameter-dependent cable results require sensitivity testing.",
+    "A structural pass does not establish anatomical completeness or biophysical validity."
+  ]
+}

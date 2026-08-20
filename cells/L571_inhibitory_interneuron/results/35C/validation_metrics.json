@@ -1,0 +1,863 @@
+{
+  "configuration": "/mnt/c/Users/Nikita/OneDrive/Documents/Neuron/inhibitory_interneuron_L571-LCN/parameters/L571_final_35C.json",
+  "temperature_c": 35.0,
+  "model": {
+    "section_count": 340,
+    "sections_by_domain": {
+      "soma": 1,
+      "dendrite": 222,
+      "axon": 117
+    },
+    "nseg_total": 2402,
+    "nseg_by_domain": {
+      "soma": 1,
+      "dendrite": 338,
+      "axon": 2063
+    },
+    "ais_proxy_section": "<l571_model.MorphologyHolder object at 0x7eeaccdede50>.axon[0]",
+    "ais_proxy_section_length_um": 221.52318971856764,
+    "ais_record_x": 0.09028400153233998,
+    "ais_record_path_distance_approx_um": 20.0,
+    "proximal_dendrite_section": "<l571_model.MorphologyHolder object at 0x7eeaccdede50>.dend[0]"
+  },
+  "passive_only": {
+    "rmp_mv": -70.56598216184335,
+    "steady_state_mv": -79.66323361474744,
+    "delta_v_mv": -9.09725145290409,
+    "current_na": -0.01,
+    "rin_mohm": 909.7251452904089,
+    "tau_ms_monoexponential": 97.92771161159833,
+    "tau_fit_rmse_mv": 0.10068660956642483
+  },
+  "passive_model": {
+    "section_count": 340,
+    "sections_by_domain": {
+      "soma": 1,
+      "dendrite": 222,
+      "axon": 117
+    },
+    "nseg_total": 2402,
+    "nseg_by_domain": {
+      "soma": 1,
+      "dendrite": 338,
+      "axon": 2063
+    },
+    "ais_proxy_section": "<l571_model.MorphologyHolder object at 0x7eeafa559940>.axon[0]",
+    "ais_proxy_section_length_um": 221.52318971856764,
+    "ais_record_x": 0.09028400153233998,
+    "ais_record_path_distance_approx_um": 20.0,
+    "proximal_dendrite_section": "<l571_model.MorphologyHolder object at 0x7eeafa559940>.dend[0]"
+  },
+  "active_passive": {
+    "rmp_mv": -69.51565562304398,
+    "steady_state_mv": -79.02134312500642,
+    "delta_v_mv": -9.505687501962441,
+    "current_na": -0.01,
+    "rin_mohm": 950.5687501962441,
+    "tau_ms_monoexponential": 112.33189477613074,
+    "tau_fit_rmse_mv": 0.10185695960963255
+  },
+  "rmp_mv": -69.21301365241918,
+  "rheobase_na": 0.04,
+  "representative_current_na": 0.1,
+  "representative_firing": {
+    "current_na": 0.1,
+    "spike_count": 13,
+    "firing_rate_hz": 26.0,
+    "first_spike_latency_ms": 15.99999999989501,
+    "last_spike_time_ms": 479.4250000004622,
+    "mean_isi_ms": 38.618750000047264,
+    "isi_cv": 0.0002927768351062171,
+    "adaptation_ratio_last_over_first": 1.0000000000045475,
+    "tonic_persistence_fraction": 0.9588500000009245,
+    "spike_times_relative_ms": [
+      15.99999999989501,
+      54.62499999985988,
+      93.24999999982475,
+      131.87499999978962,
+      170.4999999997545,
+      209.0999999997194,
+      247.72499999968426,
+      286.3499999997598,
+      324.94999999990023,
+      363.57500000004075,
+      402.20000000018126,
+      440.8000000003217,
+      479.4250000004622
+    ]
+  },
+  "action_potential": {
+    "available": true,
+    "threshold_mv_dvdt_20_v_s": -44.330547670167945,
+    "peak_mv": 19.85919609140956,
+    "amplitude_mv": 64.1897437615775,
+    "half_width_ms": 0.8249999999992497,
+    "ahp_min_mv": -77.30922525891495,
+    "ahp_depth_from_threshold_mv": 32.978677588747004,
+    "max_dvdt_v_s": 215.6480227898935,
+    "ais_to_soma_crossing_delay_ms": 0.07499999999993179,
+    "soma_crossing_time_ms": 265.999999999895,
+    "ais_crossing_time_ms": 265.9249999998951
+  },
+  "pathology": {
+    "spontaneous_firing": false,
+    "spontaneous_rate_hz_during_500_ms_window": 0.0,
+    "gap_signature_at_strong_current": false,
+    "burst_signature_at_strong_current": false,
+    "depolarization_block_at_strong_current": false,
+    "abnormal_post_stimulus_plateau": false,
+    "post_stimulus_recovery_delta_mv": -4.3948456640547136
+  },
+  "fi_curve": [
+    {
+      "current_na": 0.0,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.005,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.01,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.015,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.02,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.025,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.03,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.035,
+      "spike_count": 0,
+      "firing_rate_hz": 0.0,
+      "first_spike_latency_ms": null,
+      "last_spike_time_ms": null,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.0,
+      "spike_times_relative_ms": []
+    },
+    {
+      "current_na": 0.04,
+      "spike_count": 1,
+      "firing_rate_hz": 2.0,
+      "first_spike_latency_ms": 44.14999999986941,
+      "last_spike_time_ms": 44.14999999986941,
+      "mean_isi_ms": null,
+      "isi_cv": null,
+      "adaptation_ratio_last_over_first": null,
+      "tonic_persistence_fraction": 0.08829999999973881,
+      "spike_times_relative_ms": [
+        44.14999999986941
+      ]
+    },
+    {
+      "current_na": 0.045,
+      "spike_count": 6,
+      "firing_rate_hz": 12.0,
+      "first_spike_latency_ms": 37.599999999875365,
+      "last_spike_time_ms": 439.27500000031614,
+      "mean_isi_ms": 80.33500000008816,
+      "isi_cv": 0.0007810979283563603,
+      "adaptation_ratio_last_over_first": 1.0015581177982598,
+      "tonic_persistence_fraction": 0.8785500000006323,
+      "spike_times_relative_ms": [
+        37.599999999875365,
+        117.8249999998024,
+        198.1999999997293,
+        278.5499999997314,
+        358.92500000002383,
+        439.27500000031614
+      ]
+    },
+    {
+      "current_na": 0.05,
+      "spike_count": 7,
+      "firing_rate_hz": 14.0,
+      "first_spike_latency_ms": 33.09999999987946,
+      "last_spike_time_ms": 459.45000000038954,
+      "mean_isi_ms": 71.05833333341835,
+      "isi_cv": 0.0005745255651874113,
+      "adaptation_ratio_last_over_first": 1.0014089468168117,
+      "tonic_persistence_fraction": 0.9189000000007791,
+      "spike_times_relative_ms": [
+        33.09999999987946,
+        104.0749999998149,
+        175.14999999975026,
+        246.22499999968562,
+        317.2999999998724,
+        388.37500000013097,
+        459.45000000038954
+      ]
+    },
+    {
+      "current_na": 0.06,
+      "spike_count": 8,
+      "firing_rate_hz": 16.0,
+      "first_spike_latency_ms": 26.999999999885006,
+      "last_spike_time_ms": 441.3500000003237,
+      "mean_isi_ms": 59.19285714291981,
+      "isi_cv": 0.0005294415588477892,
+      "adaptation_ratio_last_over_first": 1.0012684989474707,
+      "tonic_persistence_fraction": 0.8827000000006474,
+      "spike_times_relative_ms": [
+        26.999999999885006,
+        86.12499999983123,
+        145.3249999997774,
+        204.52499999972355,
+        263.7499999996776,
+        322.94999999989295,
+        382.1500000001083,
+        441.3500000003237
+      ]
+    },
+    {
+      "current_na": 0.07,
+      "spike_count": 10,
+      "firing_rate_hz": 20.0,
+      "first_spike_latency_ms": 22.94999999988869,
+      "last_spike_time_ms": 486.42500000048767,
+      "mean_isi_ms": 51.49722222228878,
+      "isi_cv": 0.0003795039455335701,
+      "adaptation_ratio_last_over_first": 1.0009718173028999,
+      "tonic_persistence_fraction": 0.9728500000009753,
+      "spike_times_relative_ms": [
+        22.94999999988869,
+        74.3999999998419,
+        125.89999999979506,
+        177.39999999974822,
+        228.92499999970136,
+        280.42499999973825,
+        331.9249999999256,
+        383.42500000011296,
+        434.9250000003003,
+        486.42500000048767
+      ]
+    },
+    {
+      "current_na": 0.08,
+      "spike_count": 11,
+      "firing_rate_hz": 22.0,
+      "first_spike_latency_ms": 19.999999999891372,
+      "last_spike_time_ms": 480.07500000046457,
+      "mean_isi_ms": 46.00750000005732,
+      "isi_cv": 0.00026248214538461773,
+      "adaptation_ratio_last_over_first": 1.0000000000045475,
+      "tonic_persistence_fraction": 0.9601500000009291,
+      "spike_times_relative_ms": [
+        19.999999999891372,
+        65.99999999984954,
+        111.9999999998077,
+        158.02499999976584,
+        204.024999999724,
+        250.02499999968217,
+        296.0499999997951,
+        342.04999999996244,
+        388.0750000001299,
+        434.0750000002972,
+        480.07500000046457
+      ]
+    },
+    {
+      "current_na": 0.09,
+      "spike_count": 12,
+      "firing_rate_hz": 24.0,
+      "first_spike_latency_ms": 17.774999999893396,
+      "last_spike_time_ms": 478.3000000004581,
+      "mean_isi_ms": 41.86590909096043,
+      "isi_cv": 0.0003012743481998816,
+      "adaptation_ratio_last_over_first": 1.0005973715696637,
+      "tonic_persistence_fraction": 0.9566000000009163,
+      "spike_times_relative_ms": [
+        17.774999999893396,
+        59.62499999985533,
+        101.49999999981725,
+        143.37499999977916,
+        185.2249999997411,
+        227.09999999970302,
+        268.9749999996966,
+        310.82499999984884,
+        352.7000000000012,
+        394.55000000015343,
+        436.4250000003058,
+        478.3000000004581
+      ]
+    },
+    {
+      "current_na": 0.1,
+      "spike_count": 13,
+      "firing_rate_hz": 26.0,
+      "first_spike_latency_ms": 15.99999999989501,
+      "last_spike_time_ms": 479.4250000004622,
+      "mean_isi_ms": 38.618750000047264,
+      "isi_cv": 0.0002927768351062171,
+      "adaptation_ratio_last_over_first": 1.0000000000045475,
+      "tonic_persistence_fraction": 0.9588500000009245,
+      "spike_times_relative_ms": [
+        15.99999999989501,
+        54.62499999985988,
+        93.24999999982475,
+        131.87499999978962,
+        170.4999999997545,
+        209.0999999997194,
+        247.72499999968426,
+        286.3499999997598,
+        324.94999999990023,
+        363.57500000004075,
+        402.20000000018126,
+        440.8000000003217,
+        479.4250000004622
+      ]
+    },
+    {
+      "current_na": 0.12,
+      "spike_count": 15,
+      "firing_rate_hz": 30.0,
+      "first_spike_latency_ms": 13.374999999897398,
+      "last_spike_time_ms": 487.1250000004902,
+      "mean_isi_ms": 33.83928571432806,
+      "isi_cv": 0.00047740825358499563,
+      "adaptation_ratio_last_over_first": 0.9985239852443931,
+      "tonic_persistence_fraction": 0.9742500000009804,
+      "spike_times_relative_ms": [
+        13.374999999897398,
+        47.24999999986659,
+        81.07499999983582,
+        114.92499999980504,
+        148.74999999977427,
+        182.5999999997435,
+        216.4499999997127,
+        250.27499999968194,
+        284.1249999997517,
+        317.94999999987476,
+        351.7749999999978,
+        385.62500000012096,
+        419.450000000244,
+        453.30000000036716,
+        487.1250000004902
+      ]
+    },
+    {
+      "current_na": 0.14,
+      "spike_count": 17,
+      "firing_rate_hz": 34.0,
+      "first_spike_latency_ms": 11.52499999989908,
+      "last_spike_time_ms": 499.15000000053396,
+      "mean_isi_ms": 30.47656250003968,
+      "isi_cv": 0.0002050756210452946,
+      "adaptation_ratio_last_over_first": 0.9991803278733962,
+      "tonic_persistence_fraction": 0.9983000000010679,
+      "spike_times_relative_ms": [
+        11.52499999989908,
+        42.02499999987134,
+        72.49999999984362,
+        102.9749999998159,
+        133.4499999997882,
+        163.92499999976047,
+        194.39999999973276,
+        224.87499999970504,
+        255.34999999967732,
+        285.8249999997579,
+        316.29999999986876,
+        346.7749999999796,
+        377.2500000000905,
+        407.72500000020136,
+        438.20000000031223,
+        468.6750000004231,
+        499.15000000053396
+      ]
+    },
+    {
+      "current_na": 0.16,
+      "spike_count": 18,
+      "firing_rate_hz": 36.0,
+      "first_spike_latency_ms": 10.124999999900353,
+      "last_spike_time_ms": 485.60000000048467,
+      "mean_isi_ms": 27.969117647093196,
+      "isi_cv": 0.0006725694724966777,
+      "adaptation_ratio_last_over_first": 0.9973238180241606,
+      "tonic_persistence_fraction": 0.9712000000009693,
+      "spike_times_relative_ms": [
+        10.124999999900353,
+        38.149999999874865,
+        66.09999999984944,
+        94.074999999824,
+        122.04999999979856,
+        149.99999999977314,
+        177.9749999997477,
+        205.94999999972225,
+        233.89999999969683,
+        261.8749999996714,
+        289.84999999977254,
+        317.7999999998742,
+        345.774999999976,
+        373.75000000007776,
+        401.70000000017944,
+        429.6750000002812,
+        457.650000000383,
+        485.60000000048467
+      ]
+    },
+    {
+      "current_na": 0.18,
+      "spike_count": 19,
+      "firing_rate_hz": 38.0,
+      "first_spike_latency_ms": 9.024999999901354,
+      "last_spike_time_ms": 477.450000000455,
+      "mean_isi_ms": 26.02361111114187,
+      "isi_cv": 0.000838281140021524,
+      "adaptation_ratio_last_over_first": 0.9971264367861437,
+      "tonic_persistence_fraction": 0.95490000000091,
+      "spike_times_relative_ms": [
+        9.024999999901354,
+        35.124999999877616,
+        61.12499999985397,
+        87.1499999998303,
+        113.17499999980663,
+        139.19999999978296,
+        165.2249999997593,
+        191.22499999973564,
+        217.24999999971197,
+        243.2749999996883,
+        269.2999999996978,
+        295.29999999979236,
+        321.32499999988704,
+        347.3499999999817,
+        373.3750000000764,
+        399.375000000171,
+        425.40000000026566,
+        451.42500000036034,
+        477.450000000455
+      ]
+    },
+    {
+      "current_na": 0.2,
+      "spike_count": 21,
+      "firing_rate_hz": 42.0,
+      "first_spike_latency_ms": 8.14999999990215,
+      "last_spike_time_ms": 497.3750000005275,
+      "mean_isi_ms": 24.461250000031267,
+      "isi_cv": 0.0009653157963754786,
+      "adaptation_ratio_last_over_first": 0.9959266802489282,
+      "tonic_persistence_fraction": 0.9947500000010551,
+      "spike_times_relative_ms": [
+        8.14999999990215,
+        32.69999999987982,
+        57.149999999857584,
+        81.59999999983535,
+        106.07499999981309,
+        130.52499999979085,
+        154.9749999997686,
+        179.44999999974635,
+        203.89999999972412,
+        228.34999999970188,
+        252.79999999967964,
+        277.2749999997268,
+        301.72499999981574,
+        326.1749999999047,
+        350.62499999999363,
+        375.1000000000827,
+        399.5500000001716,
+        424.00000000026057,
+        448.4500000003495,
+        472.92500000043856,
+        497.3750000005275
+      ]
+    },
+    {
+      "current_na": 0.25,
+      "spike_count": 23,
+      "firing_rate_hz": 46.0,
+      "first_spike_latency_ms": 6.574999999903582,
+      "last_spike_time_ms": 482.2500000004725,
+      "mean_isi_ms": 21.62159090911677,
+      "isi_cv": 0.0011992495635842506,
+      "adaptation_ratio_last_over_first": 0.9953970080597625,
+      "tonic_persistence_fraction": 0.9645000000009449,
+      "spike_times_relative_ms": [
+        6.574999999903582,
+        28.299999999883823,
+        49.924999999864156,
+        71.54999999984449,
+        93.14999999982484,
+        114.77499999980517,
+        136.3999999997855,
+        157.99999999976586,
+        179.6249999997462,
+        201.24999999972653,
+        222.84999999970688,
+        244.4749999996872,
+        266.07499999968604,
+        287.6999999997647,
+        309.3249999998434,
+        330.92499999992197,
+        352.55000000000064,
+        374.1750000000793,
+        395.7750000001579,
+        417.40000000023656,
+        439.02500000031523,
+        460.6250000003938,
+        482.2500000004725
+      ]
+    },
+    {
+      "current_na": 0.3,
+      "spike_count": 26,
+      "firing_rate_hz": 52.0,
+      "first_spike_latency_ms": 5.524999999904537,
+      "last_spike_time_ms": 497.6750000005286,
+      "mean_isi_ms": 19.68600000002496,
+      "isi_cv": 0.0015588025867390735,
+      "adaptation_ratio_last_over_first": 0.9924337957169973,
+      "tonic_persistence_fraction": 0.9953500000010572,
+      "spike_times_relative_ms": [
+        5.524999999904537,
+        25.349999999886506,
+        45.02499999986861,
+        64.69999999985072,
+        84.37499999983282,
+        104.0749999998149,
+        123.74999999979701,
+        143.42499999977912,
+        163.09999999976122,
+        182.7999999997433,
+        202.4749999997254,
+        222.14999999970752,
+        241.82499999968962,
+        261.5249999996717,
+        281.19999999974107,
+        300.87499999981264,
+        320.5499999998842,
+        340.2249999999558,
+        359.92500000002747,
+        379.60000000009904,
+        399.2750000001706,
+        418.9500000002422,
+        438.65000000031387,
+        458.32500000038544,
+        478.000000000457,
+        497.6750000005286
+      ]
+    }
+  ],
+  "mechanism_temperature_audit": {
+    "test_voltage_mv": -40.0,
+    "celsius": 35.0,
+    "na": {
+      "tau_m_ms": 0.3568368638043157,
+      "tau_h_ms": 10.024086377004538,
+      "tadj": 1.0,
+      "q10": 1.0,
+      "tref_c": 23.0
+    },
+    "kdr": {
+      "tau_n_ms": 9.864905609494276,
+      "tau_h_ms": 60.2409638554217,
+      "tadj": 1.0,
+      "q10": 1.0,
+      "tref_c": 23.0
+    },
+    "table_statements": "none in adapted mechanisms; rates recompute from h.celsius at initialization and every state update"
+  },
+  "robustness": {
+    "conductance": [
+      {
+        "family": "na",
+        "percent": -10,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9768000000009898,
+        "ap_peak_mv": 18.778818994805455,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "na",
+        "percent": -5,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9674500000009557,
+        "ap_peak_mv": 19.346780742237037,
+        "ap_half_width_ms": 0.8499999999992269
+      },
+      {
+        "family": "na",
+        "percent": 0,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9588500000009245,
+        "ap_peak_mv": 19.85919609140956,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "na",
+        "percent": 5,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9508500000008953,
+        "ap_peak_mv": 20.363003088799246,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "na",
+        "percent": 10,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9434000000008682,
+        "ap_peak_mv": 20.833443365179516,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "kdr",
+        "percent": -10,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.952700000000902,
+        "ap_peak_mv": 20.187857901821474,
+        "ap_half_width_ms": 0.8499999999992269
+      },
+      {
+        "family": "kdr",
+        "percent": -5,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9558500000009135,
+        "ap_peak_mv": 20.02480780996974,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "kdr",
+        "percent": 0,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9588500000009245,
+        "ap_peak_mv": 19.85919609140956,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "family": "kdr",
+        "percent": 5,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9617500000009349,
+        "ap_peak_mv": 19.705116389370847,
+        "ap_half_width_ms": 0.7999999999992724
+      },
+      {
+        "family": "kdr",
+        "percent": 10,
+        "spike_count": 13,
+        "firing_rate_hz": 26.0,
+        "tonic_persistence_fraction": 0.9645500000009452,
+        "ap_peak_mv": 19.58167983312746,
+        "ap_half_width_ms": 0.7999999999992724
+      }
+    ],
+    "dt": [
+      {
+        "dt_ms": 0.05,
+        "spike_count": 13,
+        "ap_peak_mv": 19.80089456604597,
+        "ap_half_width_ms": 0.8499999999992269
+      },
+      {
+        "dt_ms": 0.025,
+        "spike_count": 13,
+        "ap_peak_mv": 19.85919609140956,
+        "ap_half_width_ms": 0.8249999999992497
+      },
+      {
+        "dt_ms": 0.0125,
+        "spike_count": 13,
+        "ap_peak_mv": 19.872157129713386,
+        "ap_half_width_ms": 0.8250000000030013
+      }
+    ],
+    "initial_voltage": [
+      {
+        "v_init_mv": -80.0,
+        "spike_count": 13,
+        "tonic_persistence_fraction": 0.9641000000009435
+      },
+      {
+        "v_init_mv": -69.1,
+        "spike_count": 13,
+        "tonic_persistence_fraction": 0.9588500000009245
+      },
+      {
+        "v_init_mv": -60.0,
+        "spike_count": 13,
+        "tonic_persistence_fraction": 0.9562000000009148
+      }
+    ]
+  },
+  "nseg_convergence": [
+    {
+      "nseg_scale": 0.5,
+      "nseg_total": 1470,
+      "rin_mohm": 1001.7842517632359,
+      "ap_peak_mv": 9.960726286308237,
+      "ap_half_width_ms": 1.049999999999045
+    },
+    {
+      "nseg_scale": 1.0,
+      "nseg_total": 2402,
+      "rin_mohm": 950.5687501962441,
+      "ap_peak_mv": 19.85919609140956,
+      "ap_half_width_ms": 0.8249999999992497
+    },
+    {
+      "nseg_scale": 2.0,
+      "nseg_total": 5144,
+      "rin_mohm": 975.2327118868649,
+      "ap_peak_mv": 27.325774292251,
+      "ap_half_width_ms": 0.7999999999992724
+    }
+  ],
+  "status_table": [
+    {
+      "feature": "RMP",
+      "target_source": "Luz 2014 tonic rat LCN population: -69.1 \u00b1 1.2 mV",
+      "result": -69.21301365241918,
+      "status": "PLAUSIBLE",
+      "confidence": "D translated/no 35 C target"
+    },
+    {
+      "feature": "Rin",
+      "target_source": "Sz\u00fccs 2013 rat LCN population: 0.9 \u00b1 0.1 G\u03a9",
+      "result": 950.5687501962441,
+      "status": "PLAUSIBLE",
+      "confidence": "D translated/no 35 C target"
+    },
+    {
+      "feature": "Membrane tau",
+      "target_source": "No exact L571 or LCN target in audited sources",
+      "result": 112.33189477613074,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "Rheobase",
+      "target_source": "No exact L571 target",
+      "result": 0.04,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "AP threshold",
+      "target_source": "No exact L571 waveform target",
+      "result": -44.330547670167945,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "AP peak",
+      "target_source": "No exact L571 waveform target",
+      "result": 19.85919609140956,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "AP half-width",
+      "target_source": "No exact L571 waveform target",
+      "result": 0.8249999999992497,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "AHP",
+      "target_source": "No exact L571 waveform target",
+      "result": -77.30922525891495,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "D unknown"
+    },
+    {
+      "feature": "Tonic persistence",
+      "target_source": "Luz 2014 rat LCN population; regular discharge during 500 ms pulse",
+      "result": 0.9588500000009245,
+      "status": "PLAUSIBLE",
+      "confidence": "D translated plausibility"
+    },
+    {
+      "feature": "Spontaneous firing",
+      "target_source": "Luz 2014: 40/85 LCNs rhythmic; exact L571 class unknown",
+      "result": false,
+      "status": "PLAUSIBLE",
+      "confidence": "B population-level; D individual unknown"
+    },
+    {
+      "feature": "AIS-to-soma timing",
+      "target_source": "No experiment; reconstructed proximal axon is an AIS proxy",
+      "result": 0.07499999999993179,
+      "status": "NO EXPERIMENTAL TARGET",
+      "confidence": "C model-derived"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "eTrC_area_preserved_23C.json",
+  "model_name": "RatLCN_L292E1__Medlock_eTrC__validated_23C",
+  "protocol": {
+    "current_steps_nA": [-0.02, 0.0, 0.5, 0.55, 0.56, 0.6, 0.75, 1.0, 1.5],
+    "range_reason": "Accepted 23 C validation series combining active Rin, zero-current stability, the 0.55-0.56 nA rheobase bracket, moderate drive, and strong drive."
+  },
+  "status": "VALIDATED_ETRC_23C",
+  "validation_record": {
+    "active_rin_limitation": "65.208 MOhm at -0.02 nA, below passive-only 100.453 MOhm; retained as a disclosed morphology-mapping limitation rather than arbitrarily retuned",
+    "accepted_mapping": "D-level region-wise total-maximum-conductance-preserving Medlock-to-reconstruction transform",
+    "medlock_height_comparison": "The reconstructed 23 C AP does not reproduce the paper's 107 mV height-from-start value; it does meet the project's sourced threshold, peak, and half-width ranges.",
+    "rheobase_bracket_nA": [0.55, 0.56],
+    "rheobase_resolution_nA": 0.01,
+    "source_results": [
+      "results/23C/eTrC/area_preserved_broad",
+      "results/23C/eTrC/area_preserved_extended",
+      "results/23C/eTrC/area_preserved_rheobase_50pA",
+      "results/23C/eTrC/area_preserved_rheobase_10pA"
+    ]
+  }
+}

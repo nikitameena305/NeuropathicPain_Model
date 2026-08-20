@@ -1,0 +1,396 @@
+{
+  "node_count": 10478,
+  "node_type_counts": {
+    "soma": 5,
+    "axon": 8638,
+    "dendrite": 1835
+  },
+  "root_ids": [
+    1
+  ],
+  "missing_parents": [],
+  "unreachable_node_ids": [],
+  "cycle_or_revisit_detected": false,
+  "zero_length_edge_node_ids": [],
+  "bifurcation_count": 167,
+  "terminal_count": 174,
+  "branch_count_total": 340,
+  "branch_count_by_type": {
+    "soma": 1,
+    "dendrite": 222,
+    "axon": 117
+  },
+  "total_length_um": 24113.71213002797,
+  "length_by_type_um": {
+    "soma": 30.405402792670984,
+    "dendrite": 3086.008006014223,
+    "axon": 20997.298721221076
+  },
+  "diameter_range_um": {
+    "soma": {
+      "min": 7.2232,
+      "max": 19.8168
+    },
+    "dendrite": {
+      "min": 0.19,
+      "max": 3.71
+    },
+    "axon": {
+      "min": 0.19,
+      "max": 2.6
+    }
+  },
+  "nonpositive_radius_node_ids": [],
+  "sub_0_1_um_diameter_node_ids": [],
+  "abrupt_same_type_diameter_changes_ge_2_5x": [
+    {
+      "node": 2,
+      "parent": 1,
+      "ratio": 2.5446607427191945
+    },
+    {
+      "node": 32,
+      "parent": 31,
+      "ratio": 2.5045045045045042
+    },
+    {
+      "node": 33,
+      "parent": 32,
+      "ratio": 2.5045045045045042
+    },
+    {
+      "node": 79,
+      "parent": 78,
+      "ratio": 3.5135135135135136
+    },
+    {
+      "node": 80,
+      "parent": 79,
+      "ratio": 7.027027027027027
+    },
+    {
+      "node": 85,
+      "parent": 84,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 243,
+      "parent": 242,
+      "ratio": 2.6756756756756754
+    },
+    {
+      "node": 320,
+      "parent": 319,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 378,
+      "parent": 377,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 382,
+      "parent": 381,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 386,
+      "parent": 385,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 435,
+      "parent": 242,
+      "ratio": 3.193548387096774
+    },
+    {
+      "node": 564,
+      "parent": 534,
+      "ratio": 3.8947368421052633
+    },
+    {
+      "node": 578,
+      "parent": 524,
+      "ratio": 3.8947368421052633
+    },
+    {
+      "node": 583,
+      "parent": 438,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 585,
+      "parent": 215,
+      "ratio": 2.756756756756757
+    },
+    {
+      "node": 624,
+      "parent": 623,
+      "ratio": 3.8947368421052633
+    },
+    {
+      "node": 656,
+      "parent": 655,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 681,
+      "parent": 636,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 712,
+      "parent": 711,
+      "ratio": 2.5913978494623655
+    },
+    {
+      "node": 713,
+      "parent": 712,
+      "ratio": 2.5913978494623655
+    },
+    {
+      "node": 722,
+      "parent": 721,
+      "ratio": 2.642857142857143
+    },
+    {
+      "node": 851,
+      "parent": 850,
+      "ratio": 3.0135135135135136
+    },
+    {
+      "node": 852,
+      "parent": 851,
+      "ratio": 3.0135135135135136
+    },
+    {
+      "node": 866,
+      "parent": 865,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 905,
+      "parent": 875,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 949,
+      "parent": 923,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1217,
+      "parent": 1216,
+      "ratio": 8.027027027027028
+    },
+    {
+      "node": 1575,
+      "parent": 1185,
+      "ratio": 2.5913978494623655
+    },
+    {
+      "node": 1646,
+      "parent": 1645,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1647,
+      "parent": 1646,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1686,
+      "parent": 1658,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1687,
+      "parent": 1635,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1688,
+      "parent": 1618,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1717,
+      "parent": 1716,
+      "ratio": 4.894736842105264
+    },
+    {
+      "node": 1720,
+      "parent": 1719,
+      "ratio": 3.8947368421052633
+    },
+    {
+      "node": 1823,
+      "parent": 1805,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 1910,
+      "parent": 1909,
+      "ratio": 3.321428571428571
+    },
+    {
+      "node": 1911,
+      "parent": 1910,
+      "ratio": 2.5135135135135136
+    },
+    {
+      "node": 2953,
+      "parent": 2952,
+      "ratio": 3.0000000000000004
+    },
+    {
+      "node": 2954,
+      "parent": 2953,
+      "ratio": 3.0000000000000004
+    },
+    {
+      "node": 3012,
+      "parent": 3011,
+      "ratio": 4.0
+    },
+    {
+      "node": 3013,
+      "parent": 3012,
+      "ratio": 4.0
+    },
+    {
+      "node": 3356,
+      "parent": 3355,
+      "ratio": 5.842105263157896
+    },
+    {
+      "node": 3358,
+      "parent": 2555,
+      "ratio": 2.947368421052632
+    },
+    {
+      "node": 4280,
+      "parent": 4279,
+      "ratio": 3.0000000000000004
+    },
+    {
+      "node": 4289,
+      "parent": 2553,
+      "ratio": 2.947368421052632
+    }
+  ],
+  "longest_edges_um": [
+    {
+      "node": 3099,
+      "length_um": 34.623619106037985
+    },
+    {
+      "node": 1841,
+      "length_um": 28.13573350741011
+    },
+    {
+      "node": 3197,
+      "length_um": 27.780160186723215
+    },
+    {
+      "node": 9855,
+      "length_um": 19.39923194355899
+    },
+    {
+      "node": 8666,
+      "length_um": 19.22653634953525
+    },
+    {
+      "node": 9038,
+      "length_um": 18.589303375866457
+    },
+    {
+      "node": 8144,
+      "length_um": 18.487731066845384
+    },
+    {
+      "node": 5111,
+      "length_um": 17.75536538627129
+    },
+    {
+      "node": 8171,
+      "length_um": 17.71795417084038
+    },
+    {
+      "node": 9037,
+      "length_um": 17.529044469108932
+    },
+    {
+      "node": 7827,
+      "length_um": 16.747999880582757
+    },
+    {
+      "node": 3356,
+      "length_um": 15.141175647881495
+    },
+    {
+      "node": 8281,
+      "length_um": 14.84178560686011
+    },
+    {
+      "node": 8775,
+      "length_um": 14.585012855667934
+    },
+    {
+      "node": 7344,
+      "length_um": 14.472660432691713
+    },
+    {
+      "node": 4699,
+      "length_um": 14.072849746941799
+    },
+    {
+      "node": 8289,
+      "length_um": 13.833152207649537
+    },
+    {
+      "node": 8994,
+      "length_um": 13.82058609466329
+    },
+    {
+      "node": 9271,
+      "length_um": 13.771695610926068
+    },
+    {
+      "node": 8290,
+      "length_um": 13.759600284891999
+    }
+  ],
+  "type_transitions": {
+    "1->3": 6,
+    "1->2": 1
+  },
+  "soma_point_count": 5,
+  "soma_bounds": {
+    "x_min_um": -10.6563,
+    "x_max_um": 9.788400000000001,
+    "x_extent_um": 20.4447,
+    "y_min_um": -20.9716,
+    "y_max_um": 3.8938,
+    "y_extent_um": 24.865399999999998,
+    "z_min_um": -13.5884,
+    "z_max_um": 6.228400000000001,
+    "z_extent_um": 19.8168
+  },
+  "axon_origins": [
+    {
+      "node": 1841,
+      "parent": 1,
+      "parent_type": "soma",
+      "diameter_um": 1.67,
+      "first_edge_length_um": 28.13573350741011,
+      "coordinates_um": [
+        -5.73,
+        -35.83,
+        -2.61
+      ]
+    }
+  ],
+  "source_file": "/mnt/c/Users/Nikita/OneDrive/Documents/Neuron/inhibitory_interneuron_L571-LCN/morphology/L571-LCN.CNG.swc",
+  "sha256": "696b553d7c31f58f305c79e32bb05d14c7a385b48947b93518a9abe1c01b867f"
+}

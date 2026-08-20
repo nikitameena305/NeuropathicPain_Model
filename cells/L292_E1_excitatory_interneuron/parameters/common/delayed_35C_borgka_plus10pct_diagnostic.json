@@ -1,0 +1,13 @@
+{
+  "extends": "delayed_excitatory_final_35C.json",
+  "active": {
+    "regions": {
+      "dendrite": {"mechanisms": {"borgka": {"gkabar": 0.00102663}}},
+      "proximal_axon_candidate": {"mechanisms": {"borgka": {"gkabar": 0.1232}}},
+      "soma": {"mechanisms": {"borgka": {"gkabar": 0.01199}}}
+    }
+  },
+  "model_name": "delayed_35C_diagnostic_borgka_plus10pct",
+  "protocol": {"tstop_ms": 900.0},
+  "status": "ONE_FACTOR_35C_DIAGNOSTIC_NOT_A_MODEL"
+}

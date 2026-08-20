@@ -1,0 +1,22 @@
+{
+  "extends": "delayed_excitatory_area_preserved_23C.json",
+  "active": {
+    "regions": {
+      "proximal_axon_candidate": {
+        "mechanisms": {
+          "B_Na": {"gnabar": 0.027},
+          "HH2": {"gnabar": 0.021375}
+        }
+      },
+      "soma": {
+        "mechanisms": {
+          "B_Na": {"gnabar": 0.00014868},
+          "HH2": {"gnabar": 0.076932}
+        }
+      }
+    }
+  },
+  "model_name": "delayed_diagnostic_sodium_minus10pct",
+  "protocol": {"tstop_ms": 900.0},
+  "status": "MECHANISM_CONTRIBUTION_DIAGNOSTIC_NOT_A_MODEL"
+}

@@ -1,0 +1,445 @@
+{
+  "assessment": {
+    "all_executed_gates_pass": true,
+    "checks": {
+      "ap_half_width_ms_in_target": true,
+      "ap_peak_mV_in_target": true,
+      "ap_threshold_mV_in_target": true,
+      "medlock_transient_1_to_2_spikes_within_100_ms": true,
+      "no_depolarization_block_in_tested_steps": true,
+      "no_spontaneous_firing": true,
+      "post_step_recovery_within_tolerance": true,
+      "rmp_in_target": true,
+      "spikes_at_one_or_more_positive_steps": true
+    },
+    "classification": "STAGE_GATE_PASSED",
+    "note": "A stage pass is not final model readiness and does not confirm molecular identity or 35C translation."
+  },
+  "configuration_status": "VALIDATED_ETRC_23C",
+  "identity_statement": "The L292-E1-LCN reconstruction is a rat lamina-I local-circuit morphological scaffold. ePKCgamma/eVGLUT3/eDOR/eSST/eCR/eTrC labels refer to computational Medlock population identity and are not molecular identities experimentally confirmed for L292-E1-LCN.",
+  "initiation_by_current": {
+    "-0.02": {
+      "earliest_recorded_site": null,
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": null,
+        "proximal_dendrite": null,
+        "soma": null
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": null,
+      "provisional_ais_precedes_soma": null
+    },
+    "0.0": {
+      "earliest_recorded_site": null,
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": null,
+        "proximal_dendrite": null,
+        "soma": null
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": null,
+      "provisional_ais_precedes_soma": null
+    },
+    "0.5": {
+      "earliest_recorded_site": null,
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": null,
+        "proximal_dendrite": null,
+        "soma": null
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": null,
+      "provisional_ais_precedes_soma": null
+    },
+    "0.55": {
+      "earliest_recorded_site": null,
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": null,
+        "proximal_dendrite": null,
+        "soma": null
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": null,
+      "provisional_ais_precedes_soma": null
+    },
+    "0.56": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 217.27524874328032,
+        "proximal_dendrite": 217.3054636362728,
+        "soma": 217.28417616970245
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.008927426422133067,
+      "provisional_ais_precedes_soma": true
+    },
+    "0.6": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 213.70721923356146,
+        "proximal_dendrite": 213.73550090988243,
+        "soma": 213.71532400666027
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.008104773098807527,
+      "provisional_ais_precedes_soma": true
+    },
+    "0.75": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 209.2124830366011,
+        "proximal_dendrite": 209.2390341271758,
+        "soma": 209.21969219758418
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.007209160983080665,
+      "provisional_ais_precedes_soma": true
+    },
+    "1.0": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 206.28664900059363,
+        "proximal_dendrite": 206.31214579690484,
+        "soma": 206.29305223263603
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.006403232042401896,
+      "provisional_ais_precedes_soma": true
+    },
+    "1.5": {
+      "earliest_recorded_site": "proximal_axon_candidate",
+      "first_zero_crossing_ms": {
+        "proximal_axon_candidate": 203.9670330477726,
+        "proximal_dendrite": 203.99146390719656,
+        "soma": 203.9724628512321
+      },
+      "provisional_ais_minus_soma_zero_crossing_ms": -0.005429803459520599,
+      "provisional_ais_precedes_soma": true
+    }
+  },
+  "model_name": "RatLCN_L292E1__Medlock_eTrC__validated_23C",
+  "morphology": {
+    "axon_sections": 503,
+    "connectivity": {
+      "all_axons_connected": true,
+      "all_dendrites_connected": true,
+      "external_parent_sections": [],
+      "one_connected_morphology": true,
+      "root_sections": [
+        "<rat_lcn.RatLCN_L292E1 object at 0x79e656093520>.soma[0]"
+      ],
+      "soma_is_root": true,
+      "unreachable_sections": []
+    },
+    "dendrite_sections": 446,
+    "maximum_segment_electrotonic_fraction": 0.09987119740171084,
+    "minimum_segment_diameter_um": 0.18999999761581318,
+    "path": "/mnt/c/Users/Nikita/NeuropathicPain_Model/exc_interneuron/morphology/primary/L292-E1-LCN.CNG.swc",
+    "proximal_axon_candidate_segment_count": 3,
+    "section_count": 950,
+    "soma_sections": 1,
+    "total_nseg": 4312
+  },
+  "passive_only": false,
+  "passive_reference": {
+    "adaptation_ratio_last_over_first_isi": null,
+    "ahp_mV": null,
+    "amplitude_nA": -0.02,
+    "ap_amplitude_mV": null,
+    "ap_half_width_ms": null,
+    "ap_peak_mV": null,
+    "ap_threshold_mV": null,
+    "depolarization_block_flag": false,
+    "firing_rate_Hz": 0.0,
+    "first_spike_latency_ms": null,
+    "input_capacitance_pF": 286.3908046044557,
+    "isi_cv": null,
+    "last_spike_time_ms": null,
+    "late_step_mean_voltage_mV": -67.79634058251568,
+    "max_dvdt_V_s": -1.0449070941793438e-07,
+    "mean_isi_ms": null,
+    "post_step_recovery_error_mV": -0.015842213856132048,
+    "post_step_recovery_mean_mV": -66.50802876105766,
+    "rin_MOhm": 65.20809921160264,
+    "rmp_mV": -66.49218654720153,
+    "spike_count": 0,
+    "spike_times_ms": [],
+    "spontaneous_spike_count": 0,
+    "steady_state_mV": -67.79634853143358,
+    "tau_ms": 18.674999999938052
+  },
+  "per_current": [
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": null,
+      "amplitude_nA": -0.02,
+      "ap_amplitude_mV": null,
+      "ap_half_width_ms": null,
+      "ap_peak_mV": null,
+      "ap_threshold_mV": null,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 0.0,
+      "first_spike_latency_ms": null,
+      "input_capacitance_pF": 286.3908046044557,
+      "isi_cv": null,
+      "last_spike_time_ms": null,
+      "late_step_mean_voltage_mV": -67.79634058251568,
+      "max_dvdt_V_s": -1.0449070941793438e-07,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": -0.015842213856132048,
+      "post_step_recovery_mean_mV": -66.50802876105766,
+      "rin_MOhm": 65.20809921160264,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 0,
+      "spike_times_ms": [],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -67.79634853143358,
+      "tau_ms": 18.674999999938052
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": null,
+      "amplitude_nA": 0.0,
+      "ap_amplitude_mV": null,
+      "ap_half_width_ms": null,
+      "ap_peak_mV": null,
+      "ap_threshold_mV": null,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 0.0,
+      "first_spike_latency_ms": null,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": null,
+      "late_step_mean_voltage_mV": -66.50070327729793,
+      "max_dvdt_V_s": -8.042775334586467e-09,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": -0.008517975525165866,
+      "post_step_recovery_mean_mV": -66.50070452272669,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 0,
+      "spike_times_ms": [],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -66.50070382892764,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": null,
+      "amplitude_nA": 0.5,
+      "ap_amplitude_mV": null,
+      "ap_half_width_ms": null,
+      "ap_peak_mV": null,
+      "ap_threshold_mV": null,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 0.0,
+      "first_spike_latency_ms": null,
+      "input_capacitance_pF": 158.21019999249796,
+      "isi_cv": null,
+      "last_spike_time_ms": null,
+      "late_step_mean_voltage_mV": -53.304817982607304,
+      "max_dvdt_V_s": 9.623820588145348,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.040909939475739066,
+      "post_step_recovery_mean_mV": -66.45127660772579,
+      "rin_MOhm": 26.388943318124944,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 0,
+      "spike_times_ms": [],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -53.297714888139055,
+      "tau_ms": 4.17499999995124
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": null,
+      "amplitude_nA": 0.55,
+      "ap_amplitude_mV": null,
+      "ap_half_width_ms": null,
+      "ap_peak_mV": null,
+      "ap_threshold_mV": null,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 0.0,
+      "first_spike_latency_ms": null,
+      "input_capacitance_pF": 153.11907641587788,
+      "isi_cv": null,
+      "last_spike_time_ms": null,
+      "late_step_mean_voltage_mV": -52.76065713270916,
+      "max_dvdt_V_s": 10.586212292939727,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.0411099044451646,
+      "post_step_recovery_mean_mV": -66.45107664275636,
+      "rin_MOhm": 24.98055820009452,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 0,
+      "spike_times_ms": [],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.75287953714954,
+      "tau_ms": 3.824999999951558
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 27.350619419555606,
+      "amplitude_nA": 0.56,
+      "ap_amplitude_mV": 61.83516500095707,
+      "ap_half_width_ms": 0.8283798633501078,
+      "ap_peak_mV": 22.23233135056249,
+      "ap_threshold_mV": -39.60283365039458,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 17.299999999939303,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 17.299999999939303,
+      "late_step_mean_voltage_mV": -52.663066975465554,
+      "max_dvdt_V_s": 163.616764621331,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.041098530014721746,
+      "post_step_recovery_mean_mV": -66.4510880171868,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        217.2999999999393
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.65339931610722,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 26.293013768216753,
+      "amplitude_nA": 0.6,
+      "ap_amplitude_mV": 64.29181135098652,
+      "ap_half_width_ms": 0.8315078061980614,
+      "ap_peak_mV": 23.80736268278432,
+      "ap_threshold_mV": -40.484448668202205,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 13.724999999942554,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 13.724999999942554,
+      "late_step_mean_voltage_mV": -52.26459673826379,
+      "max_dvdt_V_s": 174.67087398176224,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.04115016664616178,
+      "post_step_recovery_mean_mV": -66.45103638055537,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        213.72499999994255
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -52.25464767304467,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 25.15394941584144,
+      "amplitude_nA": 0.75,
+      "ap_amplitude_mV": 66.47082230098455,
+      "ap_half_width_ms": 0.8344575096111271,
+      "ap_peak_mV": 25.344865894714488,
+      "ap_threshold_mV": -41.12595640627006,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 9.224999999946647,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 9.224999999946647,
+      "late_step_mean_voltage_mV": -50.955868704902116,
+      "max_dvdt_V_s": 186.9641823917115,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.04089663121781939,
+      "post_step_recovery_mean_mV": -66.45128991598371,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        209.22499999994665
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -50.944591087314556,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 23.762349257823537,
+      "amplitude_nA": 1.0,
+      "ap_amplitude_mV": 68.06138937149035,
+      "ap_half_width_ms": 0.8418519118141319,
+      "ap_peak_mV": 26.27277883171345,
+      "ap_threshold_mV": -41.788610539776904,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 6.299999999949307,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 6.299999999949307,
+      "late_step_mean_voltage_mV": -49.20150754756942,
+      "max_dvdt_V_s": 194.66308800354355,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.03976637709237707,
+      "post_step_recovery_mean_mV": -66.45242017010915,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        206.2999999999493
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -49.188473309416004,
+      "tau_ms": null
+    },
+    {
+      "adaptation_ratio_last_over_first_isi": null,
+      "ahp_mV": 21.364166686642825,
+      "amplitude_nA": 1.5,
+      "ap_amplitude_mV": 69.99774312781125,
+      "ap_half_width_ms": 0.8563192807160362,
+      "ap_peak_mV": 27.136133485956535,
+      "ap_threshold_mV": -42.861609641854706,
+      "depolarization_block_flag": false,
+      "firing_rate_Hz": 2.0,
+      "first_spike_latency_ms": 3.9749999999514216,
+      "input_capacitance_pF": null,
+      "isi_cv": null,
+      "last_spike_time_ms": 3.9749999999514216,
+      "late_step_mean_voltage_mV": -46.557539574096936,
+      "max_dvdt_V_s": 200.771175080951,
+      "mean_isi_ms": null,
+      "post_step_recovery_error_mV": 0.03709715148907833,
+      "post_step_recovery_mean_mV": -66.45508939571245,
+      "rin_MOhm": null,
+      "rmp_mV": -66.49218654720153,
+      "spike_count": 1,
+      "spike_times_ms": [
+        203.97499999995142
+      ],
+      "spontaneous_spike_count": 0,
+      "steady_state_mV": -46.541320933953685,
+      "tau_ms": null
+    }
+  ],
+  "protocol": {
+    "current_steps_nA": [
+      -0.02,
+      0.0,
+      0.5,
+      0.55,
+      0.56,
+      0.6,
+      0.75,
+      1.0,
+      1.5
+    ],
+    "d_lambda": 0.1,
+    "delay_ms": 200.0,
+    "dt_ms": 0.025,
+    "duration_ms": 500.0,
+    "frequency_Hz": 100.0,
+    "tstop_ms": 900.0
+  },
+  "rheobase_nA_with_tested_resolution": 0.56,
+  "software": {
+    "neuron": "9.0.1",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.10.20"
+  },
+  "temperature_C": 23.0,
+  "temperature_label": "experimental-source-temperature"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "source": "morphology/primary/23-04-18C-04-cell-1.CNG.swc",
+  "source_sha256": "e2ecaffc1ebcf9c88b72224fa4172aa93dfb013edb3ad40ee2bfadebe06ec915",
+  "output": "morphology/model/23-04-18C-04-cell-1.model.swc",
+  "output_sha256": "0e05613af9b747d3ca856d1b643c7c776d8207df2397637d302144834ea8c9f2",
+  "transformation": "Removed blank lines only; comments and every SWC data record retained in original order.",
+  "source_line_count": 2924,
+  "output_line_count": 2909,
+  "blank_lines_removed": 15,
+  "coordinate_changes": 0,
+  "topology_changes": 0,
+  "radius_changes": 0
+}

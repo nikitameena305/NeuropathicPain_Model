@@ -1,0 +1,25 @@
+{
+  "cell": "23-04-18C-04-cell-1",
+  "nmo_id": "NMO_170087",
+  "single_cell_implementation": "ENGINEERING READY / BIOLOGICALLY PROVISIONAL",
+  "network_integration": "NO",
+  "reason": "Passive Rin and population AP threshold pass, but capacitance, rheobase, AP amplitude, half-width, AHP, spatial convergence, sodium perturbation, proximal-axon definition, and 35 C translation expose unresolved limitations.",
+  "completed_stages": [
+    "evidence and provenance",
+    "morphology acquisition and QA",
+    "NEURON import",
+    "passive fitting and validation",
+    "active evidence and channel audit",
+    "minimal active fitting and validation",
+    "temperature validation",
+    "numerical robustness",
+    "figures and machine-readable results",
+    "reporting"
+  ],
+  "blocking_recommendations": [
+    "obtain or select trace-level PV data with linked protocol details",
+    "revisit channel kinetics/distribution rather than only density fitting",
+    "refit at stricter spatial discretization",
+    "define and validate a physiological-temperature target before network use"
+  ]
+}

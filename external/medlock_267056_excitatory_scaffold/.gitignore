@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# NEURON/NMODL build output
+arm64/
+x86_64/
+nrnmech.dll
+special
+
+# Simulation output
+results/
+/data/
+*.pkl
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

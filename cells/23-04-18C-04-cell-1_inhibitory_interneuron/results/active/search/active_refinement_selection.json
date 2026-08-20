@@ -1,0 +1,46 @@
+{
+  "selected_row": {
+    "candidate": "aisna_0.35_sna_0.02_sk_0.002_aisk_0.02",
+    "soma_na_s_cm2": 0.02,
+    "soma_kdr_s_cm2": 0.002,
+    "dendrite_na_s_cm2": 0.0,
+    "dendrite_kdr_s_cm2": 0.0,
+    "ais_na_s_cm2": 0.35,
+    "ais_kdr_s_cm2": 0.02,
+    "distal_axon_na_s_cm2": 0.02,
+    "distal_axon_kdr_s_cm2": 0.005,
+    "rheobase_na": 0.04,
+    "threshold_mv": -34.94034195363336,
+    "peak_mv": 2.7025748855422647,
+    "amplitude_mv": 37.64291683917562,
+    "half_width_ms": 1.4999999999986358,
+    "ahp_relative_threshold_mv": -29.35225612536457,
+    "spikes_at_2x": 25,
+    "frequency_hz_at_2x": 31.25,
+    "tonic_persistence_at_2x": 0.9775625000019539,
+    "adaptation_at_2x": 1.039452495978962,
+    "score": 6.391210976023586
+  },
+  "targets": {
+    "rheobase_pa": [
+      77.0,
+      7.0
+    ],
+    "threshold_mv": [
+      -34.9,
+      1.3
+    ],
+    "amplitude_mv": [
+      44.8,
+      1.6
+    ],
+    "half_width_ms": [
+      1.4,
+      0.1
+    ],
+    "ahp_relative_threshold_mv": [
+      -17.6,
+      1.6
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "model_id": "NMO_170087",
+  "status": "active_fit_selected",
+  "random_seed": 170087,
+  "temperature_c": 23.0,
+  "morphology": {
+    "file": "morphology/model/23-04-18C-04-cell-1.model.swc",
+    "source_sha256": "e2ecaffc1ebcf9c88b72224fa4172aa93dfb013edb3ad40ee2bfadebe06ec915",
+    "model_sha256": "0e05613af9b747d3ca856d1b643c7c776d8207df2397637d302144834ea8c9f2",
+    "repair": "blank-lines-only parser copy",
+    "synthetic_axon": false
+  },
+  "discretization": {
+    "method": "d_lambda",
+    "frequency_hz": 100.0,
+    "d_lambda": 0.1
+  },
+  "passive": {
+    "ra_ohm_cm": 150.0,
+    "cm_uf_cm2": 0.5,
+    "g_pas_s_cm2": 6.076828312277793e-05,
+    "e_pas_mv": -60.0
+  },
+  "ions": {
+    "ena_mv": 60.0,
+    "ek_mv": -84.0
+  },
+  "active": {
+    "enabled": true,
+    "mechanism_dependency": "cells/L571_inhibitory_interneuron/mechanisms",
+    "kinetic_source": "Medlock et al. ModelDB 267056 equations as audited/adapted in l571_na and l571_kdr; densities below are only a search start",
+    "temperature_scaling": true,
+    "q10_na": 3.0,
+    "q10_kdr": 3.0,
+    "reference_temperature_c": 23.0,
+    "ais_proxy_max_distance_um": 30.0,
+    "conductance_s_cm2": {
+      "soma": {
+        "na": 0.01,
+        "kdr": 0.002
+      },
+      "dendrite": {
+        "na": 0.0,
+        "kdr": 0.0
+      },
+      "ais_proxy": {
+        "na": 0.15,
+        "kdr": 0.05
+      },
+      "distal_axon": {
+        "na": 0.015,
+        "kdr": 0.005
+      }
+    }
+  },
+  "simulation": {
+    "dt_ms": 0.025,
+    "v_init_mv": -60.0,
+    "stim_delay_ms": 250.0,
+    "stim_duration_ms": 800.0,
+    "post_stim_ms": 250.0,
+    "spike_crossing_mv": -20.0
+  },
+  "protocols": {
+    "experimental_currents_na": [
+      -0.02,
+      0.0,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.12,
+      0.14,
+      0.16,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "rheobase_search_na": [
+      0.0,
+      0.2,
+      0.005
+    ],
+    "strong_current_na": 0.4
+  },
+  "fit_selection": {
+    "coarse_grid": "results/active/search/active_fit_grid.csv",
+    "refinement_grid": "results/active/search/active_refinement_grid.csv",
+    "targeted_grid": "results/active/search/active_targeted_grid.csv",
+    "candidate": "aisna_0.15_sna_0.01_sk_0.002_aisk_0.05",
+    "score": 8.668057893961482,
+    "rheobase_resolution": "10-20 pA search grid, matching the 20-pA experimental increment scale",
+    "target_scope": "same-population adult mouse PV means; not exact-cell electrophysiology",
+    "minimal_mechanism_constraint": "leak + fast Na + delayed-rectifier K only"
+  }
+}
