@@ -1,0 +1,143 @@
+{
+  "AIS_status": "NO SYNTHETIC AIS; native soma+dendrite model was excitable",
+  "NMO_ID": "NMO_260150",
+  "active": {
+    "B_A": {
+      "ais": 0.0,
+      "dendrite": 0.0,
+      "soma": 0.005
+    },
+    "B_DR": {
+      "ais": 0.0,
+      "dendrite": 0.03,
+      "soma": 0.3
+    },
+    "B_Na": {
+      "ais": 0.0,
+      "dendrite": 0.0048,
+      "soma": 0.12
+    },
+    "Ih_Kole": {
+      "ais": 0.0,
+      "dendrite": 5.7e-05,
+      "soma": 5.7e-05
+    }
+  },
+  "axon_status": "NO RECONSTRUCTED AXON",
+  "cell_name": "100521A-S14_set5_cell11",
+  "determinism": "no random processes; deterministic fixed-step integration",
+  "diameter_scale": 1.0,
+  "diameter_status": "NeuroMorpho metadata says No Diameter; standardized CNG radius profile retained as model-defined nominal geometry",
+  "dt_ms": 0.025,
+  "evidence_category": "NPFFCre-targeted / GRPRFlp-excluded population-level electrophysiology",
+  "experimental_targets": {
+    "IAr_model_current_pA": {
+      "mean": 165.7,
+      "n": 10,
+      "sd": 80.3
+    },
+    "Ih_model_current_pA": {
+      "mean": -10.9,
+      "n": 11,
+      "sd": 5.0
+    },
+    "ahp_mV_trough_minus_threshold": {
+      "mean": -28.42,
+      "n": 26,
+      "sd": 5.2
+    },
+    "ap_base_width_ms_threshold_to_downstroke": {
+      "mean": 1.4,
+      "n": 26,
+      "sd": 0.5
+    },
+    "ap_height_mV_peak_minus_threshold": {
+      "mean": 64.8,
+      "n": 26,
+      "sd": 10.2
+    },
+    "ap_threshold_mV_dvdt_10": {
+      "mean": -35.3,
+      "n": 26,
+      "sd": 5.4
+    },
+    "capacitance_pF": {
+      "mean": 10.58,
+      "n": 31,
+      "sd": 2.2
+    },
+    "first_spike_latency_ms": {
+      "mean": 321.8,
+      "n": 26,
+      "sd": 235.8
+    },
+    "rheobase_pA": {
+      "mean": 26.9,
+      "n": 26,
+      "sd": 20.5
+    },
+    "rin_MOhm": {
+      "mean": 749.9,
+      "n": 31,
+      "sd": 307.0
+    },
+    "rmp_mV": {
+      "mean": -59.0,
+      "n": 31,
+      "sd": 8.2
+    }
+  },
+  "final_rheobase_pA": 20.0,
+  "known_identity": "NPFF-positive superficial dorsal-horn excitatory vertical interneuron",
+  "mechanism_temperature_audit": {
+    "B_A": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) divides activation/inactivation taus",
+      "effective_scaling": "Q10 3 for kinetics"
+    },
+    "B_DR": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) declared but not used in rate equations",
+      "effective_scaling": "none from celsius in this source"
+    },
+    "B_Na": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) declared in rates TABLE but not applied to taus",
+      "effective_scaling": "none from celsius in this source"
+    },
+    "Ih_Kole": {
+      "Tref_C": null,
+      "celsius_or_Q10": "no celsius/Q10 term in source",
+      "effective_scaling": "none"
+    }
+  },
+  "medlock_mapping": "eCR-like computational analogue only",
+  "model_status": "PARTIAL: quantitatively constrained tonic 35 C prediction; capacitance and delayed-latency targets are not met",
+  "morphology_path": "morphology/NMO_260150_100521A-S14_set5_cell11_standardized.CNG.swc",
+  "morphology_sha256": "AC078EE88E43CC9831544BE2242C24AC6212D26CF7C9A237A3597314A5E27F7F",
+  "nseg_rule": "odd nseg from d-lambda=0.1 at 100 Hz",
+  "passive": {
+    "Ra_ohm_cm": 225.0,
+    "cm_uF_cm2": 0.5,
+    "e_pas_mV": -59.0,
+    "g_pas_S_cm2": 3.6e-05
+  },
+  "protocol": {
+    "ap_height_definition": "AP peak minus AP threshold",
+    "base_width_definition": "threshold crossing to first downstroke crossing of threshold voltage",
+    "baseline_duration_ms": 60000.0,
+    "current_increment_pA": 5.0,
+    "current_range_pA": [
+      0.0,
+      100.0
+    ],
+    "current_step_delay_ms": 300.0,
+    "current_step_duration_ms": 1000.0,
+    "current_step_recovery_ms": 200.0,
+    "threshold_definition": "first pre-spike upward crossing of dV/dt > 10 mV/ms"
+  },
+  "reference_rheobase_pA": 20.0,
+  "temperature_C": 35.0,
+  "temperature_interpretation": "model prediction, not a direct experimental validation temperature",
+  "unconfirmed_identity": "CR/calretinin"
+}

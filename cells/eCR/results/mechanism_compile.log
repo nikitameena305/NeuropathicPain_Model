@@ -1,0 +1,8 @@
+NMO_260150 portable mechanism build audit
+Date: 2026-08-20
+Runtime: NEURON 9.0.2, Linux x86_64, Python interface
+Command class: nrnivmodl cells/eCR/mechanisms
+Sources: B_Na.mod, B_DR.mod, B_A.mod, Ih_Kole.mod
+Result: SUCCESS
+Compiler warnings after compatibility fixes: 0
+Permanent compiled artifacts: none (runtime build cache is outside the repository)

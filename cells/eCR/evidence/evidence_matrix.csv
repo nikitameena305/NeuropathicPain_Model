@@ -1,0 +1,24 @@
+measure,evidence_category,source_condition,reported_value,n,model_use,model_value_35C,status_or_interpretation,source
+exact morphology,EXACT MORPHOLOGY ONLY,NMO_260150 NeuroMorpho record,"mouse adult superficial L1-L2 dorsal horn; excitatory vertical NPFF-positive; soma+dendrites; no axon",1,direct geometry,N/A,PASS topology QA,NeuroMorpho NMO_260150 API
+morphology orientation,PRO-NPFF-CONFIRMED MORPHOLOGY POPULATION,30 Brainbow cells also pro-NPFF-immunoreactive,"virtually all vertical; all ventral dendritic length > dorsal",30,qualitative identity/mapping,N/A,strong population morphology evidence,Quillet et al. 2023
+spine density,PRO-NPFF-CONFIRMED MORPHOLOGY POPULATION,pro-NPFF-confirmed reconstructions,"30.7 +/- 3.7 spines/100 um; GRPR comparison 15.9 +/- 5.1",30,document only,N/A,not represented by compartments,Quillet et al. 2023
+RMP,NPFFCre-targeted / GRPRFlp-excluded population,current clamp/IV-derived,"-59.0 +/- 8.2 mV",31,passive/active constraint,-59.055 mV,PASS within 1 SD,Quillet et al. 2023 Table 1
+Rin,NPFFCre-targeted / GRPRFlp-excluded population,"five 1 s -5 mV voltage steps from -70 mV","749.9 +/- 307 MOhm",31,passive constraint,664.99 MOhm,"PASS within 1 SD; model value from -5 pA current step",Quillet et al. 2023 Table 1
+whole-cell capacitance,NPFFCre-targeted / GRPRFlp-excluded population,whole-cell recording,"10.58 +/- 2.2 pF",31,passive comparison,18.45 pF,"FAIL 3.58 SD high; mismatch preserved",Quillet et al. 2023 Table 1
+rheobase,NPFFCre-targeted / GRPRFlp-excluded population,1 s current steps in 5 pA increments,"26.9 +/- 20.5 pA",26,active constraint,20 pA,PASS within 1 SD,Quillet et al. 2023 Table 1
+AP threshold,NPFFCre-targeted / GRPRFlp-excluded population,dV/dt > 10 mV/ms,"-35.3 +/- 5.4 mV",26,active constraint,-40.25 mV,PASS within 1 SD,Quillet et al. 2023 Table 1
+first-spike latency,NPFFCre-targeted / GRPRFlp-excluded population,at rheobase,"321.8 +/- 235.8 ms",26,active constraint,12.62 ms,"FAIL 1.31 SD low; no forced delay",Quillet et al. 2023 Table 1
+AP base width,NPFFCre-targeted / GRPRFlp-excluded population,base-width convention,"1.4 +/- 0.5 ms",26,active constraint,1.95 ms,"PARTIAL 1.10 SD high",Quillet et al. 2023 Table 1
+AP height,NPFFCre-targeted / GRPRFlp-excluded population,peak minus threshold,"64.8 +/- 10.2 mV",26,active constraint,60.54 mV,PASS within 1 SD,Quillet et al. 2023 Table 1
+AHP,NPFFCre-targeted / GRPRFlp-excluded population,trough minus threshold,"-28.42 +/- 5.2 mV",26,active constraint,-35.87 mV,"FAIL 1.43 SD more negative",Quillet et al. 2023 Table 1
+firing distribution,NPFFCre-targeted / GRPRFlp-excluded population,1 s suprathreshold current,"delayed 11/26; tonic 8/26; transient 5/26; single 2/26",26,phenotype constraint,tonic,"biologically observed alternative; delayed target failed",Quillet et al. 2023 Figure 9
+spontaneous activity,NPFFCre-targeted / GRPRFlp-excluded population,1 min at RMP,"14/25 active (56%); 0.7 +/- 0.8 Hz",25,safety/plausibility,0/60 s; 0 Hz,"plausible silent member of 44% non-spontaneous subset",Quillet et al. 2023
+rapid IA (IAr),NPFFCre-targeted / GRPRFlp-excluded population,-60/-90/-40 mV protocol,"10/16 (62.5%); 165.7 +/- 80.3 pA",16,channel test,178.07 pA,PASS within 1 SD; exact-cell expression unknown,Quillet et al. 2023
+slow IA (IAs),NPFFCre-targeted / GRPRFlp-excluded population,-60/-90/-40 mV protocol,"4/16 (25%); 333.0 +/- 184.1 pA",16,document/reject,N/A,not retained,Quillet et al. 2023
+Ih,NPFFCre-targeted / GRPRFlp-excluded population,final 200 ms of -90 mV step,"11/16 (68.8%); -10.9 +/- 5.0 pA",16,channel test,-10.72 pA,PASS within 1 SD; exact-cell expression unknown,Quillet et al. 2023
+ICaT absence,NPFFCre-targeted / GRPRFlp-excluded population,-60/-90/-40 mV protocol,0/16 detected,16,exclusion,N/A,PASS not included,Quillet et al. 2023
+sEPSCs,NPFFCre-targeted / GRPRFlp-excluded population,spontaneous excitatory input,"6.86 +/- 6.15 Hz; 34.3 +/- 6.3 pA",27,future synaptic modeling,N/A,not used in intrinsic fit,Quillet et al. 2023
+mEPSCs,NPFFCre-targeted / GRPRFlp-excluded population,miniature excitatory input,"2.35 +/- 1.99 Hz (n=15); 30.1 +/- 4.1 pA (n=15)",15,future synaptic modeling,N/A,not used in intrinsic fit,Quillet et al. 2023
+capsaicin/TRPV1 response,NPFFCre-targeted / GRPRFlp-excluded population,7 tested; 4 sensitive,"mEPSC frequency 1.5 +/- 0.7 to 3.8 +/- 2.7 Hz",7,future afferent modeling,N/A,document only,Quillet et al. 2023
+Y1 response,NPFFCre-targeted / GRPRFlp-excluded population,"[Leu32 Pro34]-NPY", "6/6 outward current; max 27.8 +/- 8.8 pA; Rin 533.5 +/- 223.5 to 342.3 +/- 95.0 MOhm",6,future neuromodulation,N/A,document only,Quillet et al. 2023
+experimental temperature,NPFFCre-targeted / GRPRFlp-excluded population,acute slices,"32 C recovery then room-temperature recording; numeric recording-chamber temperature not stated",N/A,reference-condition boundary,35 C model prediction,"do not call directly validated at 35 C",Quillet et al. 2023 Methods

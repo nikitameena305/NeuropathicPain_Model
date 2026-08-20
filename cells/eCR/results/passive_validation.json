@@ -1,0 +1,221 @@
+{
+  "best": {
+    "metrics": {
+      "post_step_recovery_error_mV": -0.0003925192439737657,
+      "rin_MOhm": 768.8186388226725,
+      "rmp_mV": -59.0,
+      "tau_ms": 13.624999999942645,
+      "whole_cell_capacitance_pF": 18.45050160855376
+    },
+    "passive": {
+      "Ra_ohm_cm": 225.0,
+      "cm_uF_cm2": 0.5,
+      "e_pas_mV": -59.0,
+      "g_pas_S_cm2": 3.6e-05
+    },
+    "score_z2": 12.802268987287825
+  },
+  "identity_statement": "NPFF-targeted / GRPR-excluded population constraints applied to exact NMO_260150 morphology only",
+  "interpretation": {
+    "capacitance_policy": "cm was not allowed below 0.5 uF/cm2; remaining mismatch is preserved",
+    "diameter_policy": "standardized SWC profile fixed and classified as model-defined",
+    "rmp_rin_priority": "RMP and Rin prioritized over capacitance"
+  },
+  "morphology_inventory": {
+    "ais_status": "NO AIS; NO RECONSTRUCTED AXON",
+    "axon_or_ais_section_count": 0,
+    "dendrite_section_count": 64,
+    "diameter_scale": 1.0,
+    "modeled_whole_cell_capacitance_pF": 18.45050160855376,
+    "section_count": 65,
+    "soma_section_count": 1,
+    "total_area_um2": 3690.1003217107523,
+    "total_nseg": 115
+  },
+  "operational_reference_temperature_C": 23.0,
+  "search": {
+    "coarse_count": 128,
+    "evaluated_count": 158,
+    "local_count": 30,
+    "top_10": [
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.0003925192439737657,
+          "rin_MOhm": 768.8186388226725,
+          "rmp_mV": -59.0,
+          "tau_ms": 13.624999999942645,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 225.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 3.6e-05
+        },
+        "score_z2": 12.802268987287825
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.0003925192439737657,
+          "rin_MOhm": 770.5696683561143,
+          "rmp_mV": -59.0,
+          "tau_ms": 13.57499999994269,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 250.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 3.6e-05
+        },
+        "score_z2": 12.803000773186268
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.0003925192439737657,
+          "rin_MOhm": 772.3101961958548,
+          "rmp_mV": -59.0,
+          "tau_ms": 13.549999999942713,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 275.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 3.6e-05
+        },
+        "score_z2": 12.803792650002118
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 696.9985072047805,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.174999999943964,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 275.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.828317190148159
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 695.2639588554604,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.199999999943941,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 250.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.830299980009643
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 695.2639588554604,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.199999999943941,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 250.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.830299980009643
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 693.5184050519225,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.224999999943918,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 225.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.832359804174375
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 691.8022608577473,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.249999999943896,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 200.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.834447956551493
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 688.2751562121697,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.324999999943827,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 150.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.838935850315485
+      },
+      {
+        "metrics": {
+          "post_step_recovery_error_mV": -0.00014313598950366213,
+          "rin_MOhm": 684.7386253970412,
+          "rmp_mV": -59.0,
+          "tau_ms": 12.39999999994376,
+          "whole_cell_capacitance_pF": 18.45050160855376
+        },
+        "passive": {
+          "Ra_ohm_cm": 100.0,
+          "cm_uF_cm2": 0.5,
+          "e_pas_mV": -59.0,
+          "g_pas_S_cm2": 4e-05
+        },
+        "score_z2": 12.84370078866428
+      }
+    ]
+  },
+  "source_condition": "room-temperature experimental reference; chamber temperature not numerically reported",
+  "targets": {
+    "rin_MOhm": {
+      "mean": 750.0,
+      "n": 31,
+      "sd": 307.0
+    },
+    "rmp_mV": {
+      "mean": -59.0,
+      "n": 31,
+      "sd": 8.2
+    },
+    "whole_cell_capacitance_pF": {
+      "mean": 10.58,
+      "n": 31,
+      "sd": 2.2
+    }
+  }
+}

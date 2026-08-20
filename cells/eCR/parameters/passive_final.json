@@ -1,0 +1,35 @@
+{
+  "d_lambda": 0.1,
+  "diameter_scale": 1.0,
+  "diameter_status": "model-defined standardized profile; NeuroMorpho metadata says No Diameter",
+  "dt_ms": 0.025,
+  "evidence_category": "NPFFCre-targeted / GRPRFlp-excluded population",
+  "experimental_targets": {
+    "rin_MOhm": {
+      "mean": 750.0,
+      "n": 31,
+      "sd": 307.0
+    },
+    "rmp_mV": {
+      "mean": -59.0,
+      "n": 31,
+      "sd": 8.2
+    },
+    "whole_cell_capacitance_pF": {
+      "mean": 10.58,
+      "n": 31,
+      "sd": 2.2
+    }
+  },
+  "frequency_Hz": 100.0,
+  "model": "NMO_260150 passive native soma+dendrite",
+  "passive": {
+    "Ra_ohm_cm": 225.0,
+    "cm_uF_cm2": 0.5,
+    "e_pas_mV": -59.0,
+    "g_pas_S_cm2": 3.6e-05
+  },
+  "status": "passive-stage fitted model parameter set",
+  "temperature_C": 23.0,
+  "temperature_evidence": "operational room-temperature proxy, not an experimental chamber value"
+}

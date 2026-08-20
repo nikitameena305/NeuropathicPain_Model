@@ -1,0 +1,152 @@
+{
+  "all_required_topology_checks_pass": true,
+  "axon_cable_length_um": 0.0,
+  "axon_node_count": 0,
+  "branch_point_count": 32,
+  "branch_point_node_ids": [
+    1,
+    5,
+    19,
+    56,
+    123,
+    189,
+    213,
+    227,
+    258,
+    281,
+    349,
+    365,
+    377,
+    467,
+    475,
+    558,
+    566,
+    579,
+    597,
+    660,
+    666,
+    753,
+    820,
+    842,
+    845,
+    873,
+    899,
+    945,
+    1066,
+    1078,
+    1110,
+    1144
+  ],
+  "connected_component_count": 1,
+  "connected_component_sizes": [
+    1297
+  ],
+  "coordinate_extents_um": {
+    "x": {
+      "extent_um": 102.85000000000001,
+      "max_um": 80.37,
+      "min_um": -22.48
+    },
+    "y": {
+      "extent_um": 241.4,
+      "max_um": 122.68,
+      "min_um": -118.72
+    },
+    "z": {
+      "extent_um": 49.989999999999995,
+      "max_um": 25.54,
+      "min_um": -24.45
+    }
+  },
+  "dendrite_node_count": 1294,
+  "dendritic_cable_length_um": 1331.727718528527,
+  "diameter_evidence_status": "NO DIAMETER per NeuroMorpho metadata; SWC radii are standardized/model-defined and are not treated as measured anatomy",
+  "duplicate_coordinate_group_count": 0,
+  "duplicate_coordinate_node_groups": [],
+  "endpoint_count": 33,
+  "endpoint_node_ids": [
+    74,
+    97,
+    186,
+    220,
+    239,
+    271,
+    301,
+    315,
+    374,
+    450,
+    478,
+    479,
+    488,
+    551,
+    671,
+    676,
+    730,
+    764,
+    833,
+    848,
+    886,
+    894,
+    901,
+    908,
+    990,
+    1017,
+    1036,
+    1081,
+    1118,
+    1135,
+    1225,
+    1252,
+    1297
+  ],
+  "maximum_root_path_distance_um": 171.6290734417743,
+  "maximum_root_path_terminal_node_id": 730,
+  "model_diameter_policy": {
+    "interpretation": "not measured anatomy",
+    "nominal": "preserve NeuroMorpho standardized SWC radius profile as model-defined geometry",
+    "robustness_scales": [
+      0.8,
+      1.0,
+      1.2
+    ]
+  },
+  "node_count": 1297,
+  "node_type_counts": {
+    "dendrite": 1294,
+    "soma": 3
+  },
+  "nonpositive_radius_node_ids": [],
+  "orphan_node_ids": [],
+  "root_count": 1,
+  "root_node_ids": [
+    1
+  ],
+  "row_counts": {
+    "blank_rows": 0,
+    "comment_rows": 0,
+    "total_rows": 1297,
+    "valid_swc_rows": 1297
+  },
+  "sha256": "ac078ee88e43cc9831544be2242c24ac6212d26cf7c9a237a3597314a5e27f7f",
+  "soma_node_count": 3,
+  "source_file": "NMO_260150_100521A-S14_set5_cell11_standardized.CNG.swc",
+  "standardized_file_radius_distribution_um": {
+    "dendrite": {
+      "count": 1294,
+      "max_um": 2.965,
+      "mean_um": 0.34688948995363217,
+      "median_um": 0.305,
+      "min_um": 0.115
+    },
+    "soma": {
+      "count": 3,
+      "max_um": 5.95548,
+      "mean_um": 5.955479999999999,
+      "median_um": 5.95548,
+      "min_um": 5.95548
+    }
+  },
+  "total_neurite_cable_length_um": 1331.727718528527,
+  "zero_length_segment_count": 0,
+  "zero_length_segments": []
+}

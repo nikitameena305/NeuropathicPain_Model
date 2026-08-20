@@ -1,0 +1,37 @@
+{
+  "final_35C": {
+    "IAr_model_current_pA": 178.07488173367122,
+    "Ih_model_current_pA": -10.724341865576477,
+    "interpretation": "whole-cell model diagnostics, not exact-cell channel measurements",
+    "protocol": "hold -60 mV; -90 mV for 1 s; -40 mV for 200 ms"
+  },
+  "protocol": "-60 mV hold, -90 mV 1 s, -40 mV 200 ms",
+  "reference_23C": {
+    "IAr_model_current_pA": 178.08949245153656,
+    "Ih_model_current_pA": -10.724341865576475,
+    "interpretation": "whole-cell model diagnostics, not exact-cell channel measurements",
+    "protocol": "hold -60 mV; -90 mV for 1 s; -40 mV for 200 ms"
+  },
+  "temperature_audit": {
+    "B_A": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) divides activation/inactivation taus",
+      "effective_scaling": "Q10 3 for kinetics"
+    },
+    "B_DR": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) declared but not used in rate equations",
+      "effective_scaling": "none from celsius in this source"
+    },
+    "B_Na": {
+      "Tref_C": 23.0,
+      "celsius_or_Q10": "tadj=3^((celsius-23)/10) declared in rates TABLE but not applied to taus",
+      "effective_scaling": "none from celsius in this source"
+    },
+    "Ih_Kole": {
+      "Tref_C": null,
+      "celsius_or_Q10": "no celsius/Q10 term in source",
+      "effective_scaling": "none"
+    }
+  }
+}
